@@ -3,7 +3,7 @@
         <div class="ed-mob-menu-con">
             <div class="ed-mm-left">
                 <div class="wed-logo">
-                    <a href="main.html"><img src="{{ asset('fontend/images/logo_aej_280x50.png') }}" alt="" />
+                    <a href="main.html"><img src="{{ asset('frontend/images/logo_aej_280x50.png') }}" alt="" />
                     </a>
                 </div>
             </div>
