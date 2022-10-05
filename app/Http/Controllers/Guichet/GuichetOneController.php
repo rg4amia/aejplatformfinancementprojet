@@ -22,9 +22,9 @@ class GuichetOneController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function form_mentor()
     {
-        //
+        return view('frontend.guichetOne.form_mentor');
     }
 
     /**
