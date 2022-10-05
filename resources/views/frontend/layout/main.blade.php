@@ -41,9 +41,6 @@
 </section>
 <!--END HEADER SECTION-->
 
-<!--HEADER SECTION-->
-@include('frontend.layout.header-sub-menu')
-<!--END HEADER SECTION-->
 
 @yield('content')
 
