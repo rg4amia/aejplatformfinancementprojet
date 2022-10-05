@@ -22,3 +22,7 @@ use App\Http\Controllers\Guichet\GuichetFiveController;
 Route::get('/', function () {return view('frontend/accueil');});
 
 Route::get('/guichet1', [GuichetOneController::class, 'index'])->name('guichet1');
+Route::get('/guichet2', [GuichetTwoController::class, 'index'])->name('guichet2');
+Route::get('/guichet3', [GuichetThreeController::class, 'index'])->name('guichet3');
+Route::get('/guichet4', [GuichetFourController::class, 'index'])->name('guichet4');
+Route::get('/guichet5', [GuichetFiveController::class, 'index'])->name('guichet5');

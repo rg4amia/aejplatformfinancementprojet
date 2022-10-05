@@ -14,7 +14,7 @@ class GuichetTwoController extends Controller
      */
     public function index()
     {
-        //
+        return view('frontend.guichetTwo.index');
     }
 
     /**

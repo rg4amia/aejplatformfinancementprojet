@@ -55,7 +55,7 @@
                     <div class="b_pack rows">
                         <!-- TOUR TITLE -->
                         <div class="col-md-8 col-sm-8">
-                            <h4><a href="tour-details.html">GUICHET 2<span class="v_pl_name"><!-- (England) --></span></a></h4>
+                            <h4><a href="{{route('guichet2')}}">GUICHET 2<span class="v_pl_name"><!-- (England) --></span></a></h4>
                         </div>
                         <!-- TOUR ICONS -->
                         <div class="col-md-4 col-sm-4 pack_icon">
@@ -81,7 +81,7 @@
                     <div class="v_place_img"><img src="{{asset('frontend/images/t2.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <div class="b_pack rows">
                         <div class="col-md-8 col-sm-8">
-                            <h4><a href="tour-details.html">GUICHET 3<span class="v_pl_name"><!-- (India) --></span></a></h4>
+                            <h4><a href="{{route('guichet3')}}">GUICHET 3<span class="v_pl_name"><!-- (India) --></span></a></h4>
                         </div>
                         <div class="col-md-4 col-sm-4 pack_icon">
                             <ul>
@@ -106,7 +106,7 @@
                     <div class="v_place_img"><img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <div class="b_pack rows">
                         <div class="col-md-8 col-sm-8">
-                            <h4><a href="tour-details.html">GUICHET 4<span class="v_pl_name"><!-- (China) --></span></a></h4>
+                            <h4><a href="{{route('guichet4')}}">GUICHET 4<span class="v_pl_name"><!-- (China) --></span></a></h4>
                         </div>
                         <div class="col-md-4 col-sm-4 pack_icon">
                             <ul>
@@ -131,7 +131,7 @@
                     <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <div class="b_pack rows">
                         <div class="col-md-8 col-sm-8">
-                            <h4><a href="tour-details.html">GUICHET 5<span class="v_pl_name"><!-- (Andaman) --></span></a></h4>
+                            <h4><a href="{{route('guichet5')}}">GUICHET 5<span class="v_pl_name"><!-- (Andaman) --></span></a></h4>
                         </div>
                         <div class="col-md-4 col-sm-4 pack_icon">
                             <ul>

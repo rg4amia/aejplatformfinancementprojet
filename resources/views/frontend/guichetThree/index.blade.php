@@ -7,17 +7,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- FAV ICON -->
-    <link rel="shortcut icon" href="{{asset('fontend/images/fav.ico')}}">
+    <link rel="shortcut icon" href="{{asset('frontend/images/fav.ico')}}">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
     <!-- FONT-AWESOME ICON CSS -->
-    <link rel="stylesheet" href="{{asset('fontend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
     <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="{{asset('fontend/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('fontend/css/materialize.css')}}">
-    <link rel="stylesheet" href="{{asset('fontend/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('fontend/css/mob.css')}}">
-    <link rel="stylesheet" href="{{asset('fontend/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/materialize.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/mob.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/animate.css')}}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +38,7 @@
             <div class="ed-mob-menu-con">
                 <div class="ed-mm-left">
                     <div class="wed-logo">
-                        <a href="main.html"><img src="{{asset('fontend/images/logo.png')}}" alt="" />
+                        <a href="main.html"><img src="{{asset('frontend/images/logo.png')}}" alt="" />
                         </a>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wed-logo">
-                            <a href="main.html"><img src="{{asset('fontend/images/logo.png')}}" alt="" />
+                            <a href="main.html"><img src="{{asset('frontend/images/logo.png')}}" alt="" />
                             </a>
                         </div>
                         <div class="main-menu">
@@ -180,7 +180,7 @@
                                                 <div class="mm1-com mm1-s1">
                                                     <div class="ed-course-in">
                                                         <a class="course-overlay menu-about" href="all-package.html">
-                                                            <img src="{{asset('fontend/images/sight/5.jpg')}}" alt="">
+                                                            <img src="{{asset('frontend/images/sight/5.jpg')}}" alt="">
                                                             <span>Popular Package</span>
                                                         </a>
                                                     </div>
@@ -222,7 +222,7 @@
                                                 <div class="mm2-com mm1-com mm1-s1">
                                                     <div class="ed-course-in">
                                                         <a class="course-overlay" href="places.html">
-                                                            <img src="{{asset('fontend/images/sight/1.jpg')}}" alt="">
+                                                            <img src="{{asset('frontend/images/sight/1.jpg')}}" alt="">
                                                             <span>Seight Seeing - 1</span>
                                                         </a>
                                                     </div>
@@ -232,7 +232,7 @@
                                                 <div class="mm2-com mm1-com mm1-s1">
                                                     <div class="ed-course-in">
                                                         <a class="course-overlay" href="places-1.html">
-                                                            <img src="{{asset('fontend/images/sight/2.jpg')}}" alt="">
+                                                            <img src="{{asset('frontend/images/sight/2.jpg')}}" alt="">
                                                             <span>Seight Seeing - 2</span>
                                                         </a>
                                                     </div>
@@ -242,7 +242,7 @@
                                                 <div class="mm2-com mm1-com mm1-s1">
                                                     <div class="ed-course-in">
                                                         <a class="course-overlay" href="places-2.html">
-                                                            <img src="{{asset('fontend/images/sight/3.jpg')}}" alt="">
+                                                            <img src="{{asset('frontend/images/sight/3.jpg')}}" alt="">
                                                             <span>Seight Seeing - 3</span>
                                                         </a>
                                                     </div>
@@ -252,7 +252,7 @@
                                                 <div class="mm2-com mm1-com mm1-s4">
                                                     <div class="ed-course-in">
                                                         <a class="course-overlay" href="places-3.html">
-                                                            <img src="{{asset('fontend/images/sight/4.jpg')}}" alt="">
+                                                            <img src="{{asset('frontend/images/sight/4.jpg')}}" alt="">
                                                             <span>Seight Seeing - 4</span>
                                                         </a>
                                                     </div>
@@ -751,19 +751,19 @@
                         <ul>
                             <!-- LOCATION MANAGER -->
                             <li>
-                                <a href="#"><img src="{{asset('fontend/images/Location-Manager.png')}}" alt=""> </a>
+                                <a href="#"><img src="{{asset('frontend/images/Location-Manager.png')}}" alt=""> </a>
                             </li>
                             <!-- PRIVATE GUIDE -->
                             <li>
-                                <a href="#"><img src="{{asset('fontend/images/Private-Guide.png')}}" alt=""> </a>
+                                <a href="#"><img src="{{asset('frontend/images/Private-Guide.png')}}" alt=""> </a>
                             </li>
                             <!-- ARRANGEMENTS -->
                             <li>
-                                <a href="#"><img src="{{asset('fontend/images/Arrangements.png')}}" alt=""> </a>
+                                <a href="#"><img src="{{asset('frontend/images/Arrangements.png')}}" alt=""> </a>
                             </li>
                             <!-- EVENT ACTIVITIES -->
                             <li>
-                                <a href="#"><img src="{{asset('fontend/images/Events-Activities.png')}}" alt=""> </a>
+                                <a href="#"><img src="{{asset('frontend/images/Events-Activities.png')}}" alt=""> </a>
                             </li>
                         </ul>
                     </div>
@@ -888,11 +888,11 @@
         </div>
     </section>
     <!--========= Scripts ===========-->
-    <script src="{{asset('fontend/js/jquery-latest.min.js')}}"></script>
-    <script src="{{asset('fontend/js/bootstrap.js')}}"></script>
-    <script src="{{asset('fontend/js/wow.min.js')}}"></script>
-    <script src="{{asset('fontend/js/materialize.min.js')}}"></script>
-    <script src="{{asset('fontend/js/custom.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery-latest.min.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap.js')}}"></script>
+    <script src="{{asset('frontend/js/wow.min.js')}}"></script>
+    <script src="{{asset('frontend/js/materialize.min.js')}}"></script>
+    <script src="{{asset('frontend/js/custom.js')}}"></script>
 </body>
 
 </html>
