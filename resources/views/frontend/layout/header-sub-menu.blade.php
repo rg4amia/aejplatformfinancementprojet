@@ -1,6 +1,7 @@
 <section>
     <div class="tourz-search">
-        <div class="container">
+        <div class="overlay">
+            <div class="container">
             <div class="row">
                 <div class="tourz-search-1">
                     <h1>Guichet Unique du financement en Côte d’Ivoire</h1>
@@ -9,6 +10,7 @@
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
