@@ -18,6 +18,7 @@ use App\Http\Controllers\Guichet\GuichetFiveController;
 |
 */
 
+
 Route::get('/', function () {return view('frontend/accueil');});
 
 Route::get('/guichet1', [GuichetOneController::class, 'index'])->name('guichet1');

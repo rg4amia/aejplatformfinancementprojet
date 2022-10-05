@@ -59,7 +59,7 @@
      background: linear-gradient(to bottom,#f8941e,#f8941e);
 }
  .link-btn:hover {
-     background-color: #f8941e;
+     background-color: #000000;
      transition: all 0.5s ease;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -1646,7 +1646,7 @@
      -o-transition: all 0.5s ease;
      font-weight: 700;
      background: #f8941e;
-     background: linear-gradient(to bottom,#f8941e,#dc2039);
+     background: linear-gradient(to bottom,#f8941e,#f8941e);
 }
  .disco a:hover {
      background: #D46600;
@@ -1960,7 +1960,7 @@
  .banner_book_1 ul li a {
      background: #1aa5d8;
      background: #f8941e;
-     background: linear-gradient(to bottom,#f8941e,#dc2039);
+     background: linear-gradient(to bottom,#f8941e,#f8941e);
      display: block;
      text-align: center;
      color: #fff;
@@ -4296,7 +4296,7 @@
      height: 45px;
      line-height: 45px;
      background: #f8941e;
-     background: linear-gradient(to bottom,#f8941e,#dc2039);
+     background: linear-gradient(to bottom,#f8941e,#f8941e);
      outline: none;
      font-size: 16px;
      display: block !important;
@@ -4346,7 +4346,7 @@
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
      background: #f8941e;
-     background: linear-gradient(to bottom,#f8941e,#dc2039);
+     background: linear-gradient(to bottom,#f8941e,#f8941e);
      border: 1px solid #d41e36;
 }
  .tourz-hom-ser ul li a img {
@@ -5563,14 +5563,23 @@
     text-align: center;
     font-size: 18px;
 }
+
 /*--======================================================================--*/
- .wed-logo{
-     float: left;
-     width: 20%;
+/*  .wed-logo{
+    position: absolute;
+    top: -52px;
+    padding: 15px;
+} */
+
+.wed-logo {
+    float: left;
+    width: 20%;
+    position: absolute;
+    top: -30px;
+    padding: 15px;
 }
- .wed-logo a{
-}
- .wed-logo a img{
+
+.wed-logo a img{
      width: 250px;
      padding: 7px 0px;
 }
@@ -5702,7 +5711,7 @@
      font-family: 'Quicksand', sans-serif;
 }
  .main-menu ul li a:hover{
-     color: #f8941e;
+     color: #00a650;
 }
  .main-menu ul li a:after{
      content: "";
@@ -5991,12 +6000,10 @@
     -o-transition: all 0.5s ease;
     transition: all 1s ease;
     background-color: #f8941e;
-    height: 68px;
+    height: 67px;
     padding-top: 7px;
 }
 
-.pop-form{
-}
  .pop-form input{
      font-size: 16px;
 }
@@ -6063,7 +6070,7 @@
  .wed-hom-ser ul li a:hover{
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
-     background: #ef6331;
+     background: #00a650;
      color: #fff;
 }
  .wed-hom-ser ul li a img{
@@ -6591,11 +6598,10 @@
      width: 100%;
      height: 55px;
      background: #f8941e;
-     height: 68px;
+     height: 67px;
      padding-top: 7px;
      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.32);
      z-index: 999;
-     padding: 1px;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
@@ -7404,7 +7410,7 @@
 }
  .ed-com-t1-right ul li:nth-child(1) a{
      background: #f8941e;
-     background: linear-gradient(to bottom,#f8941e,#dc2039);
+     background: linear-gradient(to bottom,#f8941e,#f8941e);
 }
  .ed-com-t1-right ul li:nth-child(2) a{
      background: #2d5d73;
