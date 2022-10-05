@@ -1,7 +1,7 @@
 @extends('frontend.layout.main')
 @section('content')
     <section>
-        
+
         <!-- TOP SEARCH BOX -->
        <!--  <div class="search-top">
             <div class="container">
@@ -28,7 +28,7 @@
         <!-- END TOP SEARCH BOX -->
     </section>
     <!--END HEADER SECTION-->
-        
+
     <!--====== BANNER ==========-->
     <section>
         <div class="rows inner_banner inner_banner_4">
@@ -51,9 +51,9 @@
             <div class="container">
                 <div class="banner_book_1">
                     <ul>
-                        <li class="dl1">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="dl2">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="dl3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                         <li class="dl4"><a href="booking.html">Devenir Mentor</a> </li>
                     </ul>
                 </div>
@@ -116,8 +116,8 @@
                             <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next"> <span><i class="fa fa-angle-right hotel-gal-arr hotel-gal-arr1" aria-hidden="true"></i></span> </a>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
                 <div class="col-md-3 tour_r">
                     <!--====== SPECIAL OFFERS ==========-->
@@ -167,11 +167,10 @@
                             <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    
+
 @endsection
- 

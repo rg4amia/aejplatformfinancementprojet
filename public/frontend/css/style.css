@@ -1749,7 +1749,7 @@
      background-size: cover;
 }
  .inner_banner_4 {
-     background: url('../images/banner/4.jpg') no-repeat center center;
+     background: url('../images/banner/barnner-guichet-one.png') no-repeat center center;
      background-size: cover;
 }
  .inner_banner_5 {
@@ -2979,7 +2979,7 @@
     /* centers the loading animation horizontally one the screen */
      top: 50%;
     /* centers the loading animation vertically one the screen */
-     background-image: url(../images/preloader.gif);
+     background-image: url(..frontend/images/preloader.gif);
     /* path to your loading animation */
      background-repeat: no-repeat;
      background-position: center;

@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="wed-logo">
-                        <a href="main.html"><img src="{{ asset('frontend/images/logo/aej_logo.png') }}" alt=""/>
+                        <a href="{{ url('/') }}"><img src="{{ asset('frontend/images/logo/aej_logo.png') }}" alt=""/>
                         </a>
                     </div>
                     <div class="main-menu">
@@ -65,9 +65,9 @@
                             <li>
                                 <a href="#">Conditions d’éligibilité</a>
                             </li>
-                            <li><a href="#">Profile</a>
+                            <li><a href="#">A propos</a>
                             </li>
-                            <li><a href="#">Contact us</a>
+                            <li><a href="#">Contactez nous</a>
                             </li>
                         </ul>
                     </div>

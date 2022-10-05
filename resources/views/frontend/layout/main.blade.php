@@ -40,7 +40,6 @@
     @include('frontend.layout.menu')
 </section>
 <!--END HEADER SECTION-->
-=======
 <!--HEADER SECTION-->
 
 <!--END HEADER SECTION-->
