@@ -40,13 +40,6 @@
     @include('frontend.layout.menu')
 </section>
 <!--END HEADER SECTION-->
-<<<<<<< HEAD
-=======
-=======
-<!--HEADER SECTION-->
-
-<!--END HEADER SECTION-->
->>>>>>> e7ce646e400321ff4380a3d48b12cf8a134d6f44
 
 @yield('content')
 
