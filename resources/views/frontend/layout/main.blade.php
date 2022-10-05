@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Guichet Unique du financement en Côte d’Ivoire</title>
+    <title>Accueil - Guichet de financement</title>
     <!--== META TAGS ==-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -46,9 +45,7 @@
 @include('frontend.layout.header-sub-menu')
 <!--END HEADER SECTION-->
 
-
 @yield('content')
-
 
 <!--====== FOOTER 2 ==========-->
 <section>

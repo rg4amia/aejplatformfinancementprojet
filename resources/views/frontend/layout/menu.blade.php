@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="wed-logo">
-                        <a href="main.html"><img src="{{ asset('frontend/images/logo/logo_aej_trsp.png') }}" alt=""/>
+                        <a href="main.html"><img src="{{ asset('frontend/images/logo/aej_logo.png') }}" alt=""/>
                         </a>
                     </div>
                     <div class="main-menu">

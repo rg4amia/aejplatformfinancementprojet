@@ -59,7 +59,7 @@
      background: linear-gradient(to bottom,#f8941e,#f8941e);
 }
  .link-btn:hover {
-     background-color: #f8941e;
+     background-color: #000000;
      transition: all 0.5s ease;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -5565,12 +5565,17 @@
 }
 
 /*--======================================================================--*/
- .wed-logo{
-     /* float: left;
-     width: 20%; */
+/*  .wed-logo{
     position: absolute;
     top: -52px;
-    /* background: #fff; */
+    padding: 15px;
+} */
+
+.wed-logo {
+    float: left;
+    width: 20%;
+    position: absolute;
+    top: -30px;
     padding: 15px;
 }
 
@@ -5706,7 +5711,7 @@
      font-family: 'Quicksand', sans-serif;
 }
  .main-menu ul li a:hover{
-     color: #f8941e;
+     color: #00a650;
 }
  .main-menu ul li a:after{
      content: "";
@@ -5995,12 +6000,10 @@
     -o-transition: all 0.5s ease;
     transition: all 1s ease;
     background-color: #f8941e;
-    height: 68px;
+    height: 67px;
     padding-top: 7px;
 }
 
-.pop-form{
-}
  .pop-form input{
      font-size: 16px;
 }
@@ -6067,7 +6070,7 @@
  .wed-hom-ser ul li a:hover{
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
-     background: #ef6331;
+     background: #00a650;
      color: #fff;
 }
  .wed-hom-ser ul li a img{
@@ -6595,11 +6598,10 @@
      width: 100%;
      height: 55px;
      background: #f8941e;
-     height: 68px;
+     height: 67px;
      padding-top: 7px;
      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.32);
      z-index: 999;
-     padding: 1px;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
