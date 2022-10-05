@@ -751,19 +751,19 @@
 						<ul>
 							<!-- LOCATION MANAGER -->
 							<li>
-								<a href="#"><img src="images/Location-Manager.png" alt=""> </a>
+								<a href="#"><img src="{{asset('fontend/images/Location-Manager.png')}}" alt=""> </a>
 							</li>
 							<!-- PRIVATE GUIDE -->
 							<li>
-								<a href="#"><img src="images/Private-Guide.png" alt=""> </a>
+								<a href="#"><img src="{{asset('fontend/images/Private-Guide.png')}}" alt=""> </a>
 							</li>
 							<!-- ARRANGEMENTS -->
 							<li>
-								<a href="#"><img src="images/Arrangements.png" alt=""> </a>
+								<a href="#"><img src="{{asset('fontend/images/Arrangements.png')}}" alt=""> </a>
 							</li>
 							<!-- EVENT ACTIVITIES -->
 							<li>
-								<a href="#"><img src="images/Events-Activities.png" alt=""> </a>
+								<a href="#"><img src="{{asset('fontend/images/Events-Activities.png')}}" alt=""> </a>
 							</li>
 						</ul>
 					</div>
@@ -888,11 +888,11 @@
 		</div>
 	</section>
 	<!--========= Scripts ===========-->
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="{{asset('fontend/js/jquery-latest.min.js')}}"></script>
+	<script src="{{asset('fontend/js/bootstrap.js')}}"></script>
+	<script src="{{asset('fontend/js/wow.min.js')}}"></script>
+	<script src="{{asset('fontend/js/materialize.min.js')}}"></script>
+	<script src="{{asset('fontend/js/custom.js')}}"></script>
 </body>
 
 </html>
