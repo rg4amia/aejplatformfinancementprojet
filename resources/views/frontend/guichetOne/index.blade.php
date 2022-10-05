@@ -35,7 +35,7 @@
             <div class="container">
                 <h2><span>GUICHET 1 </span> <!-- Family Package --></h2>
                 <ul>
-                    <li><a href="#inner-page-title">Accueil</a>
+                    <li><a href="{{url('/')}}">Accueil</a>
                     </li>
                     <li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
                     <li><a href="#inner-page-title" class="bread-acti">guichet 1</a>
@@ -51,10 +51,10 @@
             <div class="container">
                 <div class="banner_book_1">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="dl4"><a href="booking.html">Devenir Mentor</a> </li>
+                        <li class="dl1">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li class="dl2">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li class="dl3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li class="dl4"><a href="{{route('mentor.form')}}">Devenir Mentor</a> </li>
                     </ul>
                 </div>
             </div>
@@ -73,7 +73,12 @@
                         <h3>Description</h3>
                         <p>Discover two of South America’s greatest cities, Rio de Janeiro and Buenos Aires, at a leisurely pace. A major highlight on this journey is a visit to Iguassu Falls in between your two city stays. It truly is one of the most spectacular sights on Earth. See the impressive falls from both the Brazilian and Argentine sides.</p>
                         <p>Brazil’s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina’s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you’ll cherish for life.</p>
+
+                        <br>
+                        <br>
+                        <a href="{{route('form.projetguichet1')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
                     </div>
+<<<<<<< HEAD
                     <!--====== ROOMS: HOTEL BOOKING ==========-->
                     <div class="tour_head1 hotel-book-room">
                         <h3>Photo Gallery</h3>
@@ -118,28 +123,23 @@
                     </div>
 
 
+=======
+
+>>>>>>> 804a8f9231c9fd7771a3c1c86c03d96362ba92a2
                 </div>
                 <div class="col-md-3 tour_r">
                     <!--====== SPECIAL OFFERS ==========-->
-                    <div class="tour_right tour_offer">
+                    <!-- <div class="tour_right tour_offer">
                         <div class="band1"><img src="images/offer.png" alt="" /> </div>
                         <p>Special Offer</p>
                         <h4>$500<span class="n-td">
                                 <span class="n-td-1">$800</span>
                                 </span>
-                            </h4> <a href="booking.html" class="link-btn">Book Now</a> </div>
-                    <!--====== TRIP INFORMATION ==========-->
-                    <div class="tour_right tour_incl tour-ri-com">
-                        <h3>Trip Information</h3>
-                        <ul>
-                            <li>Location : Rio,Brazil</li>
-                            <li>Arrival Date: Nov 12, 2017</li>
-                            <li>Departure Date: Nov 21, 2017</li>
-                            <li>Free Sightseeing & Hotel</li>
-                        </ul>
-                    </div>
+                            </h4> <a href="booking.html" class="link-btn">Book Now</a>
+                        </div> -->
+
                     <!--====== PACKAGE SHARE ==========-->
-                    <div class="tour_right head_right tour_social tour-ri-com">
+                    <!-- <div class="tour_right head_right tour_social tour-ri-com">
                         <h3>Share This Package</h3>
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
@@ -148,17 +148,17 @@
                             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
                             <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!--====== HELP PACKAGE ==========-->
                     <div class="tour_right head_right tour_help tour-ri-com">
-                        <h3>Help & Support</h3>
+                        <h3>Aide & support</h3>
                         <div class="tour_help_1">
-                            <h4 class="tour_help_1_call">Call Us Now</h4>
-                            <h4><i class="fa fa-phone" aria-hidden="true"></i> 10-800-123-000</h4> </div>
+                            <h4 class="tour_help_1_call">Applez-nous</h4>
+                            <h4><i class="fa fa-phone" aria-hidden="true"></i> (+225) 00 00 00 00 00</h4> </div>
                     </div>
                     <!--====== PACKAGE SHARE 2 ==========-->
                     <div class="tour_right head_right tour_social tour-ri-com">
-                        <h3>Share This Package</h3>
+                        <h3>Suivez-nous</h3>
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
                             <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
