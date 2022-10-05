@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend/accueil');
 });
+
+Route::get('/', function () {return view('fontend/accueil');});
+Route::get('/guichet1', [Controller::class, 'guichet_one'])->name('guichet1');
