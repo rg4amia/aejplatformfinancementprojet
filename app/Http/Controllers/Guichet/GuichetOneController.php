@@ -27,6 +27,11 @@ class GuichetOneController extends Controller
         return view('frontend.guichetOne.form_mentor');
     }
 
+    public function form_projetguichet1()
+    {
+        return view('frontend.guichetOne.form_projetguichet1');
+    }
+
     /**
      * Store a newly created resource in storage.
      *

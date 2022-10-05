@@ -76,7 +76,7 @@
 
                         <br>
                         <br>
-                        <button class="btn btn-info"> Soumettre un projet</button>
+                        <a href="{{route('form.projetguichet1')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
                     </div>
     
                 </div>
