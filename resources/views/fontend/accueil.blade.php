@@ -1,0 +1,2 @@
+
+@extends('fontend.layout.main')
