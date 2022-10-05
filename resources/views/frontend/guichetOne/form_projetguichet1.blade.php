@@ -57,7 +57,7 @@
                     </div>
 
                <div class="dir-rat-inn">
-                    <form class="dir-rat-form">
+                    <form class="dir-rat-form col-md-8">
                         <div>
 
                             <div class="form-group col-md-4 pad-left-o">
