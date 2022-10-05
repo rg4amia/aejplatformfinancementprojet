@@ -11,11 +11,4 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-
-
-     public function guichet_one()
-  {
-     //dd($demandeurs2022);
-   return view('fontend.guichet_one');
-  }
 }
