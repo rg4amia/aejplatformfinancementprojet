@@ -1,5 +1,6 @@
 @extends('frontend.layout.main')
 @section('content')
+@include('frontend.layout.header-sub-menu')
 <section>
     <div class="rows pad-bot-redu tb-space">
         <div class="container">
