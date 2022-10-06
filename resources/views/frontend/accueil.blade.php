@@ -103,7 +103,11 @@
                     </div>
                 </div>
                 <!-- TOUR PLACE 4 -->
-                <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-2 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
                     <div class="v_place_img"><img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <div class="b_pack rows">
                         <div class="col-md-8 col-sm-8">
@@ -127,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- TOUR PLACE 5 -->
+
                 <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.3s">
                     <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <div class="b_pack rows">
@@ -152,6 +156,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-2 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
+                    </div>
+                    
+                </div>
+                
+                <!-- TOUR PLACE 5 -->
+                
                 <!-- TOUR PLACE 6 -->
                 <!-- <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.5s">
                     <div class="v_place_img"><img src="{{asset('frontend/images/t6.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
