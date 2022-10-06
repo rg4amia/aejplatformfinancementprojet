@@ -27,6 +27,11 @@ class GuichetFourController extends Controller
         //
     }
 
+     public function form_projetguichet4()
+    {
+        return view('frontend.guichetFour.form_projetguichet4');
+    }
+
     /**
      * Store a newly created resource in storage.
      *

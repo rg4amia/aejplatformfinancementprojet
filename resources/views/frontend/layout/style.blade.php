@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend/css/mob.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}">
+@yield('style')
