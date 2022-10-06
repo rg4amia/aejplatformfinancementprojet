@@ -120,5 +120,4 @@
 </section>
 @include('frontend.layout.scripts')
 </body>
-
 </html>
