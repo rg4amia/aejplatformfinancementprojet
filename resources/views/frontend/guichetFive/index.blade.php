@@ -2,30 +2,7 @@
 @section('content')
     <section>
 
-        <!-- TOP SEARCH BOX -->
-       <!--  <div class="search-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="search-form">
-                        <form class="tourz-search-form">
-                            <div class="input-field">
-                                <input type="text" id="select-city" class="autocomplete">
-                                <label for="select-city">Enter city</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" id="select-search" class="autocomplete">
-                                <label for="select-search" class="search-hotel-type">Search over a million tour and travels, sight seeings, hotels and more</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="submit" value="search" class="waves-effect waves-light tourz-sear-btn"> </div>
-                        </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- END TOP SEARCH BOX -->
+       
     </section>
     <!--END HEADER SECTION-->
 
@@ -45,22 +22,7 @@
             </div>
         </div>
     </section>
-    <!--====== TOUR DETAILS - BOOKING ==========-->
-    <!-- <section>
-        <div class="rows banner_book" id="inner-page-title">
-            <div class="container">
-                <div class="banner_book_1">
-                    <ul>
-                        <li class="dl1">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="dl2">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="dl3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="dl4"><a href="{{route('mentor.form')}}">Devenir Mentor</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--====== TOUR DETAILS ==========-->
+   
     <section>
         <div class="rows inn-page-bg com-colo">
             <div class="container inn-page-con-bg tb-space">
@@ -80,45 +42,8 @@
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
-                    <!--====== SPECIAL OFFERS ==========-->
-                    <!-- <div class="tour_right tour_offer">
-                        <div class="band1"><img src="images/offer.png" alt="" /> </div>
-                        <p>Special Offer</p>
-                        <h4>$500<span class="n-td">
-                                <span class="n-td-1">$800</span>
-                                </span>
-                            </h4> <a href="booking.html" class="link-btn">Book Now</a>
-                        </div> -->
-
-                    <!--====== PACKAGE SHARE ==========-->
-                    <!-- <div class="tour_right head_right tour_social tour-ri-com">
-                        <h3>Share This Package</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-                        </ul>
-                    </div> -->
-                    <!--====== HELP PACKAGE ==========-->
-                    <div class="tour_right head_right tour_help tour-ri-com">
-                        <h3>Aide & support</h3>
-                        <div class="tour_help_1">
-                            <h4 class="tour_help_1_call">Applez-nous</h4>
-                            <h4><i class="fa fa-phone" aria-hidden="true"></i> (+225) 00 00 00 00 00</h4> </div>
-                    </div>
-                    <!--====== PACKAGE SHARE 2 ==========-->
-                    <div class="tour_right head_right tour_social tour-ri-com">
-                        <h3>Suivez-nous</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-                        </ul>
-                    </div>
+                  
+                     @include('frontend.layout.help_share')
 
                 </div>
             </div>

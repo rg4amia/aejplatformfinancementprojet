@@ -49,7 +49,7 @@
                 <!-- TOUR PLACE 2 -->
                 <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.7s">
                     <!-- OFFER BRAND -->
-                    <div class="band"> <img src="{{asset('frontend/images/band1.png')}}" alt="" /> </div>
+                   <!--  <div class="band"> <img src="{{asset('frontend/images/band1.png')}}" alt="" /> </div> -->
                     <!-- IMAGE -->
                     <div class="v_place_img"> <img src="{{asset('frontend/images/t1.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                     <!-- TOUR TITLE & ICONS -->
