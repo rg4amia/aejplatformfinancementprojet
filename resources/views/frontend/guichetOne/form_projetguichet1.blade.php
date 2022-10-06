@@ -81,24 +81,6 @@
                             
                         </div>
                         
-                         <!-- <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Contact 2:</h5></label>
-                            <input type="number" class="form-control" id="email12" placeholder="Contact 2"> </div>
-                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>E-mail:</h5></label>
-                            <input type="email" class="form-control" id="email12" placeholder="E-mail"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Region de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Region de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Ville de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Ville de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Quartier de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Quatier de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Secteur d'activité:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Secteur d'activité"> </div> -->
                        <br/>
                         <div class="form-group col-md-8 pad-left-o">
                             <input type="submit" value="Enregistrer" class="link-btn"> 

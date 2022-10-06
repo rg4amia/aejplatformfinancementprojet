@@ -33,7 +33,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 3 </span> <!-- Family Package --></h2>
+                <h2><span>GUICHET 4 </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -41,7 +41,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Soumettre un projet</a>
                     </li>
                 </ul>
-                <p>Slogan du guichet 3</p>
+                <p>Slogan du guichet 4</p>
             </div>
         </div>
     </section>
@@ -53,7 +53,7 @@
             <div class="container inn-page-con-bg tb-space">
 
                  <div class="tour_head">
-                        <h2>Soumettre un projet</h2> 
+                        <h2>Soumettre un projet de Credit Ordinaire</h2> 
                     </div>
 
                <div class="dir-rat-inn">
@@ -271,6 +271,19 @@
                                <option>Creation</option>
                                <option>Développement commercial</option>
                            </select>   
+                        </div>
+
+                        <div class="form-group col-md-4 pad-left-o">
+                             <label><h5>Bilan année 1:</h5></label>
+                            <input type="file" class="" id="email12"> 
+                        </div>
+                        <div class="form-group col-md-4 pad-left-o">
+                             <label><h5>Bilan année 2:</h5></label>
+                            <input type="file" class="" id="email12"> 
+                        </div>
+                        <div class="form-group col-md-4 pad-left-o">
+                             <label><h5>Bilan année 3:</h5></label>
+                            <input type="file" class="" id="email12"> 
                         </div>
                        
 

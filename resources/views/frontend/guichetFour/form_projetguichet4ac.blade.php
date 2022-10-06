@@ -33,7 +33,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 3 </span> <!-- Family Package --></h2>
+                <h2><span>GUICHET 4 </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -41,7 +41,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Soumettre un projet</a>
                     </li>
                 </ul>
-                <p>Slogan du guichet 3</p>
+                <p>Slogan du guichet 4</p>
             </div>
         </div>
     </section>
@@ -53,7 +53,7 @@
             <div class="container inn-page-con-bg tb-space">
 
                  <div class="tour_head">
-                        <h2>Soumettre un projet</h2> 
+                        <h2>Soumettre un projet d'autre crédit</h2> 
                     </div>
 
                <div class="dir-rat-inn">
