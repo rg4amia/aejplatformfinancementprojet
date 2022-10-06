@@ -27,6 +27,11 @@ class GuichetThreeController extends Controller
         //
     }
 
+    public function form_projetguichet3()
+    {
+        return view('frontend.guichetThree.form_projetguichet3');
+    }
+
     /**
      * Store a newly created resource in storage.
      *

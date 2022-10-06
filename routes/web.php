@@ -28,3 +28,4 @@ Route::get('/guichet4', [GuichetFourController::class, 'index'])->name('guichet4
 Route::get('/guichet5', [GuichetFiveController::class, 'index'])->name('guichet5');
 Route::get('/mentor_form', [GuichetOneController::class, 'form_mentor'])->name('mentor.form');
 Route::get('/projetguichet1_form', [GuichetOneController::class, 'form_projetguichet1'])->name('form.projetguichet1');
+Route::get('/projetguichet3_form', [GuichetThreeController::class, 'form_projetguichet3'])->name('form.projetguichet3');
