@@ -18,7 +18,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">guichet 5</a>
                     </li>
                 </ul>
-                <p>slogan du guichet 5</p>
+                <p>Capital d’Investissement</p>
             </div>
         </div>
     </section>
@@ -33,8 +33,8 @@
                     <!--====== TOUR DESCRIPTION ==========-->
                     <div class="tour_head1">
                         <h3>Description</h3>
-                        <p>Discover two of South America’s greatest cities, Rio de Janeiro and Buenos Aires, at a leisurely pace. A major highlight on this journey is a visit to Iguassu Falls in between your two city stays. It truly is one of the most spectacular sights on Earth. See the impressive falls from both the Brazilian and Argentine sides.</p>
-                        <p>Brazil’s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina’s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you’ll cherish for life.</p>
+                        <p>(i)  accompagnement des projets développement d’entreprises formelles</p>
+                        <p>(ii) financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
 
                         <br>
                         <br>
