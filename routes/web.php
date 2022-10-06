@@ -6,6 +6,7 @@ use App\Http\Controllers\Guichet\GuichetTwoController;
 use App\Http\Controllers\Guichet\GuichetThreeController;
 use App\Http\Controllers\Guichet\GuichetFourController;
 use App\Http\Controllers\Guichet\GuichetFiveController;
+use App\Http\Controllers\User\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,10 @@ use App\Http\Controllers\Guichet\GuichetFiveController;
 
 Route::get('/', function () {return view('frontend/accueil');});
 
+
+
+
+
 Route::get('/guichet1', [GuichetOneController::class, 'index'])->name('guichet1');
 Route::get('/guichet2', [GuichetTwoController::class, 'index'])->name('guichet2');
 Route::get('/guichet3', [GuichetThreeController::class, 'index'])->name('guichet3');
@@ -29,3 +34,13 @@ Route::get('/guichet5', [GuichetFiveController::class, 'index'])->name('guichet5
 Route::get('/mentor_form', [GuichetOneController::class, 'form_mentor'])->name('mentor.form');
 Route::get('/projetguichet1_form', [GuichetOneController::class, 'form_projetguichet1'])->name('form.projetguichet1');
 Route::get('/projetguichet3_form', [GuichetThreeController::class, 'form_projetguichet3'])->name('form.projetguichet3');
+
+
+
+Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+    Route::get('connexion', [UserController::class, 'index'])->name('index');
+    Route::get('enregistrer',[UserController::class,'indexRegister'])->name('enregistrer');
+    Route::get('/api', [UserController::class, 'apiGetMatricule'])->name('api');
+});
+
+

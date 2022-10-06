@@ -2979,7 +2979,7 @@
     /* centers the loading animation horizontally one the screen */
      top: 50%;
     /* centers the loading animation vertically one the screen */
-     background-image: url(..frontend/images/preloader.gif);
+     background-image: url(../images/preloader.gif);
     /* path to your loading animation */
      background-repeat: no-repeat;
      background-position: center;
@@ -4923,13 +4923,15 @@
 /* REGISTER AND LOGIN
 /*-------------------------------------------------------*/
  .tr-register {
-     background: url(../images/face.jpg) #e6e6e6;
+     background: url(../images/banner/banner_login.jpeg) #e6e6e6;
+     background-size: cover;
      position: relative;
     /* overflow: hidden;
      */
      display: inline-block;
      width: 100%;
 }
+
  .tr-register::before {
      content: '';
      position: absolute;
@@ -5590,7 +5592,7 @@
     float: left;
     width: 20%;
     position: absolute;
-    top: -30px;
+    top: -20px;
     padding: 15px;
 }
 
@@ -5717,7 +5719,7 @@
 }
 
  .main-menu ul li a{
-     color: white;
+    color: #00a650;
      padding: 20px 10px;
      line-height: 58px;
      font-size: 15px;
@@ -5728,7 +5730,7 @@
      font-family: 'Quicksand', sans-serif;
 }
  .main-menu ul li a:hover{
-     color: #00a650;
+     color: #f8941e;
 }
  .main-menu ul li a:after{
      content: "";
@@ -6016,7 +6018,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 1s ease;
-    background-color: #f8941e;
+    background-color: #ffffff;
     height: 67px;
     padding-top: 7px;
 }
@@ -6614,7 +6616,7 @@
      top: 0px;
      width: 100%;
      height: 55px;
-     background: #f8941e;
+     background: #ffffff;
      height: 67px;
      padding-top: 7px;
      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.32);

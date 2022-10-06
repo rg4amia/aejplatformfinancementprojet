@@ -4,3 +4,4 @@
 <script src="{{ asset('frontend/js/wow.min.js') }}"></script>
 <script src="{{ asset('frontend/js/materialize.min.js') }}"></script>
 <script src="{{ asset('frontend/js/custom.js') }}"></script>
+
