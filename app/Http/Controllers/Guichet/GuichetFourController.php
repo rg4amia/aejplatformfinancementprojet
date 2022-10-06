@@ -27,9 +27,13 @@ class GuichetFourController extends Controller
         //
     }
 
-     public function form_projetguichet4()
+     public function form_projetguichet4co()
     {
-        return view('frontend.guichetFour.form_projetguichet4');
+        return view('frontend.guichetFour.form_projetguichet4co');
+    }
+    public function form_projetguichet4ac()
+    {
+        return view('frontend.guichetFour.form_projetguichet4ac');
     }
 
     /**
