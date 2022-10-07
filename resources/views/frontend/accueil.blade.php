@@ -78,22 +78,7 @@
                         <div class="col-md-8 col-sm-8">
                             <h4><a href="{{route('guichet5')}}">GUICHET 5<span class="v_pl_name"><!-- (Andaman) --></span></a></h4>
                         </div>
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
 
