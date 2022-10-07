@@ -44,7 +44,7 @@
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
                                 <div class="col-md-8 col-sm-8">
-                                    <h4><a href="{{route('guichet2')}}">GUICHET 2: Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
+                                    <h4><a href="http://financement.projetsagir.com/">GUICHET 2: Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
