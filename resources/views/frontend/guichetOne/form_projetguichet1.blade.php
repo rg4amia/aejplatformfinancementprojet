@@ -80,11 +80,8 @@ input.invalid {
             <div class="container inn-page-con-bg tb-space">
 
                  <div class="tour_head">
-<<<<<<< HEAD
                         <h2>Formulaire de soumission</h2> 
-=======
-                        <h2>Soumettre un projet</h2>
->>>>>>> 505d323821dee719acee364cbbad14e5d4792623
+
                     </div>
 
                <div class="dir-rat-inn">
@@ -313,7 +310,7 @@ input.invalid {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Nombre de produits vendus</td>
+                                    <td width="30%">Nombre de produits vendus</td>
                                     <td><input type="text" class="form-control" id="email13" ></td>
                                     <td><input type="text" class="form-control" id="email13" ></td>
                                     <td><input type="text" class="form-control" id="email13" ></td>
@@ -477,7 +474,7 @@ input.invalid {
     </section>
 
 @endsection
-<<<<<<< HEAD
+
  
  @section('script')
 
@@ -557,5 +554,4 @@ function fixStepIndicator(n) {
  </script>
 
 @endsection
-=======
->>>>>>> 505d323821dee719acee364cbbad14e5d4792623
+
