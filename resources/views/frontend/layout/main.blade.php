@@ -42,6 +42,7 @@
 </section>
 <!--END HEADER SECTION-->
 
+
 @yield('content')
 
 {{-- footer --}}

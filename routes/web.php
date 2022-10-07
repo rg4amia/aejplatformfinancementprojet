@@ -20,7 +20,9 @@ use App\Http\Controllers\User\UserController;
 */
 
 
-Route::get('/', function () {return view('frontend/accueil');});
+Route::get('/', function () {
+    return view('frontend/accueil');
+})->name('home');
 
 Route::get('/guichet1', [GuichetOneController::class, 'index'])->name('guichet1');
 Route::get('/guichet2', [GuichetTwoController::class, 'index'])->name('guichet2');
@@ -36,7 +38,11 @@ Route::get('/projetguichet4ac_form', [GuichetFourController::class, 'form_projet
 Route::get('/projetguichet5_form', [GuichetFiveController::class, 'form_projetguichet5'])->name('form.projetguichet5');
 
 Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+    Route::post('login', [UserController::class, 'login'])->name('login');
     Route::get('connexion', [UserController::class, 'index'])->name('index');
     Route::get('enregistrer', [UserController::class, 'indexRegister'])->name('enregistrer');
+    Route::post('/store',[UserController::class, 'storeDemandeur'])->name('storeDemandeur');
+    Route::post('/logout',[UserController::class, 'logout'])->name('logout');
     Route::get('/api', [UserController::class, 'apiGetMatricule'])->name('api');
+    Route::get('/successful',[UserController::class, 'successful'])->name('successful');
 });

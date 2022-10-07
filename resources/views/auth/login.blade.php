@@ -5,22 +5,25 @@
 			<div class="tr-regi-form">
 				<h4>Connectez-vous</h4>
 				<p>C'est gratuit et ça le sera toujours.</p>
-				<form class="col s12">
+
+                @include('inc.message')
+				<form class="col s12" action="{{ route('user.login') }}" method="POST">
+                    @csrf()
 					<div class="row">
 						<div class="input-field col s12">
-							<input type="text" class="validate">
+							<input type="text" name="email" class="validate">
 							<label>Email</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s12">
-							<input type="password" class="validate">
+							<input type="password" name="password" class="validate">
 							<label>Mot de passe</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s12">
-							<input type="submit" value="submit" class="waves-effect waves-light btn-large full-btn"> </div>
+							<input type="submit" value="Connexion" class="waves-effect waves-light btn-large full-btn"> </div>
 					</div>
 				</form>
 				<p><a href="forgot-pass.html">mot de passe oublié</a> | Vous êtes un nouvel utilisateur ? <a href="{{ route('user.enregistrer') }}">Enregistrez vous</a>
@@ -39,6 +42,6 @@
 @endsection
 @section('js')
 <script>
-    
+
 </script>
 @endsection
