@@ -8,10 +8,10 @@
                         <div class="row">
                             <div class="col-sm-3 foot-spec foot-com">
                                 <h4><span>Plan</span> du site</h4>
-                                <p><a href="#">Accueil</a></p>
-                                <p><a href="#">Guichet de financement</a></p>
-                                <p><a href="#">Condition d'eligibilité</a></p>
-                                <p><a href="#">A propos</a></p>
+                                <p>Accueil</p>
+                                <p>Guichet de financement</p>
+                                <p>Condition d'eligibilité</p>
+                                <p>A propos</p>
                             </div>
                             <div class="col-sm-3 foot-spec foot-com">
                                 <h4><span>Contacts</span></h4>
@@ -22,14 +22,14 @@
                             <div class="col-sm-3 col-md-3 foot-spec foot-com">
                                 <h4><span>Liens</span> Utiles</h4>
                                 <ul class="two-columns">
-                                    <li> <a href="#">Mon espace</a> </li>
-                                    <li> <a href="#">Inscription jeunes</a> </li>
-                                    <li> <a href="#">Inscription Mentor </a> </li>
-                                    <li> <a href="#">Business Angel</a> </li>
-                                    <li> <a href="#">Activité génératrice</a> </li>
-                                    <li> <a href="#">Micro & petite entreprise</a> </li>
-                                    <li> <a href="#">Moyenne entreprise & projet</a> </li>
-                                    <li> <a href="#">Capital d'investissement </a> </li>
+                                    <li> <a href="{{ route('user.login') }}">Mon espace</a> </li>
+                                    <li> <a href="{{ route('user.enregistrer') }}">Inscription jeunes</a> </li>
+                                    <li> <a href="{{ route('mentor.form') }}">Inscription Mentor </a> </li>
+                                    <li> <a href="{{ route('guichet1') }}">Business Angel</a> </li>
+                                    <li> <a href="{{ route('guichet2') }}">Activité génératrice</a> </li>
+                                    <li> <a href="{{ route('guichet3') }}">Micro & petite entreprise</a> </li>
+                                    <li> <a href="{{ route('guichet4') }}">Moyenne entreprise & projet</a> </li>
+                                    <li> <a href="{{ route('guichet5') }}">Capital d'investissement </a> </li>
                                 </ul>
                             </div>
                             <div class="col-sm-3 foot-social foot-spec foot-com">
