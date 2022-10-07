@@ -7,32 +7,34 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-3 foot-spec foot-com">
-                                <h4><span>Holiday</span> Tour & Travels</h4>
-                                <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+                                <h4><span>Plan</span> du site</h4>
+                                <p><a href="#">Accueil</a></p>
+                                <p><a href="#">Guichet de financement</a></p>
+                                <p><a href="#">Condition d'eligibilité</a></p>
+                                <p><a href="#">A propos</a></p>
                             </div>
                             <div class="col-sm-3 foot-spec foot-com">
-                                <h4><span>Address</span> & Contact Info</h4>
-                                <p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
-                                <p> <span class="strong">Phone: </span> <span class="highlighted">+101-1231-1231</span> </p>
+                                <h4><span>Contacts</span></h4>
+                                <p>PLATEAU, BD CLOZEL / IMMEUBLE PERIGNON </p>
+                    <p> <span class="strong">Tél: </span> <span class="highlighted">27 20 21 50 53/27 20 22 80 32</span> </p>
+                    <p> <span class="strong">Fax: </span> <span class="highlighted">27 20 21 12 86</span> </p>
                             </div>
                             <div class="col-sm-3 col-md-3 foot-spec foot-com">
-                                <h4><span>SUPPORT</span> & HELP</h4>
+                                <h4><span>Liens</span> Utiles</h4>
                                 <ul class="two-columns">
-                                    <li> <a href="#">About Us</a> </li>
-                                    <li> <a href="#">FAQ</a> </li>
-                                    <li> <a href="#">Feedbacks</a> </li>
-                                    <li> <a href="#">Blog </a> </li>
-                                    <li> <a href="#">Use Cases</a> </li>
-                                    <li> <a href="#">Advertise us</a> </li>
-                                    <li> <a href="#">Discount</a> </li>
-                                    <li> <a href="#">Vacations</a> </li>
-                                    <li> <a href="#">Branding Offers </a> </li>
-                                    <li> <a href="#">Contact Us</a> </li>
+                                    <li> <a href="#">Mon espace</a> </li>
+                                    <li> <a href="#">Inscription jeunes</a> </li>
+                                    <li> <a href="#">Inscription Mentor </a> </li>
+                                    <li> <a href="#">Business Angel</a> </li>
+                                    <li> <a href="#">Activité génératrice</a> </li>
+                                    <li> <a href="#">Micro & petite entreprise</a> </li>
+                                    <li> <a href="#">Moyenne entreprise & projet</a> </li>
+                                    <li> <a href="#">Capital d'investissement </a> </li>
                                 </ul>
                             </div>
                             <div class="col-sm-3 foot-social foot-spec foot-com">
-                                <h4><span>Follow</span> with us</h4>
-                                <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+                                <h4><span>Suivez-nous</span> sur</h4>
+                               <!--  <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p> -->
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
                                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
