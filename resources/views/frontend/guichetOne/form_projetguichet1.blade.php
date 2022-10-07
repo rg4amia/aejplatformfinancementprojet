@@ -217,7 +217,7 @@ input.invalid {
 
                             <div class="form-group col-md-4 pad-left-o">
                             <label><h5>Année :</h5></label>
-                            <input type="date" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
+                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>Entreprise :</h5></label>
                             <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
@@ -227,7 +227,7 @@ input.invalid {
 
                             <div class="form-group col-md-4 pad-left-o">
                             <label><h5>Année :</h5></label>
-                            <input type="date" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
+                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>Entreprise :</h5></label>
                             <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
@@ -237,7 +237,7 @@ input.invalid {
 
                             <div class="form-group col-md-4 pad-left-o">
                             <label><h5>Année :</h5></label>
-                            <input type="date" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
+                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>Entreprise :</h5></label>
                             <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
