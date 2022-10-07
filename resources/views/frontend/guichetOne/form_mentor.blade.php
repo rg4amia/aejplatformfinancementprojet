@@ -1,11 +1,11 @@
 @extends('frontend.layout.main')
 @section('content')
     <section>
-        
-       
+
+
     </section>
     <!--END HEADER SECTION-->
-        
+
     <!--====== BANNER ==========-->
     <section>
         <div class="rows inner_banner inner_banner_4">
@@ -15,7 +15,7 @@
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
                     <li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
-                    <li><a href="#inner-page-title" class="bread-acti">Enrégistrr un mentor</a>
+                    <li><a href="#inner-page-title" class="bread-acti">Enrégistrer un mentor</a>
                     </li>
                 </ul>
                 <p>slogan du guichet 1</p>
@@ -30,7 +30,7 @@
             <div class="container inn-page-con-bg tb-space">
 
                  <div class="tour_head">
-                        <h2>Enregistrer un Mentor</h2> 
+                        <h2>Enregistrer un Mentor</h2>
                     </div>
 
                <div class="dir-rat-inn">
@@ -70,14 +70,13 @@
                             <textarea placeholder="Description du mentor"></textarea>
                         </div>
                         <div class="form-group col-md-8 pad-left-o">
-                            <input type="submit" value="Enregistrer" class="link-btn"> 
+                            <input type="submit" value="Enregistrer" class="link-btn">
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
 @endsection
- 

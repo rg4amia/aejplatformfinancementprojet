@@ -1,0 +1,72 @@
+version: '3.9'
+
+networks:
+    laravel:
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/nginx.dockerfile
+        container_name: webserver_projets
+        ports:
+            - 8090:80
+        volumes:
+            - ./:/var/www/html/
+        links:
+            - fpm
+        networks:
+            - laravel
+
+    fpm:
+        build:
+            context: .
+            dockerfile: docker/fpm.dockerfile
+        container_name: php_projets
+        volumes:
+            - ./:/var/www/html
+        links:
+            - db
+        networks:
+            - laravel
+    db:
+        image: mysql:5.7.22
+        container_name: db_projets
+        restart: unless-stopped
+        tty: true
+        ports:
+            - 3309:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=aej
+            - MYSQL_PASSWORD=aej@2022
+            - MYSQL_DATABASE=db_gfprojets
+        volumes:
+            - dbdata:/var/lib/mysql/
+            - ./docker/config/mysql/my.cnf:/etc/mysql/my.cnf
+            - ./docker/config/mysql/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+        networks:
+            - laravel
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        restart: always
+        container_name: phpmyadmin_projets
+        environment:
+            PMA_HOST: db
+            PMA_USER: root
+            PMA_PASSWORD: root
+        volumes:
+            - ./docker/config/phpmyadmin/uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+        links:
+            - db
+        ports:
+            - "8091:80"
+        networks:
+            - laravel
+
+#Volumes
+volumes:
+    dbdata:
+        driver: local
+    laravel_directory:
+        driver: local
