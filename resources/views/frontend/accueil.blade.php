@@ -28,22 +28,7 @@
                             <h4><a href="{{route('guichet1')}}">GUICHET 1<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
                         </div>
                         <!-- TOUR ICONS -->
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- TOUR PLACE 2 -->
@@ -59,22 +44,7 @@
                             <h4><a href="{{route('guichet2')}}">GUICHET 2<span class="v_pl_name"><!-- (England) --></span></a></h4>
                         </div>
                         <!-- TOUR ICONS -->
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- TOUR PLACE 3 -->
@@ -84,22 +54,7 @@
                         <div class="col-md-8 col-sm-8">
                             <h4><a href="{{route('guichet3')}}">GUICHET 3<span class="v_pl_name"><!-- (India) --></span></a></h4>
                         </div>
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
                 <!-- TOUR PLACE 4 -->
@@ -113,22 +68,7 @@
                         <div class="col-md-8 col-sm-8">
                             <h4><a href="{{route('guichet4')}}">GUICHET 4<span class="v_pl_name"><!-- (China) --></span></a></h4>
                         </div>
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
+                    
                     </div>
                 </div>
 

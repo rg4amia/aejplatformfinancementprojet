@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <button id="verif_aej" type="button" class="btn btn-rounded btn-success">
-                                    Verifier AEJ
+                                    Verifier Numero AEJ
                                 </button>
                                 {{-- <input type="button" id="verif_aej" value="Verifier AEJ" class="waves-effect waves-light btn-large full-btn"> --}}
                             </div>
