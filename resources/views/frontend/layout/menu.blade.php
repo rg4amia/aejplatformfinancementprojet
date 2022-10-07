@@ -20,42 +20,63 @@
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places.html">
-                                                        <img src="images/sight/1.jpg" alt="">
-                                                        <span>Seight Seeing - 1</span>
+                                                       {{--  <img src="frontend/images/sight/1.jpg" alt=""> --}}
+                                                        <img src="frontend/images/t5.png" alt="">
+                                                        <span>Guichet - 1</span>
                                                     </a>
                                                 </div>
-                                                <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                <a href="places.html" class="mm-r-m-btn">Read more</a>
+                                                <p>(i)  accompagnement par des mentors - investisseurs des projet de création ou de développement de petites entreprises formelles</p>
+                                                <p>(ii) coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                <a href="places.html" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-1.html">
-                                                        <img src="images/sight/2.jpg" alt="">
-                                                        <span>Seight Seeing - 2</span>
+                                                        {{-- <img src="frontend/images/sight/2.jpg" alt=""> --}}
+                                                        <img src="frontend/images/t1.png" alt="">
+                                                        <span>Guichet - 2</span>
                                                     </a>
                                                 </div>
-                                                <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                <a href="places-1.html" class="mm-r-m-btn">Read more</a>
+                                                 <p>(i)  accompagnement des projets de création ou de développement de petites activités</p>
+                                                 <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                                <a href="places-1.html" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-2.html">
-                                                        <img src="images/sight/3.jpg" alt="">
-                                                        <span>Seight Seeing - 3</span>
+                                                        {{-- <img src="frontend/images/sight/3.jpg" alt=""> --}}
+                                                        <img src="frontend/images/t4.png" alt="">
+                                                        <span>Guichet - 3</span>
                                                     </a>
                                                 </div>
-                                                <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                <a href="places-2.html" class="mm-r-m-btn">Read more</a>
+                                                <p>(i) accompagnement des projets de création ou de développement de petites entreprises formelles</p>
+                                                <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                                <p>(iii) pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
+                                                <a href="places-2.html" class="mm-r-m-btn">Voir plus</a>
+                                            </div>
+                                            <div class="mm2-com mm1-com mm1-s1">
+                                                <div class="ed-course-in">
+                                                    <a class="course-overlay" href="places-3.html">
+                                                        <img src="frontend/images/t3.png" alt="">
+                                                        {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
+                                                        <span>Guichet - 4</span>
+                                                    </a>
+                                                </div>
+                                                <p>(i)  accompagnement des projets de développement d’entreprises formelles</p>
+                                                <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                                <a href="places-3.html" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s4">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-3.html">
-                                                        <img src="images/sight/4.jpg" alt="">
-                                                        <span>Seight Seeing - 4</span>
+                                                        <img src="frontend/images/t4.png" alt="">
+                                                        {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
+                                                        <span>Guichet - 5</span>
                                                     </a>
                                                 </div>
-                                                <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                <a href="places-3.html" class="mm-r-m-btn">Read more</a>
+                                                 <p>(i)  accompagnement des projets développement d’entreprises formelles</p>
+                                                 <p>(ii) financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                <a href="places-3.html" class="mm-r-m-btn">Voir plus</a>
                                             </div>
 
                                         </div>
