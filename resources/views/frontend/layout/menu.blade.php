@@ -21,7 +21,7 @@
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places.html">
                                                        {{--  <img src="frontend/images/sight/1.jpg" alt=""> --}}
-                                                        <img src="frontend/images/t5.png" alt="">
+                                                        <img src="{{ asset('frontend/images/t5.png') }}" alt="">
                                                         <span>Guichet - 1</span>
                                                     </a>
                                                 </div>
@@ -33,7 +33,7 @@
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-1.html">
                                                         {{-- <img src="frontend/images/sight/2.jpg" alt=""> --}}
-                                                        <img src="frontend/images/t1.png" alt="">
+                                                        <img src="{{ asset('frontend/images/t1.png') }}" alt="">
                                                         <span>Guichet - 2</span>
                                                     </a>
                                                 </div>
@@ -45,7 +45,7 @@
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-2.html">
                                                         {{-- <img src="frontend/images/sight/3.jpg" alt=""> --}}
-                                                        <img src="frontend/images/t4.png" alt="">
+                                                        <img src="{{ asset('frontend/images/t4.png') }}" alt="">
                                                         <span>Guichet - 3</span>
                                                     </a>
                                                 </div>
@@ -57,7 +57,7 @@
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-3.html">
-                                                        <img src="frontend/images/t3.png" alt="">
+                                                        <img src="{{ asset('frontend/images/t3.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
                                                         <span>Guichet - 4</span>
                                                     </a>
@@ -69,7 +69,7 @@
                                             <div class="mm2-com mm1-com mm1-s4">
                                                 <div class="ed-course-in">
                                                     <a class="course-overlay" href="places-3.html">
-                                                        <img src="frontend/images/t4.png" alt="">
+                                                        <img src="{{ asset('frontend/images/t4.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
                                                         <span>Guichet - 5</span>
                                                     </a>

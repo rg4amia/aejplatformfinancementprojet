@@ -7,7 +7,7 @@
                     <h1>Guichet Unique du financement en Côte d’Ivoire</h1>
                     <p>
                       Vous avez un projet de financement ?,
-                      vous désirez être accompagné dans votre recherche du financement.,
+                      vous désirez être accompagné dans votre recherche du financement?,
                       Nos guichets sont à votre disposition pour la réalisation de vos projets.
                     </p>
                 </div>
