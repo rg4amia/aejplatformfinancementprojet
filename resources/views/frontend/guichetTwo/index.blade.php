@@ -53,7 +53,7 @@
 
                         <br>
                         <br>
-                        <a href="{{url('https://agenceemploijeunes.ci/site/agir-pour-les-jeunes')}}" target="_blank"><button class="btn btn-info"> Projet AGIR</button></a>
+                        <a href="{{url('http://financement.projetsagir.com')}}" target="_blank"><button class="btn btn-info"> Projet AGIR</button></a>
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
