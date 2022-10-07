@@ -178,7 +178,7 @@ input.invalid {
 
                     <div class="tab">
                         <h5>II. EDUCATION ET EXPERIENCE PROFESSIONNELLE :</h5>
-                         <h6>2.1. Veuillez indiquer vos diplômes et/ou certificats en commençant par les plus récents</h6>
+                         <h5>2.1. Veuillez indiquer vos diplômes et/ou certificats en commençant par les plus récents</h5>
                         <table>
 
                             <div class="form-group col-md-4 pad-left-o">
@@ -212,7 +212,7 @@ input.invalid {
                             <input type="date" class="form-control" id="email13" > </div>
                             
                         </table>
-                        <h6>2.2.    Veuillez rappeler votre expérience professionnelle </h6>
+                        <h5>2.2. Veuillez rappeler votre expérience professionnelle </h5>
                         <table>
 
                             <div class="form-group col-md-4 pad-left-o">
@@ -298,7 +298,7 @@ input.invalid {
 
                         <h5>3.9.    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?</h5>
 
-                         <table>
+                         <table >
                             <thead>
                                 <th>Rubriques</th>
                                 <th>Période 1</th>
@@ -354,11 +354,11 @@ input.invalid {
                       
             
                         </table>
-
+<br>
                         <table>
                       
                         <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.10.    Quel est la composition de votre équipe de gestion (nom, profil et expérience) ? </h5></label>
+                            <label><h5>3.10.    Quel est la composition de votre équipe de gestion ? </h5></label>
                            <textarea placeholder="Description activité"></textarea>
                         </div>
                         <div class="form-group col-md-6 pad-left-o">
@@ -404,7 +404,7 @@ input.invalid {
                         </div>
 
                         <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>4.2.    Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ? </h5></label>
+                             <label><h5>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.)</h5></label>
                             <textarea placeholder="Description activité"></textarea>
                         </div>
                            
@@ -415,7 +415,7 @@ input.invalid {
                             <label><h5>4.4. Quels sont les investissements à réaliser avec le concours financier sollicité</h5></label>
                             <textarea placeholder="Description activité"></textarea> </div>
                         <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>4.5.    Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.) ?</h5></label>
+                             <label><h5>4.5.  Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ? ?</h5></label>
                             <textarea placeholder="Description activité"></textarea> </div>
             
                         </table>
