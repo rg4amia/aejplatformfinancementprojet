@@ -19,31 +19,33 @@
                                         <div class="m-menu-inn">
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="places.html">
+                                                    <a class="course-overlay" href="{{ route('guichet1') }}">
                                                        {{--  <img src="frontend/images/sight/1.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t5.png') }}" alt="">
                                                         <span>Guichet - 1</span>
                                                     </a>
                                                 </div>
+
                                                 <p>(i)  accompagnement par des mentors - investisseurs des projet de création ou de développement de petites entreprises formelles</p>
                                                 <p>(ii) coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
-                                                <a href="places.html" class="mm-r-m-btn">Voir plus</a>
+
+                                                <a href="{{ route('guichet1') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="places-1.html">
+                                                    <a class="course-overlay" href="{{ route('guichet2') }}">
                                                         {{-- <img src="frontend/images/sight/2.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t1.png') }}" alt="">
                                                         <span>Guichet - 2</span>
                                                     </a>
                                                 </div>
-                                                 <p>(i)  accompagnement des projets de création ou de développement de petites activités</p>
-                                                 <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                                                <a href="places-1.html" class="mm-r-m-btn">Voir plus</a>
+                                                {{--  <p>(i)  accompagnement des projets de création ou de développement de petites activités</p>
+                                                 <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p> --}}
+                                                <a href="http://financement.projetsagir.com/" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="places-2.html">
+                                                    <a class="course-overlay" href="{{ route('guichet3') }}">
                                                         {{-- <img src="frontend/images/sight/3.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t4.png') }}" alt="">
                                                         <span>Guichet - 3</span>
@@ -52,11 +54,11 @@
                                                 <p>(i) accompagnement des projets de création ou de développement de petites entreprises formelles</p>
                                                 <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
                                                 <p>(iii) pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
-                                                <a href="places-2.html" class="mm-r-m-btn">Voir plus</a>
+                                                <a href="{{ route('guichet3') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="places-3.html">
+                                                    <a class="course-overlay" href="{{ route('guichet4') }}">
                                                         <img src="{{ asset('frontend/images/t3.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
                                                         <span>Guichet - 4</span>
@@ -64,11 +66,11 @@
                                                 </div>
                                                 <p>(i)  accompagnement des projets de développement d’entreprises formelles</p>
                                                 <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                                                <a href="places-3.html" class="mm-r-m-btn">Voir plus</a>
+                                                <a href="{{ route('guichet4') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s4">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="places-3.html">
+                                                    <a class="course-overlay" href="{{ route('guichet5')}}">
                                                         <img src="{{ asset('frontend/images/t4.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
                                                         <span>Guichet - 5</span>
@@ -76,7 +78,7 @@
                                                 </div>
                                                  <p>(i)  accompagnement des projets développement d’entreprises formelles</p>
                                                  <p>(ii) financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
-                                                <a href="places-3.html" class="mm-r-m-btn">Voir plus</a>
+                                                <a href="{{ route('guichet5')}}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
 
                                         </div>

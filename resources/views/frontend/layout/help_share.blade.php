@@ -2,7 +2,7 @@
 <div class="tour_right head_right tour_help tour-ri-com">
     <h3>Aide & support</h3>
     <div class="tour_help_1">
-        <h4 class="tour_help_1_call">Applez-nous</h4>
+        <h4 class="tour_help_1_call">Appelez-nous</h4>
         <h4><i class="fa fa-phone" aria-hidden="true"></i> 98197 </h4> </div>
     </div>
     <!--====== PACKAGE SHARE 2 ==========-->
