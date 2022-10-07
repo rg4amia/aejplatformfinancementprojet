@@ -9,7 +9,7 @@
                     <div class="main-menu">
                         <ul>
                             <li>
-                                <a href="#">Accueil</a>
+                                <a href="{{ url('/') }}">Accueil</a>
                             </li>
                             <li class="admi-menu">
                                 <a href="#" class="mm-arr">Guichet de financement</a>
