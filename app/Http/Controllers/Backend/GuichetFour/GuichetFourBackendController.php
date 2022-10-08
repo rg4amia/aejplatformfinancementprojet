@@ -9,6 +9,6 @@ class GuichetFourBackendController extends Controller
 {
     public function index()
     {
-        return view('backend.guichet-four.index');
+        return view('backend.pages.guichet-four.index');
     }
 }
