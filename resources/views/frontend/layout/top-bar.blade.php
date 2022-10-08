@@ -12,17 +12,31 @@
                 </div>
                 <div class="ed-com-t1-right">
                      @auth
-                      <ul>
-                            <li>
-                                <a href="{{ route('user.index') }}">Tableau de bord</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('user.index') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>
-                            </li>
-                           <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </ul>
+                        @role('admin')
+                            <ul>
+                                <li>
+                                    <a href="{{ route('backend.dashboard') }}">Tableau de bord</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('user.index') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>
+                                </li>
+                                <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </ul>
+                        @else
+                            <ul>
+                                <li>
+                                    <a href="{{ route('user.index') }}">Tableau de bord</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('user.index') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>
+                                </li>
+                                <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </ul>
+                        @endrole
                      @else
                         <ul>
                             <li><a href="{{ route('user.index') }}">Connexion</a>
@@ -31,7 +45,7 @@
                                 <li>
                                     <a href="{{ route('user.enregistrer') }}">S'inscrire</a>
                                 </li>
-                        
+
                         </ul>
                      @endauth
 

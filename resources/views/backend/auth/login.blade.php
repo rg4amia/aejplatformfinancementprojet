@@ -29,15 +29,20 @@
               </div>
               <h4>Bonjour ! Commençons</h4>
               <h6 class="font-weight-light">Connectez-vous pour continuer.</h6>
-              <form class="pt-3">
+              @include('inc.flash')
+              @include('inc.message')
+              <form class="pt-3" action="{{ route('backend.login') }}" method="POST">
+                @csrf
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Nom d'utilisateur:">
+                  <input type="email" class="form-control form-control-lg" name="email" id="exampleInputEmail1" placeholder="Nom d'utilisateur:">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Mot de passe">
+                  <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" placeholder="Mot de passe">
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">Connexion</a>
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                    Connexion
+                  </button>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
