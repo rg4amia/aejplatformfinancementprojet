@@ -9,6 +9,10 @@ use App\Http\Controllers\Guichet\GuichetFiveController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\UserBackendController;
+use App\Http\Controllers\Backend\GuichetOne\GuichetOneBackendController;
+use App\Http\Controllers\Backend\GuichetThree\GuichetThreeBackendController;
+use App\Http\Controllers\Backend\GuichetFour\GuichetFourBackendController;
+use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,15 +58,19 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
     Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::group(['prefix' => 'guichet-un', 'as' => 'guichet-un.'], function () {
+        Route::get('index',[GuichetOneBackendController::class,'index'])->name('index');
     });
 
     Route::group(['prefix' => 'guichet-trois', 'as' => 'guichet-trois.'], function () {
+        Route::get('index', [GuichetThreeBackendController::class, 'index'])->name('index');
     });
 
     Route::group(['prefix' => 'guichet-quatre', 'as' => 'guichet-quatre.'], function () {
+        Route::get('index', [GuichetFourBackendController::class, 'index'])->name('index');
     });
 
     Route::group(['prefix' => 'guichet-cinq', 'as' => 'guichet-cinq.'], function () {
+        Route::get('index', [GuichetFiveBackendController::class, 'index'])->name('index');
     });
 
     Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
