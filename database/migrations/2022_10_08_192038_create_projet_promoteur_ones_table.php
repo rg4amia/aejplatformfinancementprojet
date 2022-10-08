@@ -17,15 +17,15 @@ return new class extends Migration
             $table->id();
             $table->boolean('debutprojet')->default(false);
             $table->foreignId('niveaumaturation_id')->constrained('niveau_maturation_params');
-            $table->fullText('decrireprojet')->nullable();
-            $table->fullText('besoinecono_projet')->nullable();
-            $table->fullText('modelaffaire')->nullable();
-            $table->fullText('strategiemarketing')->nullable();
-            $table->fullText('combien_utilisateur')->nullable();
-            $table->fullText('compoequipe_gestion')->nullable();
-            $table->fullText('role_in_projet')->nullable();
-            $table->fullText('plein_tps_in_projet')->nullable();
-            $table->fullText('besoin_econo_projet')->nullable();
+            $table->text('decrireprojet')->nullable();
+            $table->text('besoinecono_projet')->nullable();
+            $table->text('modelaffaire')->nullable();
+            $table->text('strategiemarketing')->nullable();
+            $table->text('combien_utilisateur')->nullable();
+            $table->text('compoequipe_gestion')->nullable();
+            $table->text('role_in_projet')->nullable();
+            $table->text('plein_tps_in_projet')->nullable();
+            $table->text('besoin_econo_projet')->nullable();
             $table->timestamps();
         });
     }
