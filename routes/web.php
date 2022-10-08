@@ -56,10 +56,9 @@ Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
 Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
     Route::get('/connexion', [UserBackendController::class, 'index'])->name('index');
     Route::post('/login', [UserBackendController::class, 'login'])->name('login');
+    Route::post('/logout', [UserBackendController::class, 'logout'])->name('logout');
 
-
-
-    Route::group(['middleware' => ['role:admin']], function () {
+    Route::group(['middleware' => ['role:admin','auth']], function () {
 
         Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
 

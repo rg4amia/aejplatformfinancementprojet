@@ -77,10 +77,13 @@
                 <i class="ti-settings text-primary"></i>
                 Paramètres
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="ti-power-off text-primary"></i>
                 Déconnexion
               </a>
+                <form id="logout-form" action="{{ route('backend.logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </div>
           </li>
           {{-- <li class="nav-item nav-settings d-none d-lg-flex">

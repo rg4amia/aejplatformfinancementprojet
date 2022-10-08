@@ -7,6 +7,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Http\JsonResponse;
 
 class UserBackendController extends Controller
 {
@@ -46,5 +48,15 @@ class UserBackendController extends Controller
                 return back();
             }
         }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        Session::flush();
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 204)
+            : redirect()->route('backend.index');
     }
 }
