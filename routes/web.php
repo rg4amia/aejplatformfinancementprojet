@@ -7,6 +7,8 @@ use App\Http\Controllers\Guichet\GuichetThreeController;
 use App\Http\Controllers\Guichet\GuichetFourController;
 use App\Http\Controllers\Guichet\GuichetFiveController;
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\UserBackendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,4 +47,25 @@ Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
     Route::post('/logout',[UserController::class, 'logout'])->name('logout');
     Route::get('/api', [UserController::class, 'apiGetMatricule'])->name('api');
     Route::get('/successful',[UserController::class, 'successful'])->name('successful');
+});
+
+Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
+    Route::get('/connexion', [UserBackendController::class, 'index'])->name('login');
+    Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::group(['prefix' => 'guichet-un', 'as' => 'guichet-un.'], function () {
+    });
+
+    Route::group(['prefix' => 'guichet-trois', 'as' => 'guichet-trois.'], function () {
+    });
+
+    Route::group(['prefix' => 'guichet-quatre', 'as' => 'guichet-quatre.'], function () {
+    });
+
+    Route::group(['prefix' => 'guichet-cinq', 'as' => 'guichet-cinq.'], function () {
+    });
+
+    Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+    });
+
 });
