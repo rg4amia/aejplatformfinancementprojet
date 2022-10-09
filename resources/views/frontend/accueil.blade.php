@@ -25,8 +25,8 @@
                             <!-- TOUR TITLE & ICONS -->
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
-                                <div class="col-md-8 col-sm-8">
-                                    <h4><a href="{{route('guichet1')}}">GUICHET 1: Business Angel<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
+                                <div class="col-md-12 col-sm-12">
+                                    <h4><a href="{{route('guichet1')}}">Business Angel<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
@@ -43,8 +43,8 @@
                             <!-- TOUR TITLE & ICONS -->
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
-                                <div class="col-md-8 col-sm-8">
-                                    <h4><a href="http://financement.projetsagir.com/">GUICHET 2: Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
+                                <div class="col-md-12 col-sm-12">
+                                    <h4><a href="http://financement.projetsagir.com/">Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
@@ -56,8 +56,8 @@
                         <a href="{{route('guichet3')}}">
                             <div class="v_place_img"><img src="{{asset('frontend/images/t2.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                             <div class="b_pack rows">
-                                <div class="col-md-8 col-sm-8">
-                                    <h4><a href="{{route('guichet3')}}">GUICHET 3: Micro et petite Entreprise (MPE)<span class="v_pl_name"><!-- (India) --></span></a></h4>
+                                <div class="col-md-12 col-sm-12">
+                                    <h4><a href="{{route('guichet3')}}">Micro et petite Entreprise (MPE)<span class="v_pl_name"><!-- (India) --></span></a></h4>
                                 </div>
 
                             </div>
@@ -71,7 +71,7 @@
                             <div class="v_place_img"><img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="{{route('guichet4')}}">GUICHET 4: Moyenne Entreprise et Projets Structurant<span class="v_pl_name"><!-- (China) --></span></a></h4>
+                                    <h4><a href="{{route('guichet4')}}">Moyenne Entreprise et Projets Structurant<span class="v_pl_name"><!-- (China) --></span></a></h4>
                                 </div>
 
                             </div>
@@ -85,7 +85,7 @@
                                     <div class="col-md-12 col-sm-12">
                                         <h4>
                                             <a href="{{route('guichet5')}}">
-                                                GUICHET 5: Capital d'investisement
+                                                Capital d'investisement
                                                 <span class="v_pl_name"><!-- (Andaman) -->
                                         </span>
                                             </a>

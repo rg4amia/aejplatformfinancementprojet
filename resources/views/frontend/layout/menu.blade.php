@@ -22,12 +22,12 @@
                                                     <a class="course-overlay" href="{{ route('guichet1') }}">
                                                        {{--  <img src="frontend/images/sight/1.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t5.png') }}" alt="">
-                                                        <span>Guichet - 1</span>
+                                                        <span>Business Angel</span>
                                                     </a>
                                                 </div>
 
-                                                <p>(i)  accompagnement par des mentors - investisseurs des projet de création ou de développement de petites entreprises formelles</p>
-                                                <p>(ii) coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                <p>Accompagnement par des mentors - investisseurs des projet de création ou de développement de petites entreprises formelles</p>
+                                                <p>Coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
 
                                                 <a href="{{ route('guichet1') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
@@ -36,7 +36,7 @@
                                                     <a class="course-overlay" href="{{ route('guichet2') }}">
                                                         {{-- <img src="frontend/images/sight/2.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t1.png') }}" alt="">
-                                                        <span>Guichet - 2</span>
+                                                        <span>Activité Génératrice de revenu(AGR)</span>
                                                     </a>
                                                 </div>
                                                 {{--  <p>(i)  accompagnement des projets de création ou de développement de petites activités</p>
@@ -48,12 +48,13 @@
                                                     <a class="course-overlay" href="{{ route('guichet3') }}">
                                                         {{-- <img src="frontend/images/sight/3.jpg" alt=""> --}}
                                                         <img src="{{ asset('frontend/images/t4.png') }}" alt="">
-                                                        <span>Guichet - 3</span>
+                                                        <span>Micro et petite Entreprise (MPE)</span>
                                                     </a>
                                                 </div>
-                                                <p>(i) accompagnement des projets de création ou de développement de petites entreprises formelles</p>
-                                                <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                                                <p>(iii) pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
+
+                                                <p>Accompagnement des projets de création ou de développement de petites entreprises formelles</p>
+                                                <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                                <p>Pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
                                                 <a href="{{ route('guichet3') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
@@ -61,11 +62,12 @@
                                                     <a class="course-overlay" href="{{ route('guichet4') }}">
                                                         <img src="{{ asset('frontend/images/t3.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
-                                                        <span>Guichet - 4</span>
+                                                        <span>Moyenne Entreprise et Projets Structurant</span>
                                                     </a>
                                                 </div>
-                                                <p>(i)  accompagnement des projets de développement d’entreprises formelles</p>
-                                                <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+
+                                                <p>Accompagnement des projets de développement d’entreprises formelles</p>
+                                                <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
                                                 <a href="{{ route('guichet4') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s4">
@@ -73,11 +75,11 @@
                                                     <a class="course-overlay" href="{{ route('guichet5')}}">
                                                         <img src="{{ asset('frontend/images/t4.png') }}" alt="">
                                                         {{-- <img src="frontend/images/sight/4.jpg" alt=""> --}}
-                                                        <span>Guichet - 5</span>
+                                                        <span>Capital d'investisement</span>
                                                     </a>
                                                 </div>
-                                                 <p>(i)  accompagnement des projets développement d’entreprises formelles</p>
-                                                 <p>(ii) financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                 <p>Accompagnement des projets développement d’entreprises formelles</p>
+                                                 <p>Financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
                                                 <a href="{{ route('guichet5')}}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
 
