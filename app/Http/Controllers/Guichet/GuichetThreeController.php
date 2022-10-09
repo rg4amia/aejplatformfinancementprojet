@@ -40,32 +40,6 @@ class GuichetThreeController extends Controller
     public function form_projetguichet3()
     {
 
-<<<<<<< HEAD
-        $secteuractivites = SecteurActivite::orderBy('libelle', 'ASC')->get();
-        $formejuridiques  = FormeJuridique::orderBy('libelle', 'ASC')->get();
-        $regions          = Region::orderBy('nom', 'ASC')->get();
-        $villes           = Ville::orderBy('nom', 'ASC')->get();
-        $communes         = Commune::orderBy('nom', 'ASC')->get();
-        $divisions        = AgenceRegionale::orderBy('nom', 'ASC')->get();
-        $typeprojets      = TypeProjet::where('deleted_at', null)->orderBy('libelle', 'ASC')->get();
-        $typeprogrammes   = TypeProgramme::orderBy('libelle', 'ASC')->get();
-        $districts        = District::orderBy('nom', 'ASC')->get();
-        $statuts          = StatutProjet::orderBy('libelle', 'ASC')->get();
-
-        $data = [
-            'secteuractivites'  => $secteuractivites,
-            'formejuridiques'   => $formejuridiques,
-            'regions'           => $regions,
-            'villes'            => $villes,
-            'communes'          => $communes,
-            'divisions'         => $divisions,
-            'typeprojets'       => $typeprojets,
-            'typeprogrammes'    => $typeprogrammes,
-            'districts'         => $districts,
-            'statuts'           => $statuts,
-        ];
-        return view('frontend.guichetThree.form_projetguichet3',compact('data'));
-=======
         $secteuractivites = SecteurActivite::select('libelle','id')->orderBy('libelle', 'ASC')->get();
 
         foreach ($secteuractivites as $item) {
@@ -138,7 +112,6 @@ class GuichetThreeController extends Controller
             'typeprogramme',
             'district',
             'statut'));
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
     }
 
     /**

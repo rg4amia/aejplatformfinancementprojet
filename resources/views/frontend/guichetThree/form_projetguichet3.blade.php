@@ -51,27 +51,6 @@
 
         <div class="rows inn-page-bg com-colo">
             <div class="container inn-page-con-bg tb-space">
-
-<<<<<<< HEAD
-                 <div class="tour_head">
-                        <h2>Soumettre un projet</h2>
-                    </div>
-
-               <div class="dir-rat-inn">
-                    <form class="dir-rat-form col-md-12">
-
-                        <div class="form-group col-md-4">
-                            <label><h5>Selectionnez la region:</h5></label>
-                            {!! Form::select('region_id', $data['regions'],null, ['class' => 'form-control select2-region', 'required' => true]) !!}
-                        </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Commune:</h5></label>
-                             {!! Form::select('commune_id', $data['communes'],null, ['class' => 'form-control select2-statudemandeur', 'required' => true]) !!}
-                            </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>District:</h5></label>
-                             {!! Form::select('district_id', $data['districts'],null, ['class' => 'form-control select2-district', 'required' => true]) !!}
-=======
                 <div class="tour_head">
                     <h2>Soumettre un projet</h2>
                 </div>
@@ -88,7 +67,6 @@
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>District:</h5></label>
                              {!! Form::select('district_id', $district,null, ['class' => 'select2-district', 'required' => true]) !!}
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
@@ -112,41 +90,27 @@
                             <label>
                                 <h5>Type projet :</h5>
                             </label>
-<<<<<<< HEAD
-                             {!! Form::select('typeprojet_id', $data['typeprojets'],null, ['class' => 'form-control select2-typeprojet', 'required' => true]) !!}
-=======
+
                              {!! Form::select('typeprojet_id', $typeprojet,null, ['class' => 'select2-typeprojet', 'required' => true]) !!}
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                                 <label>
                                     <h5>Secteur d'activités :</h5>
                                 </label>
-<<<<<<< HEAD
-                                {!! Form::select('secteuractivite_id', $data['secteuractivites'],null, ['class' => 'form-control select2-secteuractivite', 'required' => true]) !!}
-=======
+
                                 {!! Form::select('secteuractivite_id', $secteuractivite,null, ['class' => 'select2-secteuractivite', 'required' => true]) !!}
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
                         </div>
                        <div class="form-group col-md-4 pad-right-o">
                             <label>
                                 <h5>Agence régionale la plus proche :</h5>
                             </label>
-<<<<<<< HEAD
-                                {!! Form::select('division_id', $data['divisions'],null, ['class' => 'form-control select2-division', 'required' => true]) !!}
-=======
                                 {!! Form::select('division_id', $division,null, ['class' => 'select2-division', 'required' => true]) !!}
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Forme juridique :</h5>
                             </label>
-<<<<<<< HEAD
-                            {!! Form::select('formejuridique_id', $data['formejuridiques'],null, ['class' => 'form-control select2-formejuridique', 'required' => true]) !!}
-=======
                             {!! Form::select('formejuridique_id', $formejuridique,null, ['class' => 'select2-formejuridique', 'required' => true]) !!}
->>>>>>> 1d0216213148a1f430f1f6d9b8da18d8071ff381
                         </div>
 
                        <div class="form-group col-md-8 pad-left-o">
