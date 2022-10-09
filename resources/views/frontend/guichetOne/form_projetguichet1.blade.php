@@ -1,5 +1,5 @@
-@extends('frontend.layout.main')
-@section('style')
+@extends('frontend.layout.main_form')
+@section('css')
 
 <style type="text/css">
     /* Style the form */
@@ -51,6 +51,7 @@ input.invalid {
 .step.finish {
   background-color: #04AA6D;
 }
+
 </style>
 
 @endsection
@@ -80,31 +81,31 @@ input.invalid {
             <div class="container inn-page-con-bg tb-space">
 
                  <div class="tour_head">
-                        <h2>Formulaire de soumission</h2> 
+                        <h2>Formulaire de soumission</h2>
 
                     </div>
 
                <div class="dir-rat-inn">
-                <form id="regForm" action="" class="dir-rat-form col-md-12">
+                <form id="regForm" action="" class="" >
 
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab">
                         <h5>I. INFORMATIONS SUR LE CANDIDAT :</h5>
                        <table>
 
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Nom:</h5></label>
+                        <div class="form-group col-md-4">
+                            <label>Nom:</label>
                             <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Prenoms:</h5></label>
+                        <div class="form-group col-md-4 ">
+                             <label>Prenoms:</label>
                             <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Date de naissance:</h5></label>
+                        <div class="form-group col-md-4 ">
+                             <label>Date de naissance:</label>
                             <input type="date" class="form-control" id="email13" > </div>
 
-                         <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Situation matrimoniale :</h5></label>
-                           <select required="">
+                         <div class="form-group col-md-4">
+                            <label>Situation matrimoniale :</label>
+                           <select required="" class="form-control">
                                 <option selected="" value=""> -- Situation matrimoniale  -- </option>
                                 <option value="32">Marié (e) </option>
                                 <option value="11">Célibataire </option>
@@ -113,17 +114,17 @@ input.invalid {
                                 <option value="11">Concubinage </option>
                             </select>
                         </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Sexe:</h5></label>
-                           <select required="">
+                        <div class="form-group col-md-4">
+                            <label>Sexe:</label>
+                           <select required="" class="form-control">
                                 <option selected="" value=""> -- Sexe -- </option>
                                 <option value="32">Masculin</option>
                                 <option value="11">Féminin</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Niveau d’étude :</h5></label>
-                           <select required="">
+                        <div class="form-group col-md-4">
+                            <label>Niveau d’étude :</label>
+                           <select required="" class="form-control">
                                 <option selected="" value=""> -- Niveau d’étude  -- </option>
                                 <option value="32">Primaire</option>
                                 <option value="11">Secondaire</option>
@@ -132,48 +133,42 @@ input.invalid {
                             </select>
                         </div>
 
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Dernier Diplôme:</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Dernier Diplôme:</label>
                             <input type="text" class="form-control" id="email13" > </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Nombre d’enfants :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Nombre d’enfants :</label>
                             <input type="number" class="form-control" id="email13" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Nombre de personnes à charge :</h5></label>
+                            <div class="form-group col-md-4">
+                             <label>Nombre de personnes à charge :</label>
                             <input type="number" class="form-control" id="email13" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Ville / Commune:</h5></label>
+                            <div class="form-group col-md-4">
+                             <label>Ville / Commune:</label>
+                            <input type="text" class="form-control" id="email13" > </div>
+                            <div class="form-group col-md-4 ">
+                             <label>Région:</label>
                             <input type="text" class="form-control" id="email13" > </div>
                             <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Région:</h5></label>
-                            <input type="text" class="form-control" id="email13" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Adresse postale :</h5></label>
-                            <input type="text" class="form-control" id="email13" > </div>
-
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Adresse géographique précise:</h5></label>
-                            <input type="text" class="form-control" id="email13" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Tél fixe :</h5></label>
-                            <input type="text" class="form-control" id="email13" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Cellulaire :</h5></label>
+                             <label>Adresse postale :</label>
                             <input type="text" class="form-control" id="email13" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Email :</h5></label>
+                            <div class="form-group col-md-4">
+                             <label>Adresse géographique précise:</label>
                             <input type="text" class="form-control" id="email13" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5></h5></label>
-                             </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label><h5></h5></label>
-                            </div>
-                           
+                            <div class="form-group col-md-4">
+                             <label>Tél fixe :</label>
+                            <input type="text" class="form-control" id="email13" > </div>
+                            <div class="form-group col-md-4">
+                             <label>Cellulaire :</label>
+                            <input type="text" class="form-control" id="email13" > </div>
+
+                            <div class="form-group col-md-4">
+                             <label>Email :</label>
+                            <input type="text" class="form-control" id="" ></div>
+                            <br>
                        </table>
-                        
+
                     </div>
 
                     <div class="tab">
@@ -181,72 +176,72 @@ input.invalid {
                          <h5>2.1. Veuillez indiquer vos diplômes et/ou certificats en commençant par les plus récents</h5>
                         <table>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Titre du diplôme/ certificat:</h5></label>
-                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Nom de l’établissement:</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Période :</h5></label>
-                            <input type="date" class="form-control" id="email13" > </div>
+                            <div class="form-group col-md-4">
+                            <label>Titre du diplôme/ certificat:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                        <div class="form-group col-md-4">
+                             <label>Nom de l’établissement:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                        <div class="form-group col-md-4">
+                             <label>Période :</label>
+                            <input type="date" class="form-control" id="" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Titre du diplôme/ certificat:</h5></label>
-                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
+                            <div class="form-group col-md-4">
+                            <label>Titre du diplôme/ certificat:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Nom de l’établissement:</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
+                             <label>Nom de l’établissement:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Période :</h5></label>
-                            <input type="date" class="form-control" id="email13" > </div>
+                             <label>Période :</label>
+                            <input type="date" class="form-control" id="" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Titre du diplôme/ certificat:</h5></label>
-                            <input type="text" class="form-control" id="email11" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Nom de l’établissement:</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Période :</h5></label>
-                            <input type="date" class="form-control" id="email13" > </div>
-                            
+                            <div class="form-group col-md-4">
+                            <label>Titre du diplôme/ certificat:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                        <div class="form-group col-md-4">
+                             <label>Nom de l’établissement:</label>
+                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                        <div class="form-group col-md-4">
+                             <label>Période :</label>
+                            <input type="date" class="form-control" id="" > </div>
+
                         </table>
                         <h5>2.2. Veuillez rappeler votre expérience professionnelle </h5>
                         <table>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Année :</h5></label>
+                            <div class="form-group col-md-4">
+                            <label>Année :</label>
                             <input type="number" class="form-control" id="email11" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Entreprise :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Entreprise :</label>
                             <input type="text" class="form-control" id="email12" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Poste ou fonction  :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Poste ou fonction  :</label>
                             <input type="text" class="form-control" id="email13" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Année :</h5></label>
+                            <div class="form-group col-md-4">
+                            <label>Année :</label>
                             <input type="number" class="form-control" id="email11" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Entreprise :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Entreprise :</label>
                             <input type="text" class="form-control" id="email12" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Poste ou fonction  :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Poste ou fonction  :</label>
                             <input type="text" class="form-control" id="email13" > </div>
 
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Année :</h5></label>
+                            <div class="form-group col-md-4">
+                            <label>Année :</label>
                             <input type="number" class="form-control" id="email11" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Entreprise :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Entreprise :</label>
                             <input type="text" class="form-control" id="email12" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Poste ou fonction  :</h5></label>
+                        <div class="form-group col-md-4">
+                             <label>Poste ou fonction  :</label>
                             <input type="text" class="form-control" id="email13" > </div>
-                            
+
                         </table>
-                       
+
                     </div>
 
                     <div class="tab">
@@ -254,49 +249,54 @@ input.invalid {
                         <h6>3.1.    Quelle est la dénomination de votre projet ?   </h6>
 
                         <table>
-                      
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.2. Avez-vous débuté le projet ?</h5></label>
-                           <select required="">
+
+                        <div class="form-group col-md-6">
+                            <label>3.2. Avez-vous débuté le projet ?</label>
+                           <select required="" class="form-control">
                                 <option value="32">OUI </option>
                                 <option value="11">NON </option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.3. Comment décrirez-vous le niveau de maturation de votre projet ?</h5></label>
-                           <select required="">
+                        <div class="form-group col-md-6">
+                            <label>3.3. Comment décrirez-vous le niveau de maturation de votre projet ?</label>
+                           <select required="" class="form-control">
                                 <option value="32">Idée: Vous avez le business model mais n'avez pas encore développé la solution technique  </option>
                                 <option value="11">Prototype: La solution est déjà développée et vous êtes en phase de test  </option>
                                 <option value="32">Revenus: Votre produit a déjà des utilisateurs qui le paient et vous êtes activement en train de vendre/distribuer</option>
                                 <option value="11">Scaling: Votre équipe cherche à passer à échelle dans d'autres villes/pays/ d'autres verticales </option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.4.    Pouvez-vous décrire votre projet ?</h5></label>
-                            <textarea placeholder="Description activité"></textarea>
+                        <div class="form-group col-md-6">
+                             <label>3.4.    Pouvez-vous décrire votre projet ?</label>
+                            <textarea placeholder="" class="form-control"></textarea>
                              </div>
-                           
-                     
 
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.5.    A quel besoin économique votre projet ou idée répond-il ?</h5></label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.6. Quel est votre business model (modèle économique ou modèle d’affaires) ?</h5></label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.7.    Quel est le marché cible ? quelle est votre stratégie marketing ?</h5></label>
-                            <textarea placeholder="Description activité"></textarea> </div>
+                        <div class="form-group col-md-6">
+                             <label>3.5. A quel besoin économique votre projet ou idée répond-il ?</label>
+                            <textarea placeholder="" class="form-control"></textarea> </div>
+                        <p>
+
+                            <div class="form-group col-md-6">
+                            <label>3.6. Quel est votre business model (modèle économique ou modèle d’affaires) ?</label>
+                            <textarea placeholder="" class="form-control"></textarea> </div>
+                        <div class="form-group col-md-6">
+                             <label>3.7. Quel est le marché cible ? quelle est votre stratégie marketing ?</label>
+                            <textarea placeholder="" class="form-control"></textarea> </div>
+                            
+                        </p>
+
+                        <p>
+                            <div class="form-group col-md-6">
+                             <label>3.8. Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?  combien d’utilisateurs paient l’usage du produit ou du service ?</label>
+                            <textarea placeholder="" class="form-control"></textarea> 
+                        </div>
+                            
+                        </p>
                         
-                       
-                         <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.8.    Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?  combien d’utilisateurs paient l’usage du produit ou du service ?</h5></label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-            
+
                         </table>
 
-
-                        <h5>3.9.    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?</h5>
+                        3.9.    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?
 
                          <table >
                             <thead>
@@ -348,76 +348,84 @@ input.invalid {
                                     <td><input type="text" class="form-control" id="email13" ></td>
                                     <td><input type="text" class="form-control" id="email13" ></td>
                                 </tr>
-                                
+
                             </tbody>
-                            
-                      
-            
+
+
+
                         </table>
 <br>
                         <table>
-                      
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.10.    Quel est la composition de votre équipe de gestion ? </h5></label>
-                           <textarea placeholder="Description activité"></textarea>
-                        </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.11.    Quel est votre rôle dans le projet ?</h5></label>
-                           <textarea placeholder="Description activité"></textarea>
-                        </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.12.   Etes-vous à plein temps dans le projet ? </h5></label>
-                            <textarea placeholder="Description activité"></textarea>
-                        </div>
-                           
-                     
 
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.5.    A quel besoin économique votre projet ou idée répond-il ?</h5></label>
+                        <div class="form-group col-md-6 ">
+                            <label>3.10.    Quel est la composition de votre équipe de gestion ? </label>
+                           <textarea placeholder="" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label>3.11.    Quel est votre rôle dans le projet ?</label>
+                           <textarea placeholder="" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                             <label>3.12.   Etes-vous à plein temps dans le projet ? </label>
+                            <textarea placeholder="" class="form-control"></textarea>
+                        </div>
+
+
+
+                        <div class="form-group col-md-6">
+                             <label>3.13.	Décrivez le plus précisément possible votre expérience dans l’activité envisagée</label>
                             <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.6. Quel est votre business model (modèle économique ou modèle d’affaires) ?</h5></label>
+                        <div class="form-group col-md-6">
+                            <label>3.14.	Comment pouvez-vous décrire votre niveau de connaissance de l’activité/ métier ? </label>
                             <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.7.    Quel est le marché cible ? quelle est votre stratégie marketing ?</h5></label>
+                        <div class="form-group col-md-6">
+                             <label>3.15.	Avez-vous pris part à une formation en entrepreneuriat ? </label>
                             <textarea placeholder="Description activité"></textarea> </div>
-                        
-                       
-                         <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>3.8.    Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?  combien d’utilisateurs paient l’usage du produit ou du service ?</h5></label>
+
+
+                         <div class="form-group col-md-6">
+                             <label>3.16.	Avez-vous pris part à une formation en gestion d’entreprises ? </label>
                             <textarea placeholder="Description activité"></textarea> </div>
-            
+
+                            <div class="form-group col-md-6">
+                                <label>3.17.	Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ?  </label>
+                                <textarea placeholder="Description activité"></textarea> </div>
+
+                            <div class="form-group col-md-6">
+                                <label>3.18.	Comment pouvez-vous décrire votre niveau de pratique en gestion d’entreprise  </label>
+                                <textarea placeholder="Description activité"></textarea> </div>
+
                         </table>
                     </div>
 
                     <div class="tab">
                         <h5>IV. BESOINS : </h5>
                       <table>
-                      
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>4.1. Quels sont vos besoins actuels en formation pour mener à bien votre projet </h5></label>
+
+                        <div class="form-group col-md-6">
+                            <label>4.1. Quels sont vos besoins actuels en formation pour mener à bien votre projet</label>
                            <textarea placeholder="Description activité"></textarea>
                         </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>3.11.    Quel est votre rôle dans le projet ?</h5></label>
+                        <div class="form-group col-md-6">
+                            <label>3.11.    Quel est votre rôle dans le projet ?</label>
                            <textarea placeholder="Description activité"></textarea>
                         </div>
 
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.)</h5></label>
+                        <div class="form-group col-md-6 ">
+                             <label>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.)</label>
                             <textarea placeholder="Description activité"></textarea>
                         </div>
-                           
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>4.3.    Avez-vous un besoin de financement ?</h5></label>
+
+                        <div class="form-group col-md-6 ">
+                             <label>4.3.    Avez-vous un besoin de financement ?</label>
                             <textarea placeholder="Description activité"></textarea> </div>
                         <div class="form-group col-md-6 pad-left-o">
-                            <label><h5>4.4. Quels sont les investissements à réaliser avec le concours financier sollicité</h5></label>
+                            <label>4.4. Quels sont les investissements à réaliser avec le concours financier sollicité</label>
                             <textarea placeholder="Description activité"></textarea> </div>
                         <div class="form-group col-md-6 pad-left-o">
-                             <label><h5>4.5.  Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ? ?</h5></label>
+                             <label>4.5.  Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ? ?</label>
                             <textarea placeholder="Description activité"></textarea> </div>
-            
+
                         </table>
                     </div>
 
@@ -437,36 +445,6 @@ input.invalid {
                     </div>
 
                     </form>
-
-                    <!-- <form class="dir-rat-form col-md-12">
-                        <div>
-
-                            <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Intitulé du projet:</h5></label>
-                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Secteur d'activité:</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Coût du projet:</h5></label>
-                            <input type="text" class="form-control" id="email13" > </div>
-                        <div class="form-group col-md-8 pad-left-o">
-                            <label><h5>Description du projet:</h5></label>
-                            <textarea placeholder="Description du mentor"></textarea>
-                        </div>
-                         <br/>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Plan d'affaire:</h5></label>
-                            <input type="file" class="" id="email12">
-                        </div>
-
-                        </div>
-
-                       <br/>
-                        <div class="form-group col-md-8 pad-left-o">
-                            <input type="submit" value="Enregistrer" class="link-btn">
-                        </div>
-                    </form> -->
                 </div>
 
             </div>
@@ -475,8 +453,8 @@ input.invalid {
 
 @endsection
 
- 
- @section('script')
+
+ @section('js')
 
  <script type="text/javascript">
      var currentTab = 0; // Current tab is set to be the first tab (0)
