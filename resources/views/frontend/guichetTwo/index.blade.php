@@ -10,12 +10,12 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 2 </span> <!-- Family Package --></h2>
+                <h2><span>Activité Génératrice de Revenu (AGR) </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
                     <li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
-                    <li><a href="#inner-page-title" class="bread-acti">guichet 2</a>
+                    <li><a href="#inner-page-title" class="bread-acti">Activité Génératrice de Revenu (AGR)</a>
                     </li>
                 </ul>
                 <p>Activité Génératrice de Revenu (AGR)</p>
@@ -44,7 +44,7 @@
                 <div class="col-md-9">
                     <!--====== TOUR TITLE ==========-->
                     <div class="tour_head">
-                        <h2>Description Guichet 2</h2> </div>
+                        <h2>Description Activité Génératrice de Revenu (AGR)</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
                     <div class="tour_head1">
                         <h3>Description</h3>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
-                   
+
                     @include('frontend.layout.help_share')
 
                 </div>

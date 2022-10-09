@@ -2,7 +2,7 @@
 @section('content')
     <section>
 
-       
+
     </section>
     <!--END HEADER SECTION-->
 
@@ -10,12 +10,12 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 3 </span> <!-- Family Package --></h2>
+                <h2><span>Micro et Petite Entreprise (MPE) </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
                     <li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
-                    <li><a href="#inner-page-title" class="bread-acti">guichet 3</a>
+                    <li><a href="#inner-page-title" class="bread-acti">Micro et Petite Entreprise (MPE)</a>
                     </li>
                 </ul>
                 <p>Micro et Petite Entreprise (MPE)</p>
@@ -44,13 +44,13 @@
                 <div class="col-md-9">
                     <!--====== TOUR TITLE ==========-->
                     <div class="tour_head">
-                        <h2>Description Guichet 3</h2> </div>
+                        <h2>Description Micro et Petite Entreprise (MPE)</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
                     <div class="tour_head1">
                         <h3>Description</h3>
-                        <p>(i)  accompagnement des projets de création ou de développement de petites entreprises formelles</p>
-                        <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                        <p>(iii)    pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
+                        <p>Accompagnement des projets de création ou de développement de petites entreprises formelles</p>
+                        <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                        <p>Pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
 
                         <br>
                         <br>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
-                   
+
                      @include('frontend.layout.help_share')
 
                 </div>

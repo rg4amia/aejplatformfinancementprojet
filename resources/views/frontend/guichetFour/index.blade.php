@@ -31,7 +31,7 @@
 @section('content')
     <section>
 
-       
+
     </section>
     <!--END HEADER SECTION-->
 
@@ -44,7 +44,7 @@
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
                     <li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
-                    <li><a href="#inner-page-title" class="bread-acti">guichet 4</a>
+                    <li><a href="#inner-page-title" class="bread-acti">Moyenne Entreprise et Projets Structurants</a>
                     </li>
                 </ul>
                 <p>Moyenne Entreprise et Projets Structurants</p>
@@ -73,17 +73,17 @@
                 <div class="col-md-9">
                     <!--====== TOUR TITLE ==========-->
                     <div class="tour_head">
-                        <h2>Description Guichet 4</h2> </div>
+                        <h2>Description Moyenne Entreprise et Projets Structurants</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
                     <div class="tour_head1">
                         <h3>Description</h3>
-                        <p>(i)  accompagnement des projets de développement d’entreprises formelles</p>
-                        <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                        <p>Accompagnement des projets de développement d’entreprises formelles</p>
+                        <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
                         <br>
                         <br>
                         <button class="accordion">Credit ordinaire</button>
                         <div class="panel">
-                         
+
                          <h3>Description Credit ordinaire</h3>
                         <p>Discover two of South America’s greatest cities, Rio de Janeiro and Buenos Aires, at a leisurely pace. A major highlight on this journey is a visit to Iguassu Falls in between your two city stays. It truly is one of the most spectacular sights on Earth. See the impressive falls from both the Brazilian and Argentine sides.</p>
                         <p>Brazil’s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina’s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you’ll cherish for life.</p>
@@ -102,12 +102,12 @@
 
                         </div>
 
-                        
+
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
-                   
-                   
+
+
                     @include('frontend.layout.help_share')
 
                 </div>
