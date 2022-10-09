@@ -61,15 +61,15 @@
 
                         <div class="form-group col-md-4">
                             <label><h5>Selectionnez la region:</h5></label>
-                            {!! Form::select('region_id', $data['regions'],null, ['class' => 'form-control select2-region', 'required' => true]) !!}
+                            {!! Form::select('region_id', $regions,null, ['class' => 'select2-region', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>Commune:</h5></label>
-                             {!! Form::select('commune_id', $data['communes'],null, ['class' => 'form-control select2-statudemandeur', 'required' => true]) !!}
+                             {!! Form::select('commune_id', $communes,null, ['class' => 'form-control select2-statudemandeur', 'required' => true]) !!}
                             </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>District:</h5></label>
-                             {!! Form::select('district_id', $data['districts'],null, ['class' => 'form-control select2-district', 'required' => true]) !!}
+                             {!! Form::select('district_id', $districts,null, ['class' => 'form-control select2-district', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
@@ -93,25 +93,25 @@
                             <label>
                                 <h5>Type projet :</h5>
                             </label>
-                             {!! Form::select('typeprojet_id', $data['typeprojets'],null, ['class' => 'form-control select2-typeprojet', 'required' => true]) !!}
+                             {!! Form::select('typeprojet_id', $typeprojets,null, ['class' => 'form-control select2-typeprojet', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                                 <label>
                                     <h5>Secteur d'activités :</h5>
                                 </label>
-                                {!! Form::select('secteuractivite_id', $data['secteuractivites'],null, ['class' => 'form-control select2-secteuractivite', 'required' => true]) !!}
+                                {!! Form::select('secteuractivite_id', $secteuractivites,null, ['class' => 'form-control select2-secteuractivite', 'required' => true]) !!}
                         </div>
                        <div class="form-group col-md-4 pad-right-o">
                             <label>
                                 <h5>Agence régionale la plus proche :</h5>
                             </label>
-                                {!! Form::select('division_id', $data['divisions'],null, ['class' => 'form-control select2-division', 'required' => true]) !!}
+                                {!! Form::select('division_id', $divisions,null, ['class' => 'form-control select2-division', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Forme juridique :</h5>
                             </label>
-                            {!! Form::select('formejuridique_id', $data['formejuridiques'],null, ['class' => 'form-control select2-formejuridique', 'required' => true]) !!}
+                            {!! Form::select('formejuridique_id', $formejuridiques,null, ['class' => 'form-control select2-formejuridique', 'required' => true]) !!}
                         </div>
 
                        <div class="form-group col-md-8 pad-left-o">
@@ -120,13 +120,19 @@
                         </div>
 
                         <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Cout projet :</h5></label>
+                            <label>
+                                <h5>Cout projet :</h5>
+                            </label>
                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Nombre d'emploi (s) créé (s) :</h5></label>
+                            <label>
+                                <h5>Nombre d'emploi (s) créé (s) :</h5>
+                            </label>
                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
                         <div class="form-group col-md-4">
-                        <label><h5>Etat du projet :</h5></label>
+                        <label>
+                            <h5>Etat du projet :</h5>
+                        </label>
                          <select style="z-index: 1;">
                                <option>Creation</option>
                                <option>Développement commercial</option>

@@ -40,30 +40,29 @@ class GuichetThreeController extends Controller
     public function form_projetguichet3()
     {
 
-        $secteuractivites = SecteurActivite::orderBy('libelle', 'ASC')->get();
-        $formejuridiques  = FormeJuridique::orderBy('libelle', 'ASC')->get();
-        $regions          = Region::orderBy('nom', 'ASC')->get();
-        $villes           = Ville::orderBy('nom', 'ASC')->get();
-        $communes         = Commune::orderBy('nom', 'ASC')->get();
-        $divisions        = AgenceRegionale::orderBy('nom', 'ASC')->get();
-        $typeprojets      = TypeProjet::where('deleted_at', null)->orderBy('libelle', 'ASC')->get();
-        $typeprogrammes   = TypeProgramme::orderBy('libelle', 'ASC')->get();
-        $districts        = District::orderBy('nom', 'ASC')->get();
-        $statuts          = StatutProjet::orderBy('libelle', 'ASC')->get();
+        $secteuractivites = SecteurActivite::select('libelle','id')->orderBy('libelle', 'ASC')->get();
+        $formejuridiques  = FormeJuridique::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $regions          = Region::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        $villes           = Ville::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        $communes         = Commune::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        $divisions        = AgenceRegionale::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        $typeprojets      = TypeProjet::select('libelle', 'id')->where('deleted_at', null)->orderBy('libelle', 'ASC')->get();
+        $typeprogrammes   = TypeProgramme::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $districts        = District::select('libelle', 'id')->orderBy('nom', 'ASC')->get();
+        $statuts          = StatutProjet::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
 
-        $data = [
-            'secteuractivites'  => $secteuractivites,
-            'formejuridiques'   => $formejuridiques,
-            'regions'           => $regions,
-            'villes'            => $villes,
-            'communes'          => $communes,
-            'divisions'         => $divisions,
-            'typeprojets'       => $typeprojets,
-            'typeprogrammes'    => $typeprogrammes,
-            'districts'         => $districts,
-            'statuts'           => $statuts,
-        ];
-        return view('frontend.guichetThree.form_projetguichet3', compact('data'));
+        //dd($data['secteuractivites']);
+        return view('frontend.guichetThree.form_projetguichet3', compact(
+            'secteuractivites',
+            'formejuridiques',
+            'regions',
+            'villes',
+            'communes',
+            'divisions',
+            'typeprojets',
+            'typeprogrammes',
+            'districts',
+            'statuts'));
     }
 
     /**
