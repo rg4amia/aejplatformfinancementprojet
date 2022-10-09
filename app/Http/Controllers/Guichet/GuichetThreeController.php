@@ -3,6 +3,16 @@
 namespace App\Http\Controllers\Guichet;
 
 use App\Http\Controllers\Controller;
+use App\Models\AgenceRegionale;
+use App\Models\Commune;
+use App\Models\District;
+use App\Models\FormeJuridique;
+use App\Models\Region;
+use App\Models\SecteurActivite;
+use App\Models\StatutProjet;
+use App\Models\TypeProgramme;
+use App\Models\TypeProjet;
+use App\Models\Ville;
 use Illuminate\Http\Request;
 
 class GuichetThreeController extends Controller
@@ -29,7 +39,31 @@ class GuichetThreeController extends Controller
 
     public function form_projetguichet3()
     {
-        return view('frontend.guichetThree.form_projetguichet3');
+
+        $secteuractivites = SecteurActivite::orderBy('libelle', 'ASC')->get();
+        $formejuridiques  = FormeJuridique::orderBy('libelle', 'ASC')->get();
+        $regions          = Region::orderBy('nom', 'ASC')->get();
+        $villes           = Ville::orderBy('nom', 'ASC')->get();
+        $communes         = Commune::orderBy('nom', 'ASC')->get();
+        $divisions        = AgenceRegionale::orderBy('nom', 'ASC')->get();
+        $typeprojets      = TypeProjet::where('deleted_at', null)->orderBy('libelle', 'ASC')->get();
+        $typeprogrammes   = TypeProgramme::orderBy('libelle', 'ASC')->get();
+        $districts        = District::orderBy('nom', 'ASC')->get();
+        $statuts          = StatutProjet::orderBy('libelle', 'ASC')->get();
+
+        $data = [
+            'secteuractivites'  => $secteuractivites,
+            'formejuridiques'   => $formejuridiques,
+            'regions'           => $regions,
+            'villes'            => $villes,
+            'communes'          => $communes,
+            'divisions'         => $divisions,
+            'typeprojets'       => $typeprojets,
+            'typeprogrammes'    => $typeprogrammes,
+            'districts'         => $districts,
+            'statuts'           => $statuts,
+        ];
+        return view('frontend.guichetThree.form_projetguichet3',compact('data'));
     }
 
     /**
