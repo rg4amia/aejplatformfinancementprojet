@@ -54,24 +54,27 @@ Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
 });
 
 Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
-    Route::get('/connexion', [UserBackendController::class, 'index'])->name('login');
-    Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/connexion', [UserBackendController::class, 'index'])->name('index');
+    Route::post('/login', [UserBackendController::class, 'login'])->name('login');
+    Route::post('/logout', [UserBackendController::class, 'logout'])->name('logout');
 
-    Route::group(['middleware' => ['role:admin']], function () {
-        
-        Route::group(['prefix' => 'guichet-un', 'as' => 'guichet-un.'], function () {
+    Route::group(['middleware' => ['role:admin','auth']], function () {
+
+        Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
+
+        Route::group(['prefix' => 'guichet-one', 'as' => 'guichet-one.'], function () {
             Route::get('index', [GuichetOneBackendController::class, 'index'])->name('index');
         });
 
-        Route::group(['prefix' => 'guichet-trois', 'as' => 'guichet-trois.'], function () {
+        Route::group(['prefix' => 'guichet-three', 'as' => 'guichet-three.'], function () {
             Route::get('index', [GuichetThreeBackendController::class, 'index'])->name('index');
         });
 
-        Route::group(['prefix' => 'guichet-quatre', 'as' => 'guichet-quatre.'], function () {
+        Route::group(['prefix' => 'guichet-four', 'as' => 'guichet-four.'], function () {
             Route::get('index', [GuichetFourBackendController::class, 'index'])->name('index');
         });
 
-        Route::group(['prefix' => 'guichet-cinq', 'as' => 'guichet-cinq.'], function () {
+        Route::group(['prefix' => 'guichet-five', 'as' => 'guichet-five.'], function () {
             Route::get('index', [GuichetFiveBackendController::class, 'index'])->name('index');
         });
 

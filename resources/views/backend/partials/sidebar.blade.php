@@ -14,7 +14,7 @@
             </a>
             <div class="collapse" id="guichet-1">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Liste projet</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-one.index') }}">Liste projet</a></li>
               </ul>
             </div>
           </li>
@@ -26,7 +26,7 @@
             </a>
             <div class="collapse" id="guichet-3">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Liste projet</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-three.index') }}">Liste projet</a></li>
               </ul>
             </div>
           </li>
@@ -38,7 +38,7 @@
             </a>
             <div class="collapse" id="guichet-4">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Liste projet</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-four.index') }}">Liste projet</a></li>
               </ul>
             </div>
           </li>
@@ -50,7 +50,7 @@
             </a>
             <div class="collapse" id="guichet-5">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Liste projet</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-five.index') }}">Liste projet</a></li>
               </ul>
             </div>
           </li>
