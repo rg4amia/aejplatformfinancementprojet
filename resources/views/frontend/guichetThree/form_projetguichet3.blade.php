@@ -52,24 +52,22 @@
         <div class="rows inn-page-bg com-colo">
             <div class="container inn-page-con-bg tb-space">
 
-                 <div class="tour_head">
-                        <h2>Soumettre un projet</h2>
-                    </div>
-
+                <div class="tour_head">
+                    <h2>Soumettre un projet</h2>
+                </div>
                <div class="dir-rat-inn">
                     <form class="dir-rat-form col-md-12">
-
                         <div class="form-group col-md-4">
                             <label><h5>Selectionnez la region:</h5></label>
-                            {!! Form::select('region_id', $regions,null, ['class' => 'select2-region', 'required' => true]) !!}
+                            {!! Form::select('region_id', $region,null, ['class' => 'select2-region', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>Commune:</h5></label>
-                             {!! Form::select('commune_id', $communes,null, ['class' => 'form-control select2-statudemandeur', 'required' => true]) !!}
+                             {!! Form::select('commune_id', $commune,null, ['class' => 'select2-statudemandeur', 'required' => true]) !!}
                             </div>
                         <div class="form-group col-md-4 pad-left-o">
                              <label><h5>District:</h5></label>
-                             {!! Form::select('district_id', $districts,null, ['class' => 'form-control select2-district', 'required' => true]) !!}
+                             {!! Form::select('district_id', $district,null, ['class' => 'select2-district', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
@@ -93,25 +91,25 @@
                             <label>
                                 <h5>Type projet :</h5>
                             </label>
-                             {!! Form::select('typeprojet_id', $typeprojets,null, ['class' => 'form-control select2-typeprojet', 'required' => true]) !!}
+                             {!! Form::select('typeprojet_id', $typeprojet,null, ['class' => 'select2-typeprojet', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                                 <label>
                                     <h5>Secteur d'activités :</h5>
                                 </label>
-                                {!! Form::select('secteuractivite_id', $secteuractivites,null, ['class' => 'form-control select2-secteuractivite', 'required' => true]) !!}
+                                {!! Form::select('secteuractivite_id', $secteuractivite,null, ['class' => 'select2-secteuractivite', 'required' => true]) !!}
                         </div>
                        <div class="form-group col-md-4 pad-right-o">
                             <label>
                                 <h5>Agence régionale la plus proche :</h5>
                             </label>
-                                {!! Form::select('division_id', $divisions,null, ['class' => 'form-control select2-division', 'required' => true]) !!}
+                                {!! Form::select('division_id', $division,null, ['class' => 'select2-division', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Forme juridique :</h5>
                             </label>
-                            {!! Form::select('formejuridique_id', $formejuridiques,null, ['class' => 'form-control select2-formejuridique', 'required' => true]) !!}
+                            {!! Form::select('formejuridique_id', $formejuridique,null, ['class' => 'select2-formejuridique', 'required' => true]) !!}
                         </div>
 
                        <div class="form-group col-md-8 pad-left-o">
