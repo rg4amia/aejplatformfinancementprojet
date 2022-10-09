@@ -55,7 +55,8 @@
                     <h2>Soumettre un projet</h2>
                 </div>
                <div class="dir-rat-inn">
-                    <form class="dir-rat-form col-md-12">
+                    <form class="dir-rat-form col-md-12" action="{{ route('form.projetguichet3.store')}}" method="POST">
+                        @csrf
                         <div class="form-group col-md-4">
                             <label><h5>Selectionnez la region:</h5></label>
                             {!! Form::select('region_id', $region,null, ['class' => 'select2-region', 'required' => true]) !!}
@@ -72,19 +73,19 @@
                             <label>
                                 <h5>Dénomination (intitulé du projet) :</h5>
                             </label>
-                           <input type="text" class="form-control" id="email12" placeholder="Dénomination">
+                           <input type="text" name="intituleprojet" class="form-control" id="email12" placeholder="Dénomination">
                         </div>
                        <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Raison sociale :</h5>
                             </label>
-                           <input type="text" class="form-control" id="email12" placeholder="Raison sociale">
+                           <input type="text" name="raisonsociale" class="form-control" id="email12" placeholder="Raison sociale">
                         </div>
                        <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Sigle :</h5>
                             </label>
-                            <input type="text" class="form-control" id="email12" placeholder="Sigle">
+                            <input type="text" name="sigle" class="form-control" id="email12" placeholder="Sigle">
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
@@ -104,7 +105,7 @@
                             <label>
                                 <h5>Agence régionale la plus proche :</h5>
                             </label>
-                                {!! Form::select('division_id', $division,null, ['class' => 'select2-division', 'required' => true]) !!}
+                                {!! Form::select('divisionregionaleaej_id', $division,null, ['class' => 'select2-division', 'required' => true]) !!}
                         </div>
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
@@ -115,32 +116,34 @@
 
                        <div class="form-group col-md-8 pad-left-o">
                             <label><h5>Description activité :</h5></label>
-                            <textarea placeholder="Description activité"></textarea>
+                            <textarea placeholder="Description activité" name="descriptionactivite"></textarea>
                         </div>
 
                         <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Cout projet :</h5>
                             </label>
-                           <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
+                           <input type="text" name="coutprojet" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
                        <div class="form-group col-md-4 pad-left-o">
                             <label>
                                 <h5>Nombre d'emploi (s) créé (s) :</h5>
                             </label>
-                           <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
+                           <input type="text" name="nombreemploi" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
                         <div class="form-group col-md-4">
                         <label>
                             <h5>Etat du projet :</h5>
                         </label>
-                         <select style="z-index: 1;">
-                               <option>Creation</option>
-                               <option>Développement commercial</option>
+                         <select style="z-index: 1;" name="estnouvelleactivite">
+                               <option value="1">Creation</option>
+                               <option value="2">Développement commercial</option>
                            </select>
                         </div>
 
                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Plan d'affaire:</h5></label>
-                            <input type="file" class="" id="email12">
+                             <label>
+                                <h5>Plan d'affaire:</h5>
+                            </label>
+                            <input name="planaffaire" type="file" class="" id="email12">
                         </div>
                         </div>
                        <br/>
