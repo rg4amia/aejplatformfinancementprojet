@@ -12,7 +12,7 @@
                         <div class="tl-2"></div>
                         <div class="tl-3"></div>
                     </div>
-                    <p>le guichet unique de financement de l'agence emploi jeunes</p>
+                    <p>GUICHET DU FINANCEMENT DES JEUNES ENTREPRENEURS EN COTE D'IVOIRE</p>
                 </div>
                 <div>
                     <!-- TOUR PLACE 1 -->
