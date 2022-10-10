@@ -76,11 +76,18 @@
                             </li>
                         </ul>
                         <br>
-                        <a href="{{route('form.projetguichet3')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
+                        @auth
+                            @role('promoteur')
+                                <a class="btn btn-info" href="{{route('form.projetguichet3')}}">Soumettre un projet</a>
+                            @endrole
+                        @else
+                            <div class="alert alert-success">
+                                Veuillez vous <a href="{{ route('user.index') }}">connecter</a> pour avoir accès à ce service.
+                            </div>
+                        @endauth
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
-
                      @include('frontend.layout.help_share')
 
                 </div>

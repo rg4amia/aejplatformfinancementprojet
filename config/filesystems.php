@@ -43,6 +43,12 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+        'planaffaire' => [
+            'driver'        => 'local',
+            'root'          => storage_path('app/planaffaire'),
+            'url'           => env('APP_URL') . '/planaffaire',
+            'visibility'    => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',
@@ -71,6 +77,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('planaffaire')    => storage_path('app/planaffaire'),
     ],
 
 ];

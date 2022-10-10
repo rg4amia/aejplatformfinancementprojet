@@ -45,7 +45,7 @@
                     <div class="tour_head">
                         <h2>Mentorat solidaire (Business Angel) </h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
-                    
+
                     <div class="tour_head1 l-info-pack-days days">
                         <h3>Description</h3>
                         <ul>
@@ -71,7 +71,15 @@
                             </li>
                         </ul>
                         <br>
-                        <a href="{{route('form.projetguichet1')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
+                        @auth
+                            @role('promoteur')
+                             <a href="{{route('form.projetguichet1')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
+                            @endrole
+                        @else
+                            <div class="alert alert-success">
+                                Veuillez vous <a href="{{ route('user.index') }}">connecter</a> pour avoir accès à ce service.
+                            </div>
+                        @endauth
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">

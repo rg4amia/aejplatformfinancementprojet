@@ -13,7 +13,7 @@ use Illuminate\Http\JsonResponse;
 class UserBackendController extends Controller
 {
     public function index(){
-        return view('backend.auth.login');
+       return view('backend.auth.login');
     }
 
     public function login(Request $request)

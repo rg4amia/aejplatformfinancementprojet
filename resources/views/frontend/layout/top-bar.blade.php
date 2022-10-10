@@ -27,7 +27,7 @@
                         @else
                             <ul>
                                 <li>
-                                    <a href="{{ route('user.index') }}">Tableau de bord</a>
+                                    <a href="{{ route('backend.promoteur.dashboard') }}">Tableau de bord</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('user.index') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>
@@ -39,13 +39,12 @@
                         @endrole
                      @else
                         <ul>
-                            <li><a href="{{ route('user.index') }}">Connexion</a>
+                            <li>
+                                <a href="{{ route('user.index') }}">Connexion</a>
                             </li>
-
-                                <li>
-                                    <a href="{{ route('user.enregistrer') }}">S'inscrire</a>
-                                </li>
-
+                            <li>
+                                <a href="{{ route('user.enregistrer') }}">S'inscrire</a>
+                            </li>
                         </ul>
                      @endauth
 
