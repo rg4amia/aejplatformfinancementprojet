@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Guichet;
+namespace App\Http\Controllers\Frontend\Guichet;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
