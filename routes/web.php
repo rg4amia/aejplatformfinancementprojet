@@ -25,7 +25,6 @@ use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
 |
 */
 
-
 Route::get('/', function () {
     return view('frontend/accueil');
 })->name('home');

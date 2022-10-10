@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('projet_promoteur_threes', function (Blueprint $table) {
-            $table->foreignId('promoteur_id')->constrained('niveau_maturation_params');
+            $table->foreignId('promoteur_id')->constrained('promoteurs');
         });
     }
 

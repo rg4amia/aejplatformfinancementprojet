@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Promoteur;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -37,24 +38,52 @@ class UserController extends Controller
 
         try {
             $user               = new User();
-            $user->genre        = $request->sexe;
-            $user->prenom       = $request->prenom;
-            $user->nom          = $request->nom;
             $user->name         = $request->nom . ' '.$request->prenom;
-            $user->telephone    = $request->telephone;
             $user->email        = $request->email;
-            $user->matricule_aej = $request->matricule_aej;
             $user->password     = Hash::make($request->password);
             // role id, 3 <=> Demandeur, 1 <=> Admin, 2 <=> Mentorat
             $role_r = Role::where('id', '=', 3)->firstOrFail();
             $user->assignRole($role_r);
 
             if ($user->save()) {
-                session()->flash('success', 'Compte crée avec success');
-                return redirect()->route('user.successful');
-            }  //code...
+
+                $matricule = \request('matricule_aej');
+                $token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
+                $url =  "https://www.agenceemploijeunes.ci/site/demandeur_data/{$matricule}/{$token}";
+                $response = Http::get($url);
+                $data = json_decode($response->body());
+
+                 $promteur = Promoteur::create([
+                    'user_id' => $user->id,
+                    'nom' => $data[0]->nom,
+                    'prenoms' => $data[0]->prenoms,
+                    'date_naissance' => $data[0]->datenaissance,
+                    'matricule_aej' => $data[0]->matriculeaej,
+                    'telephone' => $data[0]->telephone,
+                    'sexe_id'  => $data[0]->sexe_id,
+                    'situationmatrimoniale_id' => $data[0]->situationmatrimoniale_id,
+                    'niveauetude_id' => $data[0]->niveauetude_id ? $data[0]->niveauetude_id : 0,
+                    'commune_id' => $data[0]->lieuhabitation_id ?  $data[0]->lieuhabitation_id  : 0,
+                    'region_id' => $data[0]->divisionregionaleaej_id ?  $data[0]->divisionregionaleaej_id  : 0,
+                    'dernier_diplome' => $data[0]->diplome ?  $data[0]->diplome->libelle  : 0,
+                    'nombreenfant' => 0,
+                    'nombrepers_charge' => 0,
+                    'adressepostale' => null,
+                    'adressegeoprecise' => null,
+                    'telfixe' => null,
+                    'email' => $request->email,
+                    'cellulaire' => $data[0]->telephone
+                ]);
+
+                if($promteur){
+                    session()->flash('success', 'Compte crée avec success');
+                    return redirect()->route('user.successful');
+                }
+            }
+
         } catch (\Exception $e) {
             session()->flash('warning', $e->getMessage());
+            dd($e->getMessage());
             return back();
         }
     }

@@ -21,11 +21,11 @@ return new class extends Migration
             $table->date('date_naissance')->nullable();
             $table->string('matricule_aej')->nullable();
             $table->string('telephone')->nullable();
-            $table->foreignId('sexe_id')->constrained('sexe_params');
-            $table->foreignId('situationmatrimoniale_id')->constrained('situation_matrimoniale_params');
-            $table->foreignId('niveauetude_id')->constrained('niveau_etude_params');
-            $table->foreignId('commune_id')->constrained('commune_params');
-            $table->foreignId('region_id')->constrained('region_params');
+            $table->integer('sexe_id');
+            $table->integer('situationmatrimoniale_id');
+            $table->integer('niveauetude_id');
+            $table->integer('commune_id');
+            $table->integer('region_id');
             $table->string('dernier_diplome')->nullable();
             $table->integer('nombreenfant')->nullable();
             $table->integer('nombrepers_charge')->nullable();

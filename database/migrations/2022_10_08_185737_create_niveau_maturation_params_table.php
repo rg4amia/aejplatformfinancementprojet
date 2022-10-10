@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('niveau_maturation_params', function (Blueprint $table) {
             $table->id();
-            $table->string('libelle');
+            $table->string('libelle')->nullable();
+            $table->string('code')->nullable();
             $table->timestamps();
         });
     }
