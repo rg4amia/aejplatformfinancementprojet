@@ -9,10 +9,10 @@
     <div class="tour_right head_right tour_social tour-ri-com">
         <h3>Suivez-nous</h3>
             <ul>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+                <li><a href="https://www.facebook.com/AgenceEmploiJeunes"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                <!-- <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li> -->
+                <li><a href="https://twitter.com/EmploiJeunesci"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                <li><a href="https://www.linkedin.com/company/agence-emploi-jeunes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+               <!--  <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li> -->
             </ul>
     </div>
