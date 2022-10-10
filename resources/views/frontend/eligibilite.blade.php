@@ -3,7 +3,7 @@
 <style type="text/css">
     /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #F8BA05;
+  background-color: #D98719;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -67,26 +67,19 @@
                     <div class="">
                         <button class="accordion">Mentorat solidaire (Business Angel)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
-                        <h3>Mentorat solidaire (Business Angel)</h3>
+                        <h2>Mentorat solidaire (Business Angel)</h2>
                         <ul>
+                           
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>- Accompagnement par des mentors - investisseurs des projets de création ou de développement de petites entreprises formelles.</p>
-
-                                <p>- Coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
-
-                                <p>- Appui financier des mentors.</p>
-                            </li>
-                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 5 000 000 F CFA maximum</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Appui en subvention du mentor, en dette ou prise de participation minoritaire.</p>
                             </li>
                         </ul>
@@ -96,27 +89,22 @@
                          <br>
                         <button class="accordion">Activités Génératrices de Revenus (AGR) </button>
                         <div class="panel tour_head1 l-info-pack-days days">
-                        <h3>Activités Génératrices de Revenus (AGR)</h3>
+                        <h2>Activités Génératrices de Revenus (AGR)</h2>
                         <ul>
+                            
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>- Accompagnement des projets de création ou de développement de petites activités</p>
-
-                                <p>- Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                            </li>
-                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- AGR Classique et AVEC : Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité .</p>
                                 <p>- AGR Plus : Jeunes (18 à 40 ans) bénéficiaire de l’opération Agir ayant correctement remboursés les prêts.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- AGR Classique : 100 000 F CFA à 1 000 000 F CFA</p>
                                 <p>- AVEC: 100 000 F CFA à 300 000 F CFA</p>
                                 <p>- AGR Plus : 50 000 F CFA à 300 000 F CFA avec possibilité de revolving quasi illimité</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type : Crédit; Durée: 3 à 24 mois maximum.</p>
                                 <p>- Taux d’intérêt: à partir de 8% TAEG/an.</p>
                                 <p>- Apport personnel: 10% minimum.</p>
@@ -128,27 +116,20 @@
                        <br>
                         <button class="accordion">Micro et Petites Entreprises (MPE) </button>
                         <div class="panel tour_head1 l-info-pack-days days">
-                        <h3>Micro et Petites Entreprises (MPE)</h3>
+                        <h2>Micro et Petites Entreprises (MPE)</h2>
                         <ul>
+                           
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>- Accompagnement des projets de création ou de développement de petites entreprises formelles.</p>
-                                <p>- Accès à la formation, au financement et au dispositif de suivi-encadrement.</p>
-                                <p>- Pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué.</p>
-
-                               
-                            </li>
-                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité</p>
                                
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 1 000 001 F CFA à 5 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type :  Crédit</p>
                                 <p>- Duréede remboursement : 36 mois maximum</p>
                                 <p>- Taux d’intérêt: à partir de 8% TAEG/an</p>
@@ -162,23 +143,19 @@
                          <br>
                         <button class="accordion">Moyennes Entreprises et Projets Structurants (MEPS)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
-                        <h3>Moyennes Entreprises et Projets Structurants (MEPS)</h3>
+                        <h2>Moyennes Entreprises et Projets Structurants (MEPS)</h2>
                          <ul>
+                           
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>- Accompagnement des projets de développement d’entreprises formelles.</p>
-                                <p>- Accès à la formation, au financement et au dispositif de suivi-encadrement.</p>
-                            </li>
-                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) déjà en activité (2 années d’existence minimum ).</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 5 000 001 F CFA à 25 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type : Crédit; Duréede remboursement : 36 mois maximum.</p>
                                 <p>- Taux d’intérêt: à partir de 8% TAEG/an.</p>
                                 <p>- Apport personnel: 10% minimum.</p>
@@ -190,24 +167,19 @@
                         <br>
                         <button class="accordion">Capital Investissement (CI)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
-                        <h3>Capital Investissement (CI)</h3>
+                        <h2>Capital Investissement (CI)</h2>
                         <ul>
+                           
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>- Accompagnement des projets développement d’entreprises innovantes et à fort potentiel de création de valeur et d’emplois.</p>
-
-                                <p>- Financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
-                            </li>
-                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) déjà en activité (3 années d’existence minimum ).</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 25 000 000 F CFA à 100 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type : capital</p>
                                 <p>- Prise de participation minoritaire</p>
                                 <p>- Maturité de 60 mois en moyenne</p>
