@@ -1,4 +1,4 @@
-@extends('frontend.layout.main')
+@extends('frontend.layout.main_form')
 @section('content')
     <section>
         
@@ -10,7 +10,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 5 </span> <!-- Family Package --></h2>
+                <h2><span>Capital d’Investissement</span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -18,7 +18,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Soumettre un projet</a>
                     </li>
                 </ul>
-                <p>Slogan du guichet 5</p>
+                <p>Capital d’Investissement</p>
             </div>
         </div>
     </section>
@@ -34,11 +34,12 @@
                     </div>
 
                <div class="dir-rat-inn">
-                    <form class="dir-rat-form col-md-12">
-                        <div>
-                        <div class="form-group col-md-4">
-                            <label><h5>Selectionnez la region:</h5></label>
-                           <select required="">
+                    <form >
+                      
+                            <div class="form-group row">
+                        <div class="col-md-4">
+                            <label>Selectionnez la region:</label>
+                           <select class="form-control" required="" id="region" name="region">
                                 <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
                                 <option value="32">ABIDJAN</option>
                                 <option value="11">AGNEBY-TIASSA</option>
@@ -75,10 +76,10 @@
                                 <option value="33">YAMOUSSOUKRO</option>
                                 </select> 
                             </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Commune:</h5></label>
-                            <select required="">
-<option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
+                        <div class="col-md-4">
+                             <label>Commune:</label>
+                            <select class="form-control" required="" id="commune" name="commune">
+                             <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
                             <option value="1">ABENGOUROU</option>
                             <option value="2">ABIGUI</option>
                             <option value="3">ABOBO</option>
@@ -105,9 +106,9 @@
                             <option value="518">ZOUKOUGBEU</option>
                             <option value="519">ZUENOULA</option>
                     </select> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>District:</h5></label>
-                            <select  required="">
+                        <div class="col-md-4">
+                             <label>District:</label>
+                            <select  class="form-control" required="" id="district" name="district">
                             <option selected="" value="">-- Veuillez Sélectionnez --</option>
                                     <option value="11">BAS-SASSANDRA</option>
                                     <option value="5">DENGUELE</option>
@@ -125,29 +126,32 @@
                                     <option value="14">ZANZAN</option>
                             </select>
                             </div>
-
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Dénomination (intitulé du projet) :</h5></label>
-                           <input type="text" class="form-control" id="email12" placeholder="Dénomination"> </div>
-                       <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Raison sociale :</h5></label>
-                           <input type="text" class="form-control" id="email12" placeholder="Raison sociale"> </div>
-                       <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Sigle :</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Sigle"> </div>
                         </div>
 
-                         <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Type projet :</h5></label>
-                          <select  required="">
-                        <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
+                        <div class="form-group row">
+                        <div class="col-md-4">
+                            <label>Dénomination (intitulé du projet) :</label>
+                           <input type="text" class="form-control" id="denomination" name="denomination" placeholder="Dénomination"> </div>
+                       <div class="col-md-4">
+                            <label>Raison sociale :</label>
+                           <input type="text" class="form-control" id="raisonsociale" name="raisonsociale" placeholder="Raison sociale"> </div>
+                       <div class="col-md-4">
+                            <label>Sigle :</label>
+                            <input type="text" class="form-control" id="sigle" name="sigle" placeholder="Sigle"> </div>
+                        </div>
+                    
+                        <div class="form-group row">
+                         <div class="col-md-4">
+                            <label>Type projet :</label>
+                          <select  class="form-control" required="" id="typeProjet" name="typeProjet">
+                            <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
                             <option value="1">PROJET STRUCTURANTS</option>
                             <option value="2">PROJETS MICRO ET PETITES ENTREPRISES(MPE)</option>
                             <option value="3">PROJETS MOYENNE ENTREPRISE (ME)</option>
                     </select></div>
-                       <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Secteur d'activités :</h5></label>
-                           <select required="">
+                       <div class="col-md-4">
+                            <label>Secteur d'activités :</label>
+                           <select class="form-control" required="" id="secteurActivite" name="secteurActivite">
 <option selected="" value="">-- Veuillez Sélectionnez --</option>
                         <option value="1">ADMINISTRATION</option>
                         <option value="22">Agriculture</option>
@@ -198,9 +202,9 @@
                         <option value="18">Transport/Approvisionnement/Logistique</option>
                 </select>
                        </div>
-                       <div class="form-group col-md-4 pad-right-o">
-                            <label><h5>Agence régionale la plus proche :</h5></label>
-                               <select required="">
+                       <div class="col-md-4">
+                            <label>Agence régionale la plus proche :</label>
+                               <select class="form-control" required="" id="agenceRegionale" name="agenceRegionale">
                                 <option selected="" value="">-- Veuillez Sélectionnez  -- </option>
                                 <option value="7">ABENGOUROU</option>
                                 <option value="1">ABOBO</option>
@@ -225,44 +229,43 @@
                                 <option value="4">YOPOUGON</option>
                             </select>
                             </div>
-                 
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Forme juridique :</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                       
-
-                       <div class="form-group col-md-8 pad-left-o">
-                            <label><h5>Description activité :</h5></label>
-                            <textarea placeholder="Description activité"></textarea>
+                        </div>
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <label>Forme juridique :</label>
+                            <input type="text" class="form-control" id="formeJuridique" name="formeJuridique" placeholder="Forme juridique"> </div>
+                       <div class="col-md-4">
+                            <label>Description activité :</label>
+                            <textarea placeholder="Description activité" id="descriptionActivite" name="descriptionActivite" ></textarea>
                         </div>
 
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Cout projet :</h5></label>
-                           <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                       <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Nombre d'emploi (s) créé (s) :</h5></label>
-                           <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
-                        <div class="form-group col-md-4">
-                        <label><h5>Etat du projet :</h5></label>
-                         <select style="z-index: 1;">
-                               <option>Creation</option>
-                               <option>Développement commercial</option>
+                        <div class="col-md-4">
+                            <label>Cout projet :</label>
+                           <input type="text" class="form-control" id="coutprojet" name="coutprojet" placeholder="Cout projet"> </div>
+                    </div>
+                    <div class="form-group row">
+                       <div class="col-md-4">
+                            <label>Nombre d'emploi (s) créé (s) :</label>
+                           <input type="text" class="form-control" id="nbrEmploi" name="nbrEmploi" placeholder="Nombre d'emploi (s)"> </div>
+                        <div class="col-md-4">
+                        <label>Etat du projet :</label>
+                         <select class="form-control" id="etatProjet" name="etatProjet">
+                            <option value=""></option>
+                               <option value="1">Creation</option>
+                               <option value="2">Développement commercial</option>
                            </select>   
                         </div>
-                       
-
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Plan d'affaire:</h5></label>
-                            <input type="file" class="" id="email12"> 
+                        <div class="col-md-4">
+                             <label>Plan d'affaire:</label>
+                            <input class="form-control" type="file" id="planAffaire" name="planAffaire"> 
                         </div>
-    
+                     </div>
 
-                       
                         </div>
                     
                        <br/>
-                        <div class="form-group col-md-8 pad-left-o">
-                            <input type="submit" value="Enregistrer" class="link-btn"> 
+                        <div class="form-group col-md-8">
+                            <button type="submit" class="btn btn-warning">Enregistrer</button>
                         </div>
                     </form>
                 </div>

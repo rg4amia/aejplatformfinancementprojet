@@ -39,7 +39,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 4 </span> <!-- Family Package --></h2>
+                <h2><span>Moyenne Entreprise et Projets Structurants </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
