@@ -88,11 +88,11 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">Conditions d’éligibilité</a>
+                                <a href="{{route('eligibilite')}}">Conditions d’éligibilité</a>
                             </li>
-                            <li><a href="#">A propos</a>
+                            <li><a href="{{route('apropos')}}">A propos</a>
                             </li>
-                            <li><a href="#">Contactez nous</a>
+                            <li><a href="{{route('contacts')}}">Contactez nous</a>
                             </li>
                         </ul>
                     </div>

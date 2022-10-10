@@ -26,7 +26,7 @@
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="{{route('guichet1')}}">Mentorat solidaire (Business Angel)<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
+                                    <h4><a href="{{route('guichet1')}}" target="_blank">Mentorat solidaire (Business Angel)<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
@@ -44,7 +44,7 @@
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="http://financement.projetsagir.com/">Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
+                                    <h4><a href="http://financement.projetsagir.com/" target="_blank">Activité Génératrice de revenu(AGR)<span class="v_pl_name"><!-- (England) --></span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
@@ -57,7 +57,7 @@
                             <div class="v_place_img"><img src="{{asset('frontend/images/t2.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="{{route('guichet3')}}">Micro et petite Entreprise (MPE)<span class="v_pl_name"><!-- (India) --></span></a></h4>
+                                    <h4><a href="{{route('guichet3')}}" target="_blank">Micro et petite Entreprise (MPE)<span class="v_pl_name"><!-- (India) --></span></a></h4>
                                 </div>
 
                             </div>
@@ -71,7 +71,7 @@
                             <div class="v_place_img"><img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="{{route('guichet4')}}">Moyenne Entreprise et Projets Structurant (MEPS)<span class="v_pl_name"><!-- (China) --></span></a></h4>
+                                    <h4><a href="{{route('guichet4')}}" target="_blank">Moyenne Entreprise et Projets Structurant (MEPS)<span class="v_pl_name"><!-- (China) --></span></a></h4>
                                 </div>
 
                             </div>
@@ -84,7 +84,7 @@
                                 <div class="b_pack rows">
                                     <div class="col-md-12 col-sm-12">
                                         <h4>
-                                            <a href="{{route('guichet5')}}">
+                                            <a href="{{route('guichet5')}}" target="_blank">
                                                 Capital d'investisement (CI)
                                                 <span class="v_pl_name"><!-- (Andaman) -->
                                         </span>

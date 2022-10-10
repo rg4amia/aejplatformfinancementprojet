@@ -93,30 +93,37 @@ input.invalid {
                         <h5>I. INFORMATIONS SUR LE CANDIDAT :</h5>
                        <table>
 
-                        <div class="form-group col-md-4">
-                            <label>Nom:</label>
+                    <div class="form-group row">
+                         <div class="col-md-4">
+                            <label>Nom <span style="color:red">*</span>: </label>
                             <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom"> </div>
-                        <div class="form-group col-md-4 ">
-                             <label>Prenoms:</label>
+                        <div class="col-md-4 ">
+                             <label>Prenoms <span style="color:red">*</span>:</label>
                             <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom"> </div>
-                        <div class="form-group col-md-4 ">
-                             <label>Date de naissance:</label>
+                        <div class="col-md-4 ">
+                             <label>Date de naissance <span style="color:red">*</span>:</label>
                             <input type="date" class="form-control" id="datedenaissance" name="datedenaissance" > </div>
-                       <div class="form-group col-md-4 ">
-                           <label>Lieu de naissance:</label>
+                    </div>
+
+                    <div class="form-group row">
+                       <div class="col-md-4 ">
+                           <label>Lieu de naissance <span style="color:red">*</span>:</label>
                            <input type="text" class="form-control" id="lieudenaissance" name="lieudenaissance" > </div>
-                       <div class="form-group col-md-4">
-                           <label>Sexe:</label>
+                       <div class="col-md-4">
+                           <label>Sexe <span style="color:red">*</span>:</label>
                            <select required="" class="form-control" id="sexe" name="sexe">
                                <option selected="" value=""> -- Sexe -- </option>
                                <option value="1">Masculin</option>
                                <option value="2">Féminin</option>
                            </select>
                        </div>
-                       <div class="form-group col-md-4 ">
-                           <label>Nationalité:</label>
+                       <div class="col-md-4 ">
+                           <label>Nationalité <span style="color:red">*</span>:</label>
                            <input type="text" class="form-control" id="nationalite" name="nationalite" >
                        </div>
+                    </div>
+
+                    <div class="form-group row">
                        <div class="form-group col-md-4">
                            <label>Niveau d’étude :</label>
                            <select required="" class="form-control" id="niveauEtude" name="niveauEtude">
@@ -144,6 +151,7 @@ input.invalid {
                             </select>
                              <input type="text" class="form-control" id="precis_sitMatrimoniale" name="precis_sitMatrimoniale" placeholder="svp, Précisez!" style="display:none">
                         </div>
+                    </div>
 
                         <div class="form-group col-md-4">
                              <label>Nombre d’enfants :</label>
@@ -629,12 +637,12 @@ function validateForm() {
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    // if (y[i].value == "") {
-    //    add an "invalid" class to the field:
-    //   y[i].className += " invalid";
-    //    and set the current valid status to false:
-    //   valid = false;
-    // }
+    if (y[i].value == "") {
+       // add an "invalid" class to the field:
+      y[i].className += " invalid";
+       // and set the current valid status to false:
+     valid = false;
+     }
   }
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {

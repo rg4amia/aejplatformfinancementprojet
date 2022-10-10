@@ -25,9 +25,10 @@ use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend/accueil');
-})->name('home');
+Route::get('/', function () {return view('frontend/accueil');})->name('home');
+Route::get('/eligibilite', function () {return view('frontend/eligibilite');})->name('eligibilite');
+Route::get('/apropos', function () {return view('frontend/apropos');})->name('apropos');
+Route::get('/contacts', function () {return view('frontend/contacts');})->name('contacts');
 
 Route::get('/guichet1', [GuichetOneController::class, 'index'])->name('guichet1');
 Route::get('/guichet2', [GuichetTwoController::class, 'index'])->name('guichet2');
