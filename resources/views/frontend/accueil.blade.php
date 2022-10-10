@@ -21,12 +21,14 @@
                             <!-- OFFER BRAND -->
                             <div class="band"> <img src="{{asset('frontend/mages/band.png')}}" alt="" /> </div>
                             <!-- IMAGE -->
-                            <div class="v_place_img"> <img src="{{asset('frontend/images/t5.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
+                            <div class="v_place_img"> 
+                                <img src="{{asset('frontend/images/t5.png')}}" alt="Tour Booking" title="Tour Booking" /> 
+                            </div>
                             <!-- TOUR TITLE & ICONS -->
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
                                 <div class="col-md-12 col-sm-12">
-                                    <h4><a href="{{route('guichet1')}}" target="_blank">Mentorat solidaire (Business Angel)<span class="v_pl_name"><!-- (Brazil) --></span></a></h4>
+                                    <h4><a href="{{route('guichet1')}}" target="_blank">Mentorat solidaire (Business Angel)<span class="v_pl_name"> </span></a></h4>
                                 </div>
                                 <!-- TOUR ICONS -->
 
