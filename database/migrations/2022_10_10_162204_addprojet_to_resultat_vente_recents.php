@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('promoteurs', function (Blueprint $table) {
-            $table->string('nationnalite_id')->nullable()->after('lieunaissance_id');
-
+        Schema::table('resultat_vente_recents', function (Blueprint $table) {
+            $table->foreignId('projetpromoteurthree_id')->constrained('projet_promoteur_threes');
         });
     }
 
@@ -26,7 +25,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('promoteurs', function (Blueprint $table) {
+        Schema::table('resultat_vente_recents', function (Blueprint $table) {
             //
         });
     }

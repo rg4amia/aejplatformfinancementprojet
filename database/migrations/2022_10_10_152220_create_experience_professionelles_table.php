@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('experience_professionels', function (Blueprint $table) {
+        Schema::create('experience_professionelles', function (Blueprint $table) {
             $table->id();
-            $table->integer('annee')->nullable();
+            $table->integer('nombre')->nullable();
+            $table->bigInteger('unite')->nullable();
             $table->string('entreprise')->nullable();
-            $table->string('poste_fonction')->nullable();
-            $table->foreignId('promoteur_id')->constrained('promoteurs');
+            $table->string('fonction')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('experience_professionels');
+        Schema::dropIfExists('experience_professionelles');
     }
 };

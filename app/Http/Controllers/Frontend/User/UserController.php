@@ -67,6 +67,7 @@ class UserController extends Controller
                     'region_id'                 => $data[0]->divisionregionaleaej_id ?  $data[0]->divisionregionaleaej_id  : 0,
                     'dernier_diplome'           => $data[0]->diplome ?  $data[0]->diplome->libelle  : 0,
                     'lieunaissance_id'          => $data[0]->lieunaissance_id,
+                    'nationnalite_id'           => $data[0]->paysnationalite ? $data[0]->paysnationalite->id : 0,
                     'nombreenfant'              => 0,
                     'nombrepers_charge'         => 0,
                     'adressepostale'            => null,
