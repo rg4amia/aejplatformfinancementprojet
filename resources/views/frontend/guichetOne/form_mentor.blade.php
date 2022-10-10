@@ -10,7 +10,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>GUICHET 1 </span> <!-- Family Package --></h2>
+                <h2><span>Mentorat solidaire (Business Angel) </span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -18,7 +18,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Enrégistrer un mentor</a>
                     </li>
                 </ul>
-                <p>slogan du guichet 1</p>
+                <p>Mentorat solidaire (Business Angel) </p>
             </div>
         </div>
     </section>

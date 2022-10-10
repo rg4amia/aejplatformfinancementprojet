@@ -151,12 +151,9 @@
                                <option value="2">Développement commercial</option>
                            </select>
                         </div>
-
                         <div class="col-md-4">
-                             <label>
-                                Plan d'affaire:
-                            </label>
-                            <input name="planaffaire" type="file" class="form-control" id="planaffaire">
+                             <label>Plan d'affaire:</label>
+                            <input class="form-control" type="file" id="planAffaire" name="planAffaire"> 
                         </div>
                     </div>
 
