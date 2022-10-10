@@ -39,6 +39,7 @@ Route::get('/projetguichet1_form', [GuichetOneController::class, 'form_projetgui
 
 Route::get('/projetguichet3_form', [GuichetThreeController::class, 'form_projetguichet3'])->name('form.projetguichet3');
 Route::post('/store', [GuichetThreeController::class, 'store'])->name('form.projetguichet3.store');
+Route::get('/successful', [GuichetThreeController::class, 'successful'])->name('form.projetguichet3.successful');
 
 Route::get('/projetguichet4co_form', [GuichetFourController::class, 'form_projetguichet4co'])->name('form.projetguichet4co');
 Route::get('/projetguichet4ac_form', [GuichetFourController::class, 'form_projetguichet4ac'])->name('form.projetguichet4ac');
@@ -59,7 +60,7 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
     Route::post('/login', [UserBackendController::class, 'login'])->name('login');
     Route::post('/logout', [UserBackendController::class, 'logout'])->name('logout');
 
-    Route::group(['middleware' => ['role:admin','auth']], function () {
+    Route::group(['middleware' => ['role:admin|promoteur','auth']], function () {
 
         Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
 

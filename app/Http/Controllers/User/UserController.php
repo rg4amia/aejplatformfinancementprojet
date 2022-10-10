@@ -94,7 +94,6 @@ class UserController extends Controller
         } else {
             return redirect()->route('user.enregistrer');
         }
-
     }
 
     public function apiGetMatricule(){
