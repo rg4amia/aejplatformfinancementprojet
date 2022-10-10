@@ -629,9 +629,9 @@
           '</tr>'+
       '</table>';
   }
-  
+
   var table = $('#example').DataTable( {
-    "ajax": "js/data.txt",
+      "ajax": window.location.href + "backend/js/data.txt",
     "columns": [
         { "data": "Quote" },
         { "data": "Product" },

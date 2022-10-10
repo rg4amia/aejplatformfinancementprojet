@@ -27,7 +27,7 @@
                         @else
                             <ul>
                                 <li>
-                                    <a href="{{ route('backend.dashboard') }}">Tableau de bord</a>
+                                    <a href="{{ route('backend.promoteur.dashboard') }}">Tableau de bord</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('user.index') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>

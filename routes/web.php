@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guichet\GuichetOneController;
 use App\Http\Controllers\Guichet\GuichetTwoController;
@@ -7,7 +8,6 @@ use App\Http\Controllers\Guichet\GuichetThreeController;
 use App\Http\Controllers\Guichet\GuichetFourController;
 use App\Http\Controllers\Guichet\GuichetFiveController;
 use App\Http\Controllers\User\UserController;
-use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\UserBackendController;
 use App\Http\Controllers\Backend\GuichetOne\GuichetOneBackendController;
 use App\Http\Controllers\Backend\GuichetThree\GuichetThreeBackendController;
@@ -15,6 +15,7 @@ use App\Http\Controllers\Backend\GuichetFour\GuichetFourBackendController;
 use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
 use App\Http\Controllers\Backend\Mentor\DashMentorController;
 use App\Http\Controllers\Backend\Promoteur\DashPromoteurController;
+use App\Http\Controllers\Backend\Promoteur\SuiviProjetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +90,7 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
 
         Route::group(['prefix' => 'promoteur', 'as' => 'promoteur.'], function () {
             Route::get('tableau-de-board', [DashPromoteurController::class, 'index'])->name('dashboard');
+            Route::get('mes-suivie', [SuiviProjetController::class, 'index'])->name('suiviprojet');
         });
 
 

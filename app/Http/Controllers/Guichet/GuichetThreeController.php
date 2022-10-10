@@ -228,7 +228,13 @@ class GuichetThreeController extends Controller
                 'promoteur_id'               => promoteurLogin()->id,
             ]);
 
-            if ($projet) {
+            $dayorder = ProjetPromoteurThree::where('created_at', '>=', date('Y-m-d'))->count(); //l'ordre du jour
+            $matriculeprojet =  $projet->id . '-' . $dayorder;
+            $projet->matriculeprojet = $matriculeprojet;
+            $projet->save();
+
+            if ($projet->save()) {
+
                 session()->flash('success', 'Projet crée avec success');
                 return redirect()->route('form.projetguichet3.successful');
             }

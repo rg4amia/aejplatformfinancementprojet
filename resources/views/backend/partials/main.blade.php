@@ -20,6 +20,16 @@
   <link rel="stylesheet" href="{{ asset('backend/css/vertical-layout-light/style.css') }}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{ asset('backend/images/logo/aej_logo.png') }}" />
+   <style>
+        code {
+            color:#f8941e
+        }
+
+        .card-title{
+            color: #00a650;
+        }
+
+   </style>
 </head>
 <body>
   <div class="container-scroller">
