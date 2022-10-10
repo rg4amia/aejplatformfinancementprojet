@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class SituationMatrimonialeParam extends Model
 {
+    protected $table = 'digit_parametrage_situationmatrimoniale';
     use HasFactory;
 }

@@ -6,6 +6,7 @@
 			<div class="tr-regi-form">
 				<h4>Création de compte</h4>
 				<p>C'est gratuit et ça le sera toujours.</p>
+                   @include('inc.message')
 				<form class="col s12" action="{{ route('user.storeDemandeur') }}" method="POST" >
                         @csrf()
                     <div id="after-check">
