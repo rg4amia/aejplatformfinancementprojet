@@ -85,7 +85,7 @@ input.invalid {
 
                     </div>
 
-               <div class="dir-rat-inn">
+               <div class="">
                 <form id="regForm" action="" class="" >
 
                     <!-- One "tab" for each step in the form: -->
@@ -95,77 +95,86 @@ input.invalid {
 
                         <div class="form-group col-md-4">
                             <label>Nom:</label>
-                            <input type="text" class="form-control" id="email11" placeholder="Intitulé du projet"> </div>
+                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom"> </div>
                         <div class="form-group col-md-4 ">
                              <label>Prenoms:</label>
-                            <input type="text" class="form-control" id="email12" placeholder="Secteur d'activité"> </div>
+                            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom"> </div>
                         <div class="form-group col-md-4 ">
                              <label>Date de naissance:</label>
-                            <input type="date" class="form-control" id="email13" > </div>
+                            <input type="date" class="form-control" id="datedenaissance" name="datedenaissance" > </div>
+                       <div class="form-group col-md-4 ">
+                           <label>Lieu de naissance:</label>
+                           <input type="text" class="form-control" id="lieudenaissance" name="lieudenaissance" > </div>
+                       <div class="form-group col-md-4">
+                           <label>Sexe:</label>
+                           <select required="" class="form-control" id="sexe" name="sexe">
+                               <option selected="" value=""> -- Sexe -- </option>
+                               <option value="1">Masculin</option>
+                               <option value="2">Féminin</option>
+                           </select>
+                       </div>
+                       <div class="form-group col-md-4 ">
+                           <label>Nationalité:</label>
+                           <input type="text" class="form-control" id="nationalite" name="nationalite" >
+                       </div>
+                       <div class="form-group col-md-4">
+                           <label>Niveau d’étude :</label>
+                           <select required="" class="form-control" id="niveauEtude" name="niveauEtude">
+                               <option selected="" value=""> -- Niveau d’étude  -- </option>
+                               <option value="1">Primaire</option>
+                               <option value="2">Secondaire</option>
+                               <option value="3">Supérieur</option>
+                               <option value="4">Autodidacte</option>
+                           </select>
+                       </div>
+                       <div class="form-group col-md-4">
+                           <label>Dernier Diplôme:</label>
+                           <input type="text" class="form-control" id="dernierDiplome" name="dernierDiplome"> </div>
 
                          <div class="form-group col-md-4">
                             <label>Situation matrimoniale :</label>
-                           <select required="" class="form-control">
+                           <select class="form-control" id="sitMatrimoniale" name="sitMatrimoniale" onchange="displaySitMatrimoniale(this.value)">
                                 <option selected="" value=""> -- Situation matrimoniale  -- </option>
-                                <option value="32">Marié (e) </option>
-                                <option value="11">Célibataire </option>
-                                <option value="32">Divorcé (e)</option>
-                                <option value="11">Veuf (e)</option>
-                                <option value="11">Concubinage </option>
+                                <option value="1">Marié (e) </option>
+                                <option value="2">Célibataire </option>
+                                <option value="3">Divorcé (e)</option>
+                                <option value="4">Veuf (e)</option>
+                                <option value="5">Concubinage </option>
+                               <option value="6">autre </option>
                             </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label>Sexe:</label>
-                           <select required="" class="form-control">
-                                <option selected="" value=""> -- Sexe -- </option>
-                                <option value="32">Masculin</option>
-                                <option value="11">Féminin</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label>Niveau d’étude :</label>
-                           <select required="" class="form-control">
-                                <option selected="" value=""> -- Niveau d’étude  -- </option>
-                                <option value="32">Primaire</option>
-                                <option value="11">Secondaire</option>
-                                <option value="32">Supérieur</option>
-                                <option value="11">Autodidacte</option>
-                            </select>
+                             <input type="text" class="form-control" id="precis_sitMatrimoniale" name="precis_sitMatrimoniale" placeholder="svp, Précisez!" style="display:none">
                         </div>
 
                         <div class="form-group col-md-4">
-                             <label>Dernier Diplôme:</label>
-                            <input type="text" class="form-control" id="email13" > </div>
-                        <div class="form-group col-md-4">
                              <label>Nombre d’enfants :</label>
-                            <input type="number" class="form-control" id="email13" > </div>
+                            <input type="number" class="form-control" id="nbEnfant" name="nbEnfant" > </div>
                             <div class="form-group col-md-4">
                              <label>Nombre de personnes à charge :</label>
-                            <input type="number" class="form-control" id="email13" > </div>
+                            <input type="number" class="form-control" id="nbPersonne" name="nbPersonne" > </div>
 
                             <div class="form-group col-md-4">
                              <label>Ville / Commune:</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="commune" name="commune" > </div>
                             <div class="form-group col-md-4 ">
                              <label>Région:</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="region" name="region" > </div>
                             <div class="form-group col-md-4 pad-left-o">
                              <label>Adresse postale :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="adresse" name="adresse" > </div>
 
                             <div class="form-group col-md-4">
                              <label>Adresse géographique précise:</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="adresseGeo" name="adresseGeo" > </div>
                             <div class="form-group col-md-4">
                              <label>Tél fixe :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="telFixe" name="telFixe" > </div>
                             <div class="form-group col-md-4">
                              <label>Cellulaire :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                            <input type="text" class="form-control" id="celullaire" name="celullaire" > </div>
 
                             <div class="form-group col-md-4">
                              <label>Email :</label>
-                            <input type="text" class="form-control" id="" ></div>
+                            <input type="email" class="form-control" id="email" name="email" ></div>
                             <br>
                        </table>
 
@@ -178,68 +187,88 @@ input.invalid {
 
                             <div class="form-group col-md-4">
                             <label>Titre du diplôme/ certificat:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                            <input type="text" class="form-control" id="certificat1" name="certificat1" placeholder="Titre du diplôme/ certificat"> </div>
                         <div class="form-group col-md-4">
                              <label>Nom de l’établissement:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
+                            <input type="text" class="form-control" id="etablissement1" name="etablissement1" placeholder="Nom de l’établissement"> </div>
                         <div class="form-group col-md-4">
                              <label>Période :</label>
-                            <input type="date" class="form-control" id="" > </div>
+                            <input type="text" class="form-control" id="periode1" name="periode1" > </div>
 
                             <div class="form-group col-md-4">
-                            <label>Titre du diplôme/ certificat:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label>Nom de l’établissement:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label>Période :</label>
-                            <input type="date" class="form-control" id="" > </div>
+                                <label>Titre du diplôme/ certificat:</label>
+                                <input type="text" class="form-control" id="certificat2" name="certificat2" placeholder="Titre du diplôme/ certificat"> </div>
+                            <div class="form-group col-md-4">
+                                <label>Nom de l’établissement:</label>
+                                <input type="text" class="form-control" id="etablissement2" name="etablissement2" placeholder="Nom de l’établissement"> </div>
+                            <div class="form-group col-md-4">
+                                <label>Période :</label>
+                                <input type="text" class="form-control" id="periode2" name="periode2" > </div>
 
                             <div class="form-group col-md-4">
-                            <label>Titre du diplôme/ certificat:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
-                        <div class="form-group col-md-4">
-                             <label>Nom de l’établissement:</label>
-                            <input type="text" class="form-control" id="" placeholder=""> </div>
-                        <div class="form-group col-md-4">
-                             <label>Période :</label>
-                            <input type="date" class="form-control" id="" > </div>
+                                <label>Titre du diplôme/ certificat:</label>
+                                <input type="text" class="form-control" id="certificat3" name="certificat3" placeholder="Titre du diplôme/ certificat"> </div>
+                            <div class="form-group col-md-4">
+                                <label>Nom de l’établissement:</label>
+                                <input type="text" class="form-control" id="etablissement3" name="etablissement3" placeholder="Nom de l’établissement"> </div>
+                            <div class="form-group col-md-4">
+                                <label>Période :</label>
+                                <input type="text" class="form-control" id="periode3" name="periode3" > </div>
 
                         </table>
                         <h5>2.2. Veuillez rappeler votre expérience professionnelle </h5>
                         <table>
 
-                            <div class="form-group col-md-4">
-                            <label>Année :</label>
-                            <input type="number" class="form-control" id="email11" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                        <label>Nombre :</label>
+                        <input type="number" class="form-control" id="nbreUnite1" name="nbreUnite1" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                         <label>Unité :</label>
+                        <select class="form-control" id="unite1" name="unite1">
+                            <option value="1">Année </option>
+                            <option value="2">Mois </option>
+                        </select>
+                        </div>
                         <div class="form-group col-md-4">
-                             <label>Entreprise :</label>
-                            <input type="text" class="form-control" id="email12" placeholder=""> </div>
+                         <label>Entreprise :</label>
+                        <input type="text" class="form-control" id="entreprise1" placeholder="Entreprise1"> </div>
                         <div class="form-group col-md-4">
-                             <label>Poste ou fonction  :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                         <label>Poste ou fonction  :</label>
+                        <input type="text" class="form-control" id="fonction1" name="fonction1" placeholder="Poste ou fonction"> </div>
 
-                            <div class="form-group col-md-4">
-                            <label>Année :</label>
-                            <input type="number" class="form-control" id="email11" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                        <label>Nombre :</label>
+                        <input type="number" class="form-control" id="nbreUnite2" name="nbreUnite2" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                         <label>Unité :</label>
+                        <select class="form-control" id="unite2" name="unite2">
+                            <option value="1">Année </option>
+                            <option value="2">Mois </option>
+                        </select>
+                        </div>
                         <div class="form-group col-md-4">
-                             <label>Entreprise :</label>
-                            <input type="text" class="form-control" id="email12" placeholder=""> </div>
+                         <label>Entreprise :</label>
+                        <input type="text" class="form-control" id="entreprise2" placeholder="Entreprise2"> </div>
                         <div class="form-group col-md-4">
-                             <label>Poste ou fonction  :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
+                         <label>Poste ou fonction  :</label>
+                        <input type="text" class="form-control" id="fonction2" name="fonction2" placeholder="Poste ou fonction"> </div>
 
-                            <div class="form-group col-md-4">
-                            <label>Année :</label>
-                            <input type="number" class="form-control" id="email11" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                        <label>Nombre :</label>
+                        <input type="number" class="form-control" id="nbreUnite3" name="nbreUnite3" placeholder=""> </div>
+                        <div class="form-group col-md-2">
+                         <label>Unité :</label>
+                        <select class="form-control" id="unite3" name="unite3">
+                            <option value="1">Année </option>
+                            <option value="2">Mois </option>
+                        </select>
+                        </div>
                         <div class="form-group col-md-4">
-                             <label>Entreprise :</label>
-                            <input type="text" class="form-control" id="email12" placeholder=""> </div>
+                         <label>Entreprise :</label>
+                        <input type="text" class="form-control" id="entreprise3" placeholder="Entreprise3"> </div>
                         <div class="form-group col-md-4">
-                             <label>Poste ou fonction  :</label>
-                            <input type="text" class="form-control" id="email13" > </div>
-
+                         <label>Poste ou fonction  :</label>
+                        <input type="text" class="form-control" id="fonction2" name="fonction2" placeholder="Poste ou fonction"> </div>
                         </table>
 
                     </div>
@@ -250,51 +279,73 @@ input.invalid {
 
                         <table>
 
-                        <div class="form-group col-md-6">
-                            <label>3.2. Avez-vous débuté le projet ?</label>
-                           <select required="" class="form-control">
-                                <option value="32">OUI </option>
-                                <option value="11">NON </option>
+                        <div class="form-group row">
+
+                        <div class="col-md-4">
+                            <label >3.2. Avez-vous débuté le projet ?</label>
+                           <select  class="form-control" id="debutProjet" name="debutProjet" onchange="displayDebutProjet(this.value)">
+                                 <option value=""> </option>
+                                <option value="1">OUI </option>
+                                <option value="2">NON </option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="col-md-2" id="dateDebutProjet" style="display:none">
+                             <label >Début du projet</label>
+                            <input type="date" class="form-control"  name="dateDebutProjet" placeholder="Date Début du projet">
+                        </div>
+
+                        <div class="col-md-6">
                             <label>3.3. Comment décrirez-vous le niveau de maturation de votre projet ?</label>
-                           <select required="" class="form-control">
-                                <option value="32">Idée: Vous avez le business model mais n'avez pas encore développé la solution technique  </option>
-                                <option value="11">Prototype: La solution est déjà développée et vous êtes en phase de test  </option>
-                                <option value="32">Revenus: Votre produit a déjà des utilisateurs qui le paient et vous êtes activement en train de vendre/distribuer</option>
-                                <option value="11">Scaling: Votre équipe cherche à passer à échelle dans d'autres villes/pays/ d'autres verticales </option>
+                           <select  class="form-control" id="descriptionMaturation" name="descriptionMaturation">
+                                <option value="1">Idée: Vous avez le business model mais n'avez pas encore développé la solution technique  </option>
+                                <option value="2">Prototype: La solution est déjà développée et vous êtes en phase de test  </option>
+                                <option value="3">Revenus: Votre produit a déjà des utilisateurs qui le paient et vous êtes activement en train de vendre/distribuer</option>
+                                <option value="4">Scaling: Votre équipe cherche à passer à échelle dans d'autres villes/pays/ d'autres verticales </option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6">
-                             <label>3.4.    Pouvez-vous décrire votre projet ?</label>
-                            <textarea placeholder="" class="form-control"></textarea>
+
+                        </div>
+
+                        <div class="form-group row">
+                             <div class="col-sm-6" >
+                             <label>3.4. Pouvez-vous décrire votre projet ?</label>
+                            <textarea placeholder="" class="form-control" id="descriptionProjet" name="descriptionProjet"></textarea>
                              </div>
 
                         <div class="form-group col-md-6">
                              <label>3.5. A quel besoin économique votre projet ou idée répond-il ?</label>
-                            <textarea placeholder="" class="form-control"></textarea> </div>
-                        <p>
+                            <textarea placeholder="" class="form-control" id="reponseEconomique" name="reponseEconomique"></textarea> </div>
+                        </div>
+                       <div class="form-group row">
 
-                            <div class="form-group col-md-6">
+                        <div class="col-md-6">
                             <label>3.6. Quel est votre business model (modèle économique ou modèle d’affaires) ?</label>
-                            <textarea placeholder="" class="form-control"></textarea> </div>
+                            <textarea placeholder="" class="form-control" id="businessModel" name="businessModel"></textarea>
+                        </div>
                         <div class="form-group col-md-6">
                              <label>3.7. Quel est le marché cible ? quelle est votre stratégie marketing ?</label>
-                            <textarea placeholder="" class="form-control"></textarea> </div>
-                            
-                        </p>
+                            <textarea placeholder="" class="form-control" id="marcheCyble" name="marcheCyble"></textarea> </div>
 
-                        <p>
-                            <div class="form-group col-md-6">
-                             <label>3.8. Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?  combien d’utilisateurs paient l’usage du produit ou du service ?</label>
-                            <textarea placeholder="" class="form-control"></textarea> 
                         </div>
-                            
-                        </p>
-                        
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                             <label>3.8. Si déjà en activité, combien avez-vous d’utilisateurs ou clients ? combien d’utilisateurs paient l’usage du produit ou du service ?</label>
+                            <input class="form-control" type="number" name="nombreClient" id="nombreClient">
+                        </div>
+
+                         <div class="col-md-6">
+
+                         </div>
+
+                        </div>
 
                         </table>
+
+                        <div class="form-group row col-md-12">
+
+                            <div class="col-md-12">
 
                         3.9.    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?
 
@@ -351,98 +402,168 @@ input.invalid {
 
                             </tbody>
 
-
-
                         </table>
+                    </div>
+                    </div>
 <br>
                         <table>
-
-                        <div class="form-group col-md-6 ">
-                            <label>3.10.    Quel est la composition de votre équipe de gestion ? </label>
-                           <textarea placeholder="" class="form-control"></textarea>
+                   <div class="form-group row">
+                        <div class="col-md-6 ">
+                            <label>3.10. Quel est la composition de votre équipe de gestion ? </label>
+                           <textarea placeholder="" class="form-control" id="compositionEquipe" name="compositionEquipe"></textarea>
                         </div>
-                        <div class="form-group col-md-6 ">
+                        <div class="col-md-6 ">
                             <label>3.11.    Quel est votre rôle dans le projet ?</label>
-                           <textarea placeholder="" class="form-control"></textarea>
+                           <textarea placeholder="" class="form-control" id="monRole" name="monRole"></textarea>
                         </div>
-                        <div class="form-group col-md-6 ">
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-4 ">
                              <label>3.12.   Etes-vous à plein temps dans le projet ? </label>
-                            <textarea placeholder="" class="form-control"></textarea>
+                           <select  class="form-control" id="pleinTemps" name="pleinTemps" onchange="displayPleinTemps(this.value)">
+                                 <option value=""> </option>
+                                <option value="1">OUI </option>
+                                <option value="2">NON </option>
+                            </select>
+                        </div>
+                        <div class="col-md-4" id="restTemps" style="display:none">
+                             <label >Que faîtes-vous le reste du temps ?</label>
+                             <textarea class="form-control"  name="restTemps" placeholder="Que faîtes-vous le reste du temps ?"></textarea>
                         </div>
 
-
-
-                        <div class="form-group col-md-6">
+                        <div class="col-md-4">
                              <label>3.13.	Décrivez le plus précisément possible votre expérience dans l’activité envisagée</label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6">
-                            <label>3.14.	Comment pouvez-vous décrire votre niveau de connaissance de l’activité/ métier ? </label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6">
-                             <label>3.15.	Avez-vous pris part à une formation en entrepreneuriat ? </label>
-                            <textarea placeholder="Description activité"></textarea> </div>
+                            <textarea class="form-control"  name="experiencePrecise" placeholder=""></textarea> </div>
 
+                        </div>
 
-                         <div class="form-group col-md-6">
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                            <label>3.14. Comment pouvez-vous décrire votre niveau de connaissance de l’activité/ métier ? </label>
+                            <select  class="form-control" id="descriptionConnaissance" name="descriptionConnaissance">
+                                <option value="1">Aucune connaissance</option>
+                                <option value="2">Connaissance de base (généralités)  </option>
+                                <option value="3">Connaissance moyenne (maîtrise moyenne des concepts clés)</option>
+                                <option value="4">Connaissance approfondie (maîtrise globale du processus global)</option>
+                            </select>
+                         </div>
+                        <div class="col-md-4">
+                             <label>3.15. Avez-vous pris part à une formation en entrepreneuriat ? </label>
+                            <select  class="form-control" id="formationEntrepreunariat" name="formationEntrepreunariat" onchange="displayFormationEntrepreunariat(this.value)">
+                                 <option value=""> </option>
+                                <option value="1">OUI </option>
+                                <option value="2">NON </option>
+                            </select>
+                             </div>
+                        <div class="col-md-4" id="connaissanceAquise" style="display: none;">
+                             <label>Formation & Connaissance acquises </label>
+                           <textarea class="form-control"  name="connaissanceAquise" placeholder=""></textarea>
+                             </div>
+                       </div>
+
+                         <div class="form-group row">
+                            <div class="col-md-4">
                              <label>3.16.	Avez-vous pris part à une formation en gestion d’entreprises ? </label>
-                            <textarea placeholder="Description activité"></textarea> </div>
+                           <select  class="form-control" id="formationGestion" name="formationGestion" onchange="displayFormationGestion(this.value)">
+                                 <option value=""> </option>
+                                <option value="1">OUI </option>
+                                <option value="2">NON </option>
+                            </select>
+                        </div>
+                         <div class="col-md-4" id="connaissanceAquiseGestion" style="display: none;">
+                             <label>Formation & Connaissance acquises </label>
+                           <textarea class="form-control"  name="connaissanceAquiseGestion" placeholder=""></textarea>
+                             </div>
 
-                            <div class="form-group col-md-6">
-                                <label>3.17.	Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ?  </label>
-                                <textarea placeholder="Description activité"></textarea> </div>
+                            <div class="col-md-4">
+                                <label>3.17. Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ?  </label>
+                                <select  class="form-control" id="niveauPratiqueEntrepreunariat" name="niveauPratiqueEntrepreunariat">
+                                 <option value=""> </option>
+                                <option value="1">Aucune connaissance </option>
+                                <option value="2">Connaissance de base (généralités)  </option>
+                                 <option value="3">Connaissance moyenne (réaliser une étude de marché, établir un compte d’exploitation…) </option>
+                                <option value="4">Connaissance approfondie (élaborer entièrement un business plan)  </option>
+                            </select>
+                        </div>
+                    </div>
 
-                            <div class="form-group col-md-6">
-                                <label>3.18.	Comment pouvez-vous décrire votre niveau de pratique en gestion d’entreprise  </label>
-                                <textarea placeholder="Description activité"></textarea> </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                <label>3.18. Comment pouvez-vous décrire votre niveau de pratique en gestion d’entreprise  </label>
+                                <select  class="form-control" id="niveauPratiqueEntreprise" name="niveauPratiqueEntreprise">
+                                 <option value=""> </option>
+                                <option value="1">Aucune connaissance </option>
+                                <option value="2">Connaissance de base (généralités)  </option>
+                                 <option value="3">Connaissance moyenne  </option>
+                                <option value="4">Connaissance approfondie</option>
+                            </select>
+                             </div>
+                         </div>
 
                         </table>
                     </div>
 
                     <div class="tab">
                         <h5>IV. BESOINS : </h5>
-                      <table>
+                      <table class="col-12">
 
-                        <div class="form-group col-md-6">
-                            <label>4.1. Quels sont vos besoins actuels en formation pour mener à bien votre projet</label>
-                           <textarea placeholder="Description activité"></textarea>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                            <label>4.1. Quels sont vos besoins actuels en formation pour mener à bien votre projet ?</label>
+                           <textarea placeholder="Besoin actuels en formation" id="besoinsActuelsFormation" name="besoinsActuelsFormation" class="form-control"></textarea>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label>3.11.    Quel est votre rôle dans le projet ?</label>
-                           <textarea placeholder="Description activité"></textarea>
+                        <div class="col-md-6">
+                            <label>4.2. Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ?</label>
+                           <textarea placeholder="Besoins actuels en accompagnement" id="besoinsActuelsAccompagnement" name="besoinsActuelsAccompagnement" class="form-control"></textarea>
                         </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <div class="col-md-4">
+                             <label>4.3. Avez-vous un besoin de financement ? </label>
+                           <select  class="form-control" id="formationGestion" name="formationGestion" onchange="displayBesoinEnFinancement(this.value)">
+                                 <option value=""> </option>
+                                <option value="1">OUI </option>
+                                <option value="2">NON </option>
+                            </select>
+                        </div>
+                         <div class="col-md-4" id="besoinEnFinancement" style="display: none;">
+                             <label>Quel est le montant en FCFA </label>
+                           <input type="number" class="form-control"  name="besoinEnFinancement" placeholder="Montant en FCFA">
+                             </div>
+
+                            <div class="col-md-4">
+                                <label>4.4. Quels sont les investissements à réaliser avec le concours financier sollicité</label>
+                                <textarea placeholder="" id="investissementConcour" name="investissementConcour" class="form-control"></textarea>
+                        </div>
+                    </div>
 
                         <div class="form-group col-md-6 ">
                              <label>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.)</label>
-                            <textarea placeholder="Description activité"></textarea>
+                            <textarea placeholder="Autres bésoins"  id="autreBesoinsAccompagnement" name="autreBesoinsAccompagnement" class="form-control"></textarea>
                         </div>
 
-                        <div class="form-group col-md-6 ">
-                             <label>4.3.    Avez-vous un besoin de financement ?</label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                            <label>4.4. Quels sont les investissements à réaliser avec le concours financier sollicité</label>
-                            <textarea placeholder="Description activité"></textarea> </div>
-                        <div class="form-group col-md-6 pad-left-o">
-                             <label>4.5.  Quels sont vos besoins actuels en accompagnement technique ou en gestion pour mener à bien votre projet ? ?</label>
-                            <textarea placeholder="Description activité"></textarea> </div>
 
                         </table>
                     </div>
+                    <br>
 
-                    <div style="margin-top:10px;">
-                      <div style="float:right;margin-top:10px;">
-                        <button type="button" id="prevBtn" class="btn btn-warning btn-rounded" onclick="nextPrev(-1)">Précédent</button>
-                        <button type="button" id="nextBtn" class="btn btn-info btn-rounded" onclick="nextPrev(1)">Suivant</button>
-                      </div>
-                    </div>
 
-                    <!-- Circles which indicates the steps of the form: -->
-                    <div style="text-align:center;margin-top:20px;">
-                      <span class="step"></span>
-                      <span class="step"></span>
-                      <span class="step"></span>
-                      <span class="step"></span>
-                    </div>
+                        <div class="rows" style="float:right;">
+
+                        <div  style="text-align:center;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+                        <div >
+                                <button type="button" id="prevBtn" class="btn btn-warning btn-rounded" onclick="nextPrev(-1)">Précédent</button>
+                                <button type="button" id="nextBtn" class="btn btn-info btn-rounded" onclick="nextPrev(1)">Suivant</button>
+                            </div>
+                        </div>
+
 
                     </form>
                 </div>
@@ -529,6 +650,45 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
+function displaySitMatrimoniale(id) {
+
+    if(id==6){$('#precis_sitMatrimoniale').css("display","block");;}else{$('#precis_sitMatrimoniale').css("display","none");;}
+
+}
+
+function displayDebutProjet(id) {
+
+    if(id==1){$('#dateDebutProjet').css("display","block");;}else{$('#dateDebutProjet').css("display","none");;}
+
+}
+
+function displayPleinTemps(id) {
+
+    if(id==1){$('#restTemps').css("display","block");;}else{$('#restTemps').css("display","none");;}
+
+}
+
+function displayFormationEntrepreunariat(id) {
+
+    if(id==1){$('#connaissanceAquise').css("display","block");;}else{$('#connaissanceAquise').css("display","none");;}
+
+}
+
+function displayFormationGestion(id) {
+
+    if(id==1){$('#connaissanceAquiseGestion').css("display","block");;}else{$('#connaissanceAquiseGestion').css("display","none");;}
+
+}
+
+function displayBesoinEnFinancement(id) {
+
+    if(id==1){$('#besoinEnFinancement').css("display","block");;}else{$('#besoinEnFinancement').css("display","none");;}
+
+}
+
+
+
  </script>
 
 @endsection

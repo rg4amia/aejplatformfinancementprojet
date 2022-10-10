@@ -8,13 +8,13 @@
     <!-- FAV ICON -->
     <link rel="shortcut icon" href="images/fav.ico">
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
+
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/mob.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}">
+
 @yield('css')
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
