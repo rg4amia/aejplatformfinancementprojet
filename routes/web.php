@@ -2,12 +2,12 @@
 
 use App\Http\Controllers\Backend\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Guichet\GuichetOneController;
-use App\Http\Controllers\Guichet\GuichetTwoController;
-use App\Http\Controllers\Guichet\GuichetThreeController;
-use App\Http\Controllers\Guichet\GuichetFourController;
-use App\Http\Controllers\Guichet\GuichetFiveController;
-use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Frontend\Guichet\GuichetOneController;
+use App\Http\Controllers\Frontend\Guichet\GuichetTwoController;
+use App\Http\Controllers\Frontend\Guichet\GuichetThreeController;
+use App\Http\Controllers\Frontend\Guichet\GuichetFourController;
+use App\Http\Controllers\Frontend\Guichet\GuichetFiveController;
+use App\Http\Controllers\Frontend\User\UserController;
 use App\Http\Controllers\Backend\UserBackendController;
 use App\Http\Controllers\Backend\GuichetOne\GuichetOneBackendController;
 use App\Http\Controllers\Backend\GuichetThree\GuichetThreeBackendController;
@@ -93,7 +93,6 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
             Route::get('tableau-de-board', [DashPromoteurController::class, 'index'])->name('dashboard');
             Route::get('mes-suivie', [SuiviProjetController::class, 'index'])->name('suiviprojet');
         });
-
 
         Route::group(['prefix' => 'mentor', 'as' => 'mentor.'], function () {
             Route::get('tableau-de-board', [DashMentorController::class, 'index'])->name('dashboard');

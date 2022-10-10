@@ -79,20 +79,15 @@ input.invalid {
 
         <div class="rows inn-page-bg com-colo">
             <div class="container inn-page-con-bg tb-space">
-
-                 <div class="tour_head">
+                     <div class="tour_head">
                         <h2>Formulaire de soumission</h2>
-
                     </div>
-
                <div class="">
                 <form id="regForm" action="" class="" >
-
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab">
                         <h5>I. INFORMATIONS SUR LE CANDIDAT :</h5>
                        <table>
-
                         <div class="form-group col-md-4">
                             <label>Nom:</label>
                             <input type="text" class="form-control" id="nom" name="nom" value="{{ promoteurLogin()->nom }}" placeholder="Nom"> </div>
@@ -107,11 +102,7 @@ input.invalid {
                            <input type="text" class="form-control" id="lieudenaissance" value="{{ promoteurLogin()->date_naissance  }}" name="lieudenaissance" > </div>
                        <div class="form-group col-md-4">
                            <label>Sexe:</label>
-                           <select required="" class="form-control" id="sexe" name="sexe">
-                               <option selected="" value=""> -- Sexe -- </option>
-                               <option value="1">Masculin</option>
-                               <option value="2">Féminin</option>
-                           </select>
+                           {!! Form::select('sexe_id', $sexe,promoteurLogin()->sexe_id, ['class' => 'select2-region form-control', 'required' => true]) !!}
                        </div>
                        <div class="form-group col-md-4 ">
                            <label>Nationalité:</label>
@@ -119,65 +110,75 @@ input.invalid {
                        </div>
                        <div class="form-group col-md-4">
                            <label>Niveau d’étude :</label>
-                           <select required="" class="form-control" id="niveauEtude" name="niveauEtude">
+                           {!! Form::select('niveauetudeprojet_id', $niveauetude,promoteurLogin()->niveauetudeprojet_id, ['class' => 'select2-region form-control', 'required' => true]) !!}
+                           {{--<select required="" class="form-control" id="niveauEtude" name="niveauEtude">
                                <option selected="" value=""> -- Niveau d’étude  -- </option>
                                <option value="1">Primaire</option>
                                <option value="2">Secondaire</option>
                                <option value="3">Supérieur</option>
                                <option value="4">Autodidacte</option>
-                           </select>
+                           </select>--}}
                        </div>
                        <div class="form-group col-md-4">
                            <label>Dernier Diplôme:</label>
-                           <input type="text" class="form-control" id="dernierDiplome" name="dernierDiplome"> </div>
+                           <input type="text" class="form-control" value="{{ promoteurLogin()->dernier_diplome }}" id="dernierDiplome" name="dernier_diplome"> </div>
 
                          <div class="form-group col-md-4">
                             <label>Situation matrimoniale :</label>
-                           <select class="form-control" id="sitMatrimoniale" name="sitMatrimoniale" onchange="displaySitMatrimoniale(this.value)">
-                                <option selected="" value=""> -- Situation matrimoniale  -- </option>
-                                <option value="1">Marié (e) </option>
-                                <option value="2">Célibataire </option>
-                                <option value="3">Divorcé (e)</option>
-                                <option value="4">Veuf (e)</option>
-                                <option value="5">Concubinage </option>
-                               <option value="6">autre </option>
-                            </select>
-                             <input type="text" class="form-control" id="precis_sitMatrimoniale" name="precis_sitMatrimoniale" placeholder="svp, Précisez!" style="display:none">
+                             {!! Form::select('situationmatrimoniale_id', $situationmatrimoniale,promoteurLogin()->situationmatrimoniale_id, ['class' => 'select2-region form-control', 'required' => true]) !!}
+                             {{-- <select class="form-control" id="sitMatrimoniale" name="sitMatrimoniale" onchange="displaySitMatrimoniale(this.value)">
+                                   <option selected="" value=""> -- Situation matrimoniale  -- </option>
+                                   <option value="1">Marié (e) </option>
+                                   <option value="2">Célibataire </option>
+                                   <option value="3">Divorcé (e)</option>
+                                   <option value="4">Veuf (e)</option>
+                                   <option value="5">Concubinage </option>
+                                  <option value="6">autre </option>
+                               </select>--}}
+                             {{--<input type="text" class="form-control" id="precis_sitMatrimoniale" name="precis_sitMatrimoniale" placeholder="svp, Précisez!" style="display:none">--}}
                         </div>
 
                         <div class="form-group col-md-4">
                              <label>Nombre d’enfants :</label>
-                            <input type="number" class="form-control" id="nbEnfant" name="nbEnfant" > </div>
+                            <input type="number" value="{{ promoteurLogin()->nombreenfant }}"  class="form-control" id="nombreenfant" name="nombreenfant" >
+                        </div>
                             <div class="form-group col-md-4">
                              <label>Nombre de personnes à charge :</label>
-                            <input type="number" class="form-control" id="nbPersonne" name="nbPersonne" > </div>
+                            <input type="number"  value="{{ promoteurLogin()->nombrepers_charge  }}" class="form-control" id="nombrepers_charge" name="nombrepers_charge" > </div>
 
                             <div class="form-group col-md-4">
-                             <label>Ville / Commune:</label>
-                            <input type="text" class="form-control" id="commune" name="commune" > </div>
+                                @php
+                                //dd(promoteurLogin()->commune_id)
+                                @endphp
+                                <label>Ville / Commune:</label>
+                                {!! Form::select('commune_id', $commune,promoteurLogin()->commune_id,['class' => 'select2-region form-control', 'required' => true]) !!}
+                               {{-- <input type="text" class="form-control" id="commune" name="commune" >--}}
+                            </div>
                             <div class="form-group col-md-4 ">
-                             <label>Région:</label>
-                            <input type="text" class="form-control" id="region" name="region" > </div>
-                            <div class="form-group col-md-4 pad-left-o">
-                             <label>Adresse postale :</label>
-                            <input type="text" class="form-control" id="adresse" name="adresse" > </div>
+                                <label>Région:</label>
+                                {!! Form::select('region_id', $region,promoteurLogin()->region_id, ['class' => 'select2-region form-control', 'required' => true]) !!}
+                                <label>Adresse postale :</label>
+                                <input type="text" class="form-control" value="{{ promoteurLogin()->adressepostale }}" id="adresse" name="adressepostale">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Adresse géographique précise:</label>
+                                <input type="text" class="form-control" value="{{ promoteurLogin()->adressegeoprecise }}" id="adresseGeo" name="adressegeoprecise" >
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Tél fixe :</label>
+                                <input type="text" class="form-control" value="{{ promoteurLogin()->telfixe  }}" id="telFixe" name="telfixe" >
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Cellulaire :</label>
+                                <input type="text" class="form-control" value="{{ promoteurLogin()->cellulaire  }}" id="cellulaire" name="cellulaire" >
+                            </div>
 
                             <div class="form-group col-md-4">
-                             <label>Adresse géographique précise:</label>
-                            <input type="text" class="form-control" id="adresseGeo" name="adresseGeo" > </div>
-                            <div class="form-group col-md-4">
-                             <label>Tél fixe :</label>
-                            <input type="text" class="form-control" id="telFixe" name="telFixe" > </div>
-                            <div class="form-group col-md-4">
-                             <label>Cellulaire :</label>
-                            <input type="text" class="form-control" id="celullaire" name="celullaire" > </div>
-
-                            <div class="form-group col-md-4">
-                             <label>Email :</label>
-                            <input type="email" class="form-control" id="email" name="email" ></div>
+                                <label>Email :</label>
+                                <input type="email" class="form-control" value="{{ promoteurLogin()->email  }}" id="email" name="email" >
+                            </div>
                             <br>
                        </table>
-
                     </div>
 
                     <div class="tab">

@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Guichet;
+namespace App\Http\Controllers\Frontend\Guichet;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class GuichetFourController extends Controller
+class GuichetTwoController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        return view('frontend.guichetFour.index');
+        return view('frontend.guichetTwo.index');
     }
 
     /**
@@ -25,15 +25,6 @@ class GuichetFourController extends Controller
     public function create()
     {
         //
-    }
-
-     public function form_projetguichet4co()
-    {
-        return view('frontend.guichetFour.form_projetguichet4co');
-    }
-    public function form_projetguichet4ac()
-    {
-        return view('frontend.guichetFour.form_projetguichet4ac');
     }
 
     /**

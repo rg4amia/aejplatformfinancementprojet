@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Frontend\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Promoteur;
@@ -54,25 +54,26 @@ class UserController extends Controller
                 $data = json_decode($response->body());
 
                  $promteur = Promoteur::create([
-                    'user_id' => $user->id,
-                    'nom' => $data[0]->nom,
-                    'prenoms' => $data[0]->prenoms,
-                    'date_naissance' => $data[0]->datenaissance,
-                    'matricule_aej' => $data[0]->matriculeaej,
-                    'telephone' => $data[0]->telephone,
-                    'sexe_id'  => $data[0]->sexe_id,
-                    'situationmatrimoniale_id' => $data[0]->situationmatrimoniale_id,
-                    'niveauetude_id' => $data[0]->niveauetude_id ? $data[0]->niveauetude_id : 0,
-                    'commune_id' => $data[0]->lieuhabitation_id ?  $data[0]->lieuhabitation_id  : 0,
-                    'region_id' => $data[0]->divisionregionaleaej_id ?  $data[0]->divisionregionaleaej_id  : 0,
-                    'dernier_diplome' => $data[0]->diplome ?  $data[0]->diplome->libelle  : 0,
-                    'nombreenfant' => 0,
-                    'nombrepers_charge' => 0,
-                    'adressepostale' => null,
-                    'adressegeoprecise' => null,
-                    'telfixe' => null,
-                    'email' => $request->email,
-                    'cellulaire' => $data[0]->telephone
+                    'user_id'           => $user->id,
+                    'nom'               => $data[0]->nom,
+                    'prenoms'           => $data[0]->prenoms,
+                    'date_naissance'    => $data[0]->datenaissance,
+                    'matricule_aej'     => $data[0]->matriculeaej,
+                    'telephone'         => $data[0]->telephone,
+                    'sexe_id'           => $data[0]->sexe_id,
+                    'situationmatrimoniale_id'  => $data[0]->situationmatrimoniale_id,
+                    'niveauetude_id'            => $data[0]->niveauetude_id ? $data[0]->niveauetude_id : 0,
+                    'commune_id'                => $data[0]->lieuhabitation_id ?  $data[0]->lieuhabitation_id  : 0,
+                    'region_id'                 => $data[0]->divisionregionaleaej_id ?  $data[0]->divisionregionaleaej_id  : 0,
+                    'dernier_diplome'           => $data[0]->diplome ?  $data[0]->diplome->libelle  : 0,
+                    'lieunaissance_id'          => $data[0]->lieunaissance_id,
+                    'nombreenfant'              => 0,
+                    'nombrepers_charge'         => 0,
+                    'adressepostale'            => null,
+                    'adressegeoprecise'         => null,
+                    'telfixe'                   => null,
+                    'email'                     => $request->email,
+                    'cellulaire'                => $data[0]->telephone
                 ]);
 
                 if($promteur){

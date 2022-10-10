@@ -13,7 +13,8 @@ class Promoteur extends Model
         'user_id','nom','prenoms','date_naissance','matricule_aej',
         'telephone','sexe_id','situationmatrimoniale_id','niveauetude_id',
         'commune_id','region_id','dernier_diplome','nombreenfant','nombrepers_charge',
-        'adressepostale','adressegeoprecise','telfixe','email','cellulaire','lieunaissance_id'
+        'adressepostale','adressegeoprecise','telfixe','email','cellulaire','lieunaissance_id',
+        'niveauetudeprojet_id'
     ];
 
 
