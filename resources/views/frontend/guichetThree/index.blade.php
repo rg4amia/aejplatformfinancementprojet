@@ -51,7 +51,7 @@
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
+                                <h4> Composantes</h4>
                                 <p>- Accompagnement des projets de création ou de développement de petites entreprises formelles.</p>
                                 <p>- Accès à la formation, au financement et au dispositif de suivi-encadrement.</p>
                                 <p>- Pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué.</p>
@@ -59,16 +59,16 @@
                                
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité</p>
                                
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 1 000 001 F CFA à 5 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type :  Crédit</p>
                                 <p>- Duréede remboursement : 36 mois maximum</p>
                                 <p>- Taux d’intérêt: à partir de 8% TAEG/an</p>

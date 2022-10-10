@@ -26,8 +26,10 @@
                                                     </a>
                                                 </div>
 
-                                                <p>Accompagnement par des mentors - investisseurs des projet de création ou de développement de petites entreprises formelles</p>
-                                                <p>Coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                <p>Accompagnement par un mentor</p>
+                                                <p>Coaching</p>
+                                                <p>Appui financier des mentors</p>
+                                                <br>
 
                                                 <a href="{{ route('guichet1') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
@@ -41,6 +43,9 @@
                                                 </div>
                                                 {{--  <p>(i)  accompagnement des projets de création ou de développement de petites activités</p>
                                                  <p>(ii) accès à la formation, au financement et au dispositif de suivi-encadrement</p> --}}
+                                                <p>Accompagnement des projets de création</p>
+                                                <p>Accès à la formation</p>
+                                                <p>Accès au financement</p>
                                                 <a href="http://financement.projetsagir.com/" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
@@ -52,9 +57,9 @@
                                                     </a>
                                                 </div>
 
-                                                <p>Accompagnement des projets de création ou de développement de petites entreprises formelles</p>
-                                                <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
-                                                <p>Pilotage du processus par les Conseils Régionaux à travers l’approche de la Maîtrise d’Ouvrage Délégué</p>
+                                                <p>Accompagnement des projets...</p>
+                                                <p>Accès à la formation...</p>
+                                                <p>Pilotage du processus par les Conseils Régionaux </p>
                                                 <a href="{{ route('guichet3') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
@@ -66,8 +71,9 @@
                                                     </a>
                                                 </div>
 
-                                                <p>Accompagnement des projets de développement d’entreprises formelles</p>
-                                                <p>Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                                <p>Accompagnement des projets...</p>
+                                                <p>Développement d’entreprises formelles</p>
+                                                <p>Accès au financement...</p>
                                                 <a href="{{ route('guichet4') }}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s4">
@@ -78,8 +84,9 @@
                                                         <span>Capital d'investisement</span>
                                                     </a>
                                                 </div>
-                                                 <p>Accompagnement des projets développement d’entreprises formelles</p>
-                                                 <p>Financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
+                                                    <p>Accompagnement des projets...</p>
+                                                    <p>Développement d’entreprises innovantes</p>
+                                                    <p>Financement en capital...</p>
                                                 <a href="{{ route('guichet5')}}" class="mm-r-m-btn">Voir plus</a>
                                             </div>
 

@@ -37,29 +37,29 @@
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
-                                <p>accompagnement des projets de création ou de développement de petites activités</p>
+                                <h4> Composantes</h4>
+                                <p>- Accompagnement des projets de création ou de développement de petites activités</p>
 
-                                <p>accès à la formation, au financement et au dispositif de suivi-encadrement</p>
+                                <p>- Accès à la formation, au financement et au dispositif de suivi-encadrement</p>
 
                                
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
-                                <p>AGR Classique et AVEC : Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité .</p>
-                                <p>AGR Plus : Jeunes (18 à 40 ans) bénéficiaire de l’opération Agir ayant correctement remboursés les prêts.</p>
+                                <h4> Cibles</h4>
+                                <p>- AGR Classique et AVEC : Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité .</p>
+                                <p>- AGR Plus : Jeunes (18 à 40 ans) bénéficiaire de l’opération Agir ayant correctement remboursés les prêts.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
-                                <p>AGR Classique : 100 000 F CFA à 1 000 000 F CFA</p>
-                                <p>AVEC: 100 000 F CFA à 300 000 F CFA</p>
-                                <p>AGR Plus : 50 000 F CFA à 300 000 F CFA avec possibilité de revolving quasi illimité</p>
+                                <h4> Besoins de financement</h4>
+                                <p>- AGR Classique : 100 000 F CFA à 1 000 000 F CFA</p>
+                                <p>- AVEC: 100 000 F CFA à 300 000 F CFA</p>
+                                <p>- AGR Plus : 50 000 F CFA à 300 000 F CFA avec possibilité de revolving quasi illimité</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
-                                <p>Type : Crédit; Durée: 3 à 24 mois maximum.</p>
-                                <p>Taux d’intérêt: à partir de 8% TAEG/an.</p>
-                                <p>Apport personnel: 10% minimum.</p>
+                                <h4> Conditions de financement</h4>
+                                <p>- Type : Crédit; Durée: 3 à 24 mois maximum.</p>
+                                <p>- Taux d’intérêt: à partir de 8% TAEG/an.</p>
+                                <p>- Apport personnel: 10% minimum.</p>
                             </li>
                         </ul>
                         <br>

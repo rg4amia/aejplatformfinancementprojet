@@ -35,21 +35,21 @@
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
+                                <h4> Composantes</h4>
                                 <p>- accompagnement des projets développement d’entreprises innovantes et à fort potentiel de création de valeur et d’emplois.</p>
 
                                 <p>- financement en capital, appui à la réflexion stratégique, appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) déjà en activité (3 années d’existence minimum ).</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 25 000 000 F CFA à 100 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type : capital</p>
                                 <p>- Prise de participation minoritaire</p>
                                 <p>- Maturité de 60 mois en moyenne</p>

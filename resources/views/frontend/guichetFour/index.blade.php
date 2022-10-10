@@ -68,26 +68,25 @@
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
+                                <h4> Composantes</h4>
                                 <p>- accompagnement des projets de développement d’entreprises formelles.</p>
                                 <p>- accès à la formation, au financement et au dispositif de suivi-encadrement.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) déjà en activité (2 années d’existence minimum ).</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 5 000 001 F CFA à 25 000 000 F CFA</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Type : Crédit; Duréede remboursement : 36 mois maximum.</p>
                                 <p>- Taux d’intérêt: à partir de 8% TAEG/an.</p>
                                 <p>- Apport personnel: 10% minimum.</p>
                             </li>
                         </ul>
-                        <br>
                         <br>
                         <button class="accordion">CREDIT ORDINAIRE</button>
                         <div class="panel">

@@ -50,7 +50,7 @@
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>1</span> Composantes</h4>
+                                <h4> Composantes</h4>
                                 <p>- Accompagnement par des mentors - investisseurs des projets de création ou de développement de petites entreprises formelles.</p>
 
                                 <p>- Coaching (leadership, compétences de vie, etc.), appui à la structuration, appui à l’accès au marché, mise en réseau, etc.</p>
@@ -58,15 +58,15 @@
                                 <p>- Appui financier des mentors.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>2</span> Cibles</h4>
+                                <h4> Cibles</h4>
                                 <p>- Jeunes (18 à 40 ans) primo entrepreneurs ou déjà en activité.</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>3</span> Besoins de financement</h4>
+                                <h4> Besoins de financement</h4>
                                 <p>- 5 000 000 F CFA maximum</p>
                             </li>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <h4><span>4</span> Conditions de financement</h4>
+                                <h4> Conditions de financement</h4>
                                 <p>- Appui en subvention du mentor, en dette ou prise de participation minoritaire.</p>
                             </li>
                         </ul>

@@ -17,12 +17,21 @@
                 <div>
                     <!-- TOUR PLACE 1 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow slideInUp" data-wow-duration="0.5s">
-                        <a href="{{ route('guichet1') }}">
-                            <!-- OFFER BRAND -->
-                            <div class="band"> <img src="{{asset('frontend/mages/band.png')}}" alt="" /> </div>
+                        <a class="course-overlay" href="{{ route('guichet1') }}">
                             <!-- IMAGE -->
+                            <span style="padding-bottom: 200px;">
+                                <h4>Mentorat solidaire (Business Angel)</h4>
+                            </span>
+                            <span style="padding-bottom: 100px;text-align: left;">
+                                <h5 style="margin-left: 40px;">Accompagnement par un mentor</h5>
+                                <h5 style="margin-left: 40px;">Coaching(leadership, compétences de vie, etc.)</h5>
+                                <h5 style="margin-left: 40px;">Appui financier des mentors</h5>
+                            </span>
+                            <span style="padding-bottom: 5px;">
+                               <h6>Voir plus...</h6>
+                            </span>
                             <div class="v_place_img"> 
-                                <img src="{{asset('frontend/images/t5.png')}}" alt="Tour Booking" title="Tour Booking" /> 
+                                <img src="{{asset('frontend/images/t5.png')}}" alt="Mentorat solidaire (Business Angel)" title="Mentorat solidaire (Business Angel)" />
                             </div>
                             <!-- TOUR TITLE & ICONS -->
                             <div class="b_pack rows">
@@ -37,11 +46,22 @@
                     </div>
                     <!-- TOUR PLACE 2 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.7s">
-                        <a href="{{ route('guichet2') }}">
-                            <!-- OFFER BRAND -->
-                        <!--  <div class="band"> <img src="{{asset('frontend/images/band1.png')}}" alt="" /> </div> -->
+                        <a class="course-overlay" href="{{ route('guichet2') }}">
+
+                            <span style="padding-bottom: 200px;">
+                                <h4>Activité Génératrice de revenu(AGR)</h4>
+                            </span>
+                            <span style="padding-bottom: 100px;text-align: left;">
+                                <h5 style="margin-left: 40px;">Accompagnement des projets de création</h5>
+                                <h5 style="margin-left: 40px;">Accès à la formation</h5>
+                                <h5 style="margin-left: 40px;">Accès au financement</h5>
+                            </span>
+                            <span style="padding-bottom: 5px;">
+                               <h6>Voir plus...</h6>
+                            </span>
+                           
                             <!-- IMAGE -->
-                            <div class="v_place_img"> <img src="{{asset('frontend/images/t1.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
+                            <div class="v_place_img"> <img src="{{asset('frontend/images/t1.png')}}" alt="Activité Génératrice de revenu" title="Activité Génératrice de revenu" /> </div>
                             <!-- TOUR TITLE & ICONS -->
                             <div class="b_pack rows">
                                 <!-- TOUR TITLE -->
@@ -55,8 +75,21 @@
                     </div>
                     <!-- TOUR PLACE 3 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.9s">
-                        <a href="{{route('guichet3')}}">
-                            <div class="v_place_img"><img src="{{asset('frontend/images/t2.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <a class="course-overlay" href="{{route('guichet3')}}">
+
+                            <span style="padding-bottom: 200px;">
+                                <h4>Micro et petite Entreprise (MPE)</h4>
+                            </span>
+                            <span style="padding-bottom: 100px;text-align: left;">
+                                <h5 style="margin-left: 30px;">Accompagnement des projets de création</h5>
+                                <h5 style="margin-left: 30px;">Accès à la formation, au financement</h5>
+                                <h5 style="margin-left: 30px;">Pilotage du processus par les Conseils Régionaux </h5>
+                            </span>
+                            <span style="padding-bottom: 5px;">
+                               <h6>Voir plus...</h6>
+                            </span>
+
+                            <div class="v_place_img"><img src="{{asset('frontend/images/t2.png')}}" alt="Micro et petite Entreprise (MPE)" title="Micro et petite Entreprise (MPE)" /></div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
                                     <h4><a href="{{route('guichet3')}}" target="_blank">Micro et petite Entreprise (MPE)<span class="v_pl_name"><!-- (India) --></span></a></h4>
@@ -71,9 +104,22 @@
                         </div>
                         
                         <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
-                            <a href="{{route('guichet4')}}" target="_blank">
+                            <a class="course-overlay" href="{{route('guichet4')}}" target="_blank">
+
+                                <span style="padding-bottom: 200px;">
+                                <h5>Moyenne Entreprise et Projets Structurants</h5>
+                            </span>
+                            <span style="padding-bottom: 100px;text-align: left;">
+                                <h6 style="margin-left: 30px;">Accompagnement des projets</h6>
+                                <h6 style="margin-left: 30px;">Développement d’entreprises formelles</h6>
+                                <h6 style="margin-left: 30px;">Accès à la formation, au financement</h6>
+                            </span>
+                            <span style="padding-bottom: 5px;">
+                               <h6>Voir plus...</h6>
+                            </span>
+
                             <div class="v_place_img">
-                                <img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> 
+                                <img src="{{asset('frontend/images/t3.png')}}" alt="Moyenne Entreprise et Projets Structurant" title="Moyenne Entreprise et Projets Structurant" /> 
                             </div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
@@ -85,8 +131,19 @@
                         </div>
 
                         <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.3s">
-                            <a href="{{route('guichet5')}}" target="_blank">
-                            <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
+                            <a class="course-overlay" href="{{route('guichet5')}}" target="_blank">
+                            <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Capital d'investisement" title="Capital d'investisement" /> </div>
+                            <span style="padding-bottom: 200px;">
+                                <h4> Capital d'investisement (CI)</h4>
+                            </span>
+                            <span style="padding-bottom: 100px;text-align: left;">
+                                <h5 style="margin-left: 30px;">Accompagnement des projets</h5>
+                                <h5 style="margin-left: 30px;">Développement d’entreprises innovantes</h5>
+                                <h5 style="margin-left: 30px;">Financement en capital</h5>
+                            </span>
+                            <span style="padding-bottom: 5px;">
+                               <h6>Voir plus...</h6>
+                            </span>
                             <a href="{{ route('guichet5') }}">
                                 <div class="b_pack rows">
                                     <div class="col-md-12 col-sm-12">
@@ -106,33 +163,6 @@
                         </div>
                     </div>
 
-                    <!-- TOUR PLACE 5 -->
-
-                    <!-- TOUR PLACE 6 -->
-                <!-- <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.5s">
-                    <div class="v_place_img"><img src="{{asset('frontend/images/t6.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
-                    <div class="b_pack rows">
-                        <div class="col-md-8 col-sm-8">
-                            <h4><a href="tour-details.html">GUICHET 6<span class="v_pl_name"></span></a></h4>
-                        </div>
-                        <div class="col-md-4 col-sm-4 pack_icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/clock.png')}}" alt="Date" title="Tour Timing" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/info.png')}}" alt="Details" title="View more details" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/price.png')}}" alt="Price" title="Price" /> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend/images/map.png')}}" alt="Location" title="Location" /> </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
                 </div>
             </div>
         </div>
