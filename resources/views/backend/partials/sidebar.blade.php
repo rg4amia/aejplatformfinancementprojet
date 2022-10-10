@@ -7,18 +7,39 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#guichet-1" aria-expanded="false" aria-controls="guichet-1">
+            <a class="nav-link" data-toggle="collapse" href="#guichet1" aria-expanded="false" aria-controls="guichet1">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 1</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="guichet-1">
+            <div class="collapse" id="guichet1">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-one.index') }}">Liste projet</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('backend.guichet-one.index') }}">
+                        Liste projet
+                    </a>
+                </li>
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#guichet3" aria-expanded="false" aria-controls="guichet3">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Guichet 3</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="guichet3">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('backend.guichet-three.index') }}">
+                        Liste projet
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#guichet-3" aria-expanded="false" aria-controls="guichet-3">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 3</span>
@@ -29,28 +50,36 @@
                 <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-three.index') }}">Liste projet</a></li>
               </ul>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#guichet-4" aria-expanded="false" aria-controls="guichet-4">
+            <a class="nav-link" data-toggle="collapse" href="#guichet4" aria-expanded="false" aria-controls="guichet4">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 4</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="guichet-4">
+            <div class="collapse" id="guichet4">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-four.index') }}">Liste projet</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('backend.guichet-four.index') }}">
+                        Liste projet
+                    </a>
+                </li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#guichet-5" aria-expanded="false" aria-controls="guichet-5">
+            <a class="nav-link" data-toggle="collapse" href="#guichet5" aria-expanded="false" aria-controls="guichet5">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 5</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="guichet-5">
+            <div class="collapse" id="guichet5">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ route('backend.guichet-five.index') }}">Liste projet</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('backend.guichet-five.index') }}">
+                        Liste projet
+                    </a>
+                </li>
               </ul>
             </div>
           </li>
@@ -63,18 +92,6 @@
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
-              </ul>
-            </div>
-          </li> --}}
-          {{-- <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Charts</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
               </ul>
             </div>
           </li> --}}

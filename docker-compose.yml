@@ -24,7 +24,7 @@ services:
             dockerfile: docker/fpm.dockerfile
         container_name: php_projets
         volumes:
-            - ./:/var/www/html
+            - ./:/var/www/htm\
         links:
             - db
         networks:
