@@ -48,8 +48,6 @@ class GuichetOneController extends Controller
             $niveauetude[$item->id] = $item->libelle;
         }
 
-        //dd($niveauetudes);
-
         $communes = Commune::select('nom','id')->orderBy('nom', 'ASC')->get();
         $commune = [0 => 'Selectionner'];
         foreach ($communes as $item) {

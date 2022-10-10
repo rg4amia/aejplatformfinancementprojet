@@ -147,6 +147,9 @@ input.invalid {
                             <input type="number"  value="{{ promoteurLogin()->nombrepers_charge  }}" class="form-control" id="nombrepers_charge" name="nombrepers_charge" > </div>
 
                             <div class="form-group col-md-4">
+                                @php
+                                //dd(promoteurLogin()->commune_id)
+                                @endphp
                                 <label>Ville / Commune:</label>
                                 {!! Form::select('commune_id', $commune,promoteurLogin()->commune_id,['class' => 'select2-region form-control', 'required' => true]) !!}
                                {{-- <input type="text" class="form-control" id="commune" name="commune" >--}}
@@ -154,10 +157,8 @@ input.invalid {
                             <div class="form-group col-md-4 ">
                                 <label>Région:</label>
                                 {!! Form::select('region_id', $region,promoteurLogin()->region_id, ['class' => 'select2-region form-control', 'required' => true]) !!}
-                                <div class="form-group col-md-4 pad-left-o">
-                                    <label>Adresse postale :</label>
-                                     <input type="text" class="form-control" value="{{ promoteurLogin()->adressepostale }}" id="adresse" name="adressepostale" >
-                                </div>
+                                <label>Adresse postale :</label>
+                                <input type="text" class="form-control" value="{{ promoteurLogin()->adressepostale }}" id="adresse" name="adressepostale">
                             </div>
                             <div class="form-group col-md-4">
                                 <label>Adresse géographique précise:</label>
