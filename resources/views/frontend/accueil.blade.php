@@ -67,8 +67,12 @@
                     <div class="d-flex justify-content-center">
                         <div class="col-md-2 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
                         </div>
+                        
                         <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
-                            <div class="v_place_img"><img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
+                            <a href="{{route('guichet4')}}" target="_blank">
+                            <div class="v_place_img">
+                                <img src="{{asset('frontend/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> 
+                            </div>
                             <div class="b_pack rows">
                                 <div class="col-md-12 col-sm-12">
                                     <h4><a href="{{route('guichet4')}}" target="_blank">Moyenne Entreprise et Projets Structurant (MEPS)<span class="v_pl_name"><!-- (China) --></span></a></h4>
@@ -79,6 +83,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.3s">
+                            <a href="{{route('guichet5')}}" target="_blank">
                             <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                             <a href="{{ route('guichet5') }}">
                                 <div class="b_pack rows">
