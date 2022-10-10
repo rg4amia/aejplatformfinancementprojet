@@ -1,6 +1,6 @@
 <!--====== FOOTER 2 ==========-->
 <div class="spe-title">
-                    <h2>Nos <span>Partenaire</span></h2>
+                    <h2>Nos <span>Partenaires</span></h2>
                     <div class="title-line">
                         <div class="tl-1"></div>
                         <div class="tl-2"></div>
