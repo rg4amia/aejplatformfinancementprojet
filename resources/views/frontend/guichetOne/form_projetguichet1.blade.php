@@ -347,7 +347,7 @@ input.invalid {
 
                             <div class="col-md-12">
 
-                        3.9.    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?
+                        3.9. Si déjà en activité, quels sont vos résultats les plus récents en termes de vente de vos produits sur les 6 derniers mois ?
 
                          <table >
                             <thead>
@@ -362,42 +362,42 @@ input.invalid {
                             <tbody>
                                 <tr>
                                     <td width="30%">Nombre de produits vendus</td>
-                                    <td><input type="text" class="form-control" id="produitVendu1" name="produitVendu1" ></td>
-                                    <td><input type="text" class="form-control" id="produitVendu2" name="produitVendu2" ></td>
-                                    <td><input type="text" class="form-control" id="produitVendu3" name="produitVendu3" ></td>
-                                    <td><input type="text" class="form-control" id="produitVendu4" name="produitVendu4" ></td>
-                                    <td><input type="text" class="form-control" id="produitVendu5" name="produitVendu5" ></td>
-                                    <td><input type="text" class="form-control" id="produitVendu6" name="produitVendu6" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu1" name="produitVendu1" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu2" name="produitVendu2" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu3" name="produitVendu3" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu4" name="produitVendu4" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu5" name="produitVendu5" ></td>
+                                    <td><input type="number" class="form-control" id="produitVendu6" name="produitVendu6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Montant des ventes</td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu1" name="montantProduitVendu1" ></td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu2" name="montantProduitVendu2" ></td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu3" name="montantProduitVendu3" ></td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu4" name="montantProduitVendu4" ></td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu5" name="montantProduitVendu5" ></td>
-                                    <td><input type="text" class="form-control" id="montantProduitVendu6" name="montantProduitVendu6" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu1" name="montantProduitVendu1" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu2" name="montantProduitVendu2" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu3" name="montantProduitVendu3" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu4" name="montantProduitVendu4" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu5" name="montantProduitVendu5" ></td>
+                                    <td><input type="number" class="form-control" id="montantProduitVendu6" name="montantProduitVendu6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Montant des dépenses (charges)</td>
-                                    <td><input type="text" class="form-control" id="montantDepense1" name="montantDepense1" ></td>
-                                    <td><input type="text" class="form-control" id="montantDepense2" name="montantDepense2" ></td>
-                                    <td><input type="text" class="form-control" id="montantDepense3" name="montantDepense3" ></td>
-                                    <td><input type="text" class="form-control" id="montantDepense4" name="montantDepense4" ></td>
-                                    <td><input type="text" class="form-control" id="montantDepense5" name="montantDepense5" ></td>
-                                    <td><input type="text" class="form-control" id="montantDepense6" name="montantDepense6" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense1" name="montantDepense1" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense2" name="montantDepense2" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense3" name="montantDepense3" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense4" name="montantDepense4" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense5" name="montantDepense5" ></td>
+                                    <td><input type="number" class="form-control" id="montantDepense6" name="montantDepense6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Bénéfices</td>
-                                    <td><input type="text" class="form-control" id="benefice1" name="benefice1" ></td>
-                                    <td><input type="text" class="form-control" id="benefice2" name="benefice2" ></td>
-                                    <td><input type="text" class="form-control" id="benefice3" name="benefice3" ></td>
-                                    <td><input type="text" class="form-control" id="benefice4" name="benefice4" ></td>
-                                    <td><input type="text" class="form-control" id="benefice5" name="benefice5" ></td>
-                                    <td><input type="text" class="form-control" id="benefice6" name="benefice6" ></td>
+                                    <td><input type="number" class="form-control" id="benefice1" name="benefice1" ></td>
+                                    <td><input type="number" class="form-control" id="benefice2" name="benefice2" ></td>
+                                    <td><input type="number" class="form-control" id="benefice3" name="benefice3" ></td>
+                                    <td><input type="number" class="form-control" id="benefice4" name="benefice4" ></td>
+                                    <td><input type="number" class="form-control" id="benefice5" name="benefice5" ></td>
+                                    <td><input type="number" class="form-control" id="benefice6" name="benefice6" ></td>
                                 </tr>
 
                             </tbody>
@@ -539,10 +539,12 @@ input.invalid {
                         </div>
                     </div>
 
-                        <div class="form-group col-md-6 ">
+                        <div class="form-group row">
+                             <div class="col-md-6 ">
                              <label>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi, etc.)</label>
                             <textarea placeholder="Autres bésoins"  id="autreBesoinsAccompagnement" name="autreBesoinsAccompagnement" class="form-control"></textarea>
                         </div>
+                    </div>
 
 
                         </table>
@@ -550,7 +552,7 @@ input.invalid {
                     <br>
 
 
-                        <div class="rows" style="float:right;">
+                        <div class="row" style="float:right; ">
 
                         <div  style="text-align:center;">
                             <span class="step"></span>
@@ -558,7 +560,7 @@ input.invalid {
                             <span class="step"></span>
                             <span class="step"></span>
                         </div>
-                        <div >
+                        <div">
                                 <button type="button" id="prevBtn" class="btn btn-warning btn-rounded" onclick="nextPrev(-1)">Précédent</button>
                                 <button type="button" id="nextBtn" class="btn btn-info btn-rounded" onclick="nextPrev(1)">Suivant</button>
                             </div>
