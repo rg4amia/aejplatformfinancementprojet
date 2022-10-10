@@ -4,10 +4,17 @@ namespace App\Http\Controllers\Frontend\Guichet;
 
 use App\Http\Controllers\Controller;
 use App\Models\Commune;
+use App\Models\DescriptionConnaissanceActivite;
+use App\Models\NationaliteParam;
 use App\Models\NiveauEtudeProjet;
+use App\Models\NiveauMaturationParam;
+use App\Models\NiveauPratiqueEntrepreneuriat;
+use App\Models\NiveauPratiqueEntreprise;
 use App\Models\Region;
 use App\Models\SexeParam;
 use App\Models\SituationMatrimonialeParam;
+use App\Models\UniteAnne;
+use Database\Seeders\DescrConnaissanceActiviteSeeder;
 use Illuminate\Http\Request;
 
 class GuichetOneController extends Controller
@@ -60,12 +67,53 @@ class GuichetOneController extends Controller
             $region[$item->id] = $item->nom;
         }
 
+        $nationalites      = NationaliteParam::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $nationalite = [0 => 'Selectionner'];
+        foreach ($nationalites as $item) {
+            $nationalite[$item->id] = $item->libelle;
+        }
+
         $situationmatrimoniales = SituationMatrimonialeParam::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
         $situationmatrimoniale = [0 => 'Selectionner'];
         foreach ($situationmatrimoniales as $item) {
             $situationmatrimoniale[$item->id] = $item->libelle;
         }
-        return view('frontend.guichetOne.form_projetguichet1',compact('sexe','niveauetude','commune','region','situationmatrimoniale'));
+
+        $uniteannes = UniteAnne::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $uniteanne = [0 => 'Selectionner'];
+        foreach ($uniteannes as $item) {
+            $uniteanne[$item->id] = $item->libelle;
+        }
+
+        $niveaumaturations = NiveauMaturationParam::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $niveaumaturation = [0 => 'Selectionner'];
+        foreach ($niveaumaturations as $item) {
+            $niveaumaturation[$item->id] = $item->libelle;
+        }
+
+        $descriconnaissanceactivites = DescriptionConnaissanceActivite::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $descriconnaissanceactivite = [0 => 'Selectionner'];
+        foreach ($descriconnaissanceactivites as $item) {
+            $descriconnaissanceactivite[$item->id] = $item->libelle;
+        }
+
+        $niveaupratiqueentrepreneuriats = NiveauPratiqueEntrepreneuriat::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $niveaupratiqueentrepreneuriat = [0 => 'Selectionner'];
+        foreach ($niveaupratiqueentrepreneuriats as $item) {
+            $niveaupratiqueentrepreneuriat[$item->id] = $item->libelle;
+        }
+
+        $niveaupratiqueentreprises = NiveauPratiqueEntreprise::select('libelle', 'id')->orderBy('libelle', 'ASC')->get();
+        $niveaupratiqueentreprise = [0 => 'Selectionner'];
+        foreach ($niveaupratiqueentreprises as $item) {
+            $niveaupratiqueentreprise[$item->id] = $item->libelle;
+        }
+
+        return view('frontend.guichetOne.form_projetguichet1',compact('sexe','niveauetude',
+            'commune','region','situationmatrimoniale','nationalite','uniteanne',
+            'niveaumaturation','descriconnaissanceactivite','niveaupratiqueentrepreneuriat',
+            'niveaupratiqueentreprise'
+        ));
     }
 
     /**

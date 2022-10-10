@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('promoteurs', function (Blueprint $table) {
-            $table->string('nationnalite_id')->nullable()->after('lieunaissance_id');
-
+        Schema::create('niveau_pratique_entreprises', function (Blueprint $table) {
+            $table->id();
+            $table->string('libelle')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -26,8 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('promoteurs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('niveau_pratique_entreprises');
     }
 };
