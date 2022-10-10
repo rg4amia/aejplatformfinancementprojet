@@ -1,9 +1,6 @@
-@extends('frontend.layout.main')
+@extends('frontend.layout.main_form')
 @section('content')
-    <section>
-
-
-    </section>
+  
     <!--END HEADER SECTION-->
 
     <!--====== BANNER ==========-->
@@ -34,43 +31,54 @@
                     </div>
 
                <div class="dir-rat-inn">
-                    <form class="dir-rat-form">
-                        <div class="form-group col-md-4 pad-left-o">
-                            <label><h5>Nom:</h5></label>
-                            <input type="text" class="form-control" id="email11" placeholder="Nom"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Prenoms:</h5></label>
-                            <input type="text" class="form-control" id="email12" placeholder="Prenoms"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Date de naissance:</h5></label>
-                            <input type="date" class="form-control" id="email13" > </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Contact 1:</h5></label>
-                            <input type="number" class="form-control" id="email12" placeholder="Contact 1"> </div>
-                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Contact 2:</h5></label>
-                            <input type="number" class="form-control" id="email12" placeholder="Contact 2"> </div>
-                         <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>E-mail:</h5></label>
-                            <input type="email" class="form-control" id="email12" placeholder="E-mail"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Region de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Region de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Ville de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Ville de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Quartier de résidence:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Quatier de residence"> </div>
-                        <div class="form-group col-md-4 pad-left-o">
-                             <label><h5>Secteur d'activité:</h5></label>
-                            <input type="text" class="form-control" id="email14" placeholder="Secteur d'activité"> </div>
-                        <div class="form-group col-md-8 pad-left-o">
-                            <label><h5>Description du mentor:</h5></label>
-                            <textarea placeholder="Description du mentor"></textarea>
+                    <form >
+                        <div class="form-group">
+                        <div class="col-md-4">
+                            <label>Nom:</label>
+                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom"> </div>
+                        <div class="col-md-4">
+                             <label>Prenoms:</label>
+                            <input type="text" class="form-control" id="prenoms" name="prenoms" placeholder="Prenoms"> </div>
+                        <div class="col-md-4">
+                             <label>Date de naissance:</label>
+                            <input type="date" class="form-control" id="datedenaissance" name="datedenaissance" > </div>
                         </div>
-                        <div class="form-group col-md-8 pad-left-o">
-                            <input type="submit" value="Enregistrer" class="link-btn">
+
+                       <div class="form-group">
+                        <div class="col-md-4">
+                             <label><h5>Contact 1:</h5></label>
+                            <input type="number" class="form-control" id="contact1" name="contact1" placeholder="Contact 1"> </div>
+                         <div class="col-md-4">
+                             <label><h5>Contact 2:</h5></label>
+                            <input type="number" class="form-control" id="contact2" name="contact2" placeholder="Contact 2"> </div>
+                         <div class="col-md-4">
+                             <label><h5>E-mail:</h5></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail"> </div>
+                        </div>
+
+                    <div class="form-group">
+                        <div class="col-md-4">
+                             <label><h5>Region de résidence:</h5></label>
+                            <input type="text" class="form-control" id="regionResidence" name="regionResidence" placeholder="Region de residence"> </div>
+                        <div class="col-md-4">
+                             <label><h5>Ville de résidence:</h5></label>
+                            <input type="text" class="form-control" id="villeResidence" name="villeResidence" placeholder="Ville de residence"> </div>
+                        <div class="col-md-4">
+                             <label><h5>Quartier de résidence:</h5></label>
+                            <input type="text" class="form-control" id="quartierResidence" name="quartierResidence" placeholder="Quatier de residence"> </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-4">
+                             <label><h5>Secteur d'activité:</h5></label>
+                            <input type="text" class="form-control" id="secteurActivite" name="secteurActivite" placeholder="Secteur d'activité"> </div>
+                        <div class="col-md-8">
+                            <label><h5>Description du mentor:</h5></label>
+                            <textarea class="form-control" placeholder="Description du mentor" id="descriptionMentor" name="descriptionMentor"></textarea>
+                        </div>
+                    </div>
+                        <div class="form-group col-md-8">
+                            <button type="submit" class="btn btn-warning">Enregistrer</button>
                         </div>
                     </form>
                 </div>
