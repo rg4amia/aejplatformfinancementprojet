@@ -362,42 +362,42 @@ input.invalid {
                             <tbody>
                                 <tr>
                                     <td width="30%">Nombre de produits vendus</td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu1" name="produitVendu1" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu2" name="produitVendu2" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu3" name="produitVendu3" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu4" name="produitVendu4" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu5" name="produitVendu5" ></td>
+                                    <td><input type="text" class="form-control" id="produitVendu6" name="produitVendu6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Montant des ventes</td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu1" name="montantProduitVendu1" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu2" name="montantProduitVendu2" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu3" name="montantProduitVendu3" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu4" name="montantProduitVendu4" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu5" name="montantProduitVendu5" ></td>
+                                    <td><input type="text" class="form-control" id="montantProduitVendu6" name="montantProduitVendu6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Montant des dépenses (charges)</td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense1" name="montantDepense1" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense2" name="montantDepense2" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense3" name="montantDepense3" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense4" name="montantDepense4" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense5" name="montantDepense5" ></td>
+                                    <td><input type="text" class="form-control" id="montantDepense6" name="montantDepense6" ></td>
                                 </tr>
 
                                 <tr>
                                     <td>Bénéfices</td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
-                                    <td><input type="text" class="form-control" id="email13" ></td>
+                                    <td><input type="text" class="form-control" id="benefice1" name="benefice1" ></td>
+                                    <td><input type="text" class="form-control" id="benefice2" name="benefice2" ></td>
+                                    <td><input type="text" class="form-control" id="benefice3" name="benefice3" ></td>
+                                    <td><input type="text" class="form-control" id="benefice4" name="benefice4" ></td>
+                                    <td><input type="text" class="form-control" id="benefice5" name="benefice5" ></td>
+                                    <td><input type="text" class="form-control" id="benefice6" name="benefice6" ></td>
                                 </tr>
 
                             </tbody>
