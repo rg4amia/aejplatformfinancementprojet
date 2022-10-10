@@ -13,6 +13,8 @@ use App\Http\Controllers\Backend\GuichetOne\GuichetOneBackendController;
 use App\Http\Controllers\Backend\GuichetThree\GuichetThreeBackendController;
 use App\Http\Controllers\Backend\GuichetFour\GuichetFourBackendController;
 use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
+use App\Http\Controllers\Backend\Mentor\DashMentorController;
+use App\Http\Controllers\Backend\Promoteur\DashPromoteurController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,25 +64,37 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
 
     Route::group(['middleware' => ['role:admin|promoteur','auth']], function () {
 
-        Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
+        Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+            Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
 
-        Route::group(['prefix' => 'guichet-one', 'as' => 'guichet-one.'], function () {
-            Route::get('index', [GuichetOneBackendController::class, 'index'])->name('index');
+            Route::group(['prefix' => 'guichet-one', 'as' => 'guichet-one.'], function () {
+                Route::get('index', [GuichetOneBackendController::class, 'index'])->name('index');
+            });
+
+            Route::group(['prefix' => 'guichet-three', 'as' => 'guichet-three.'], function () {
+                Route::get('index', [GuichetThreeBackendController::class, 'index'])->name('index');
+            });
+
+            Route::group(['prefix' => 'guichet-four', 'as' => 'guichet-four.'], function () {
+                Route::get('index', [GuichetFourBackendController::class, 'index'])->name('index');
+            });
+
+            Route::group(['prefix' => 'guichet-five', 'as' => 'guichet-five.'], function () {
+                Route::get('index', [GuichetFiveBackendController::class, 'index'])->name('index');
+            });
+
+            Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+            });
         });
 
-        Route::group(['prefix' => 'guichet-three', 'as' => 'guichet-three.'], function () {
-            Route::get('index', [GuichetThreeBackendController::class, 'index'])->name('index');
+        Route::group(['prefix' => 'promoteur', 'as' => 'promoteur.'], function () {
+            Route::get('tableau-de-board', [DashPromoteurController::class, 'index'])->name('dashboard');
         });
 
-        Route::group(['prefix' => 'guichet-four', 'as' => 'guichet-four.'], function () {
-            Route::get('index', [GuichetFourBackendController::class, 'index'])->name('index');
+
+        Route::group(['prefix' => 'mentor', 'as' => 'mentor.'], function () {
+            Route::get('tableau-de-board', [DashMentorController::class, 'index'])->name('dashboard');
         });
 
-        Route::group(['prefix' => 'guichet-five', 'as' => 'guichet-five.'], function () {
-            Route::get('index', [GuichetFiveBackendController::class, 'index'])->name('index');
-        });
-
-        Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
-        });
     });
 });
