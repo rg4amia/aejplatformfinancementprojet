@@ -3,20 +3,22 @@
 <style type="text/css">
     /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
+  background-color: #F8BA05;
   color: #444;
   cursor: pointer;
   padding: 18px;
+  margin: 5px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  border-radius: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #E2AF18;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -87,7 +89,7 @@
                         </ul>
                         <br>
                         <br>
-                        <button class="accordion">Credit ordinaire</button>
+                        <button class="accordion">CREDIT ORDINAIRE</button>
                         <div class="panel">
 
                          <h3>Credit ordinaire</h3>
@@ -97,7 +99,7 @@
 
                         </div>
                          <br>
-                        <button class="accordion">Autre type de credit</button>
+                        <button class="accordion">AUTRE TYPE DE CREDIT</button>
                         <div class="panel">
                           <h3>Autre type de credit</h3>
                         
