@@ -19,6 +19,9 @@
             </div>
           </li>
         </ul>
+          @role('promoteur')
+            <a type="button" class="btn btn-outline-success btn-fw" href="{{ url('/') }}">Retour au site</a>
+          @endrole
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">

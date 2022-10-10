@@ -95,16 +95,16 @@ input.invalid {
 
                         <div class="form-group col-md-4">
                             <label>Nom:</label>
-                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom"> </div>
+                            <input type="text" class="form-control" id="nom" name="nom" value="{{ promoteurLogin()->nom }}" placeholder="Nom"> </div>
                         <div class="form-group col-md-4 ">
                              <label>Prenoms:</label>
-                            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom"> </div>
+                            <input type="text" class="form-control" id="prenom" value="{{ promoteurLogin()->prenoms }}" name="prenom" placeholder="Prénom"> </div>
                         <div class="form-group col-md-4 ">
                              <label>Date de naissance:</label>
-                            <input type="date" class="form-control" id="datedenaissance" name="datedenaissance" > </div>
+                            <input type="date" class="form-control" id="datedenaissance" value="{{ promoteurLogin()->date_naissance  }}" name="datedenaissance" > </div>
                        <div class="form-group col-md-4 ">
                            <label>Lieu de naissance:</label>
-                           <input type="text" class="form-control" id="lieudenaissance" name="lieudenaissance" > </div>
+                           <input type="text" class="form-control" id="lieudenaissance" value="{{ promoteurLogin()->date_naissance  }}" name="lieudenaissance" > </div>
                        <div class="form-group col-md-4">
                            <label>Sexe:</label>
                            <select required="" class="form-control" id="sexe" name="sexe">
