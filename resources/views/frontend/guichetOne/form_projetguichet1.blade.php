@@ -229,47 +229,47 @@
 
                                 <div class="form-group col-md-4">
                                     <label>Titre du diplôme/ certificat:</label>
-                                    <input type="text" class="form-control" id="certificat1" name="certificat1"
+                                    <input type="text" class="form-control" id="certificat1" name="exp[certificat]"
                                         placeholder="Titre du diplôme/ certificat">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Nom de l’établissement:</label>
-                                    <input type="text" class="form-control" id="etablissement1" name="etablissement1"
+                                    <input type="text" class="form-control" id="etablissement1" name="exp[etablissement]"
                                         placeholder="Nom de l’établissement">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Période :</label>
-                                    <input type="text" class="form-control" id="periode1" name="periode1">
+                                    <input type="text" class="form-control" id="periode1" name="exp[periode]">
                                 </div>
 
                                 <div class="form-group col-md-4">
                                     <label>Titre du diplôme/ certificat:</label>
-                                    <input type="text" class="form-control" id="certificat2" name="certificat2"
+                                    <input type="text" class="form-control" id="certificat2" name="exp[certificat]"
                                         placeholder="Titre du diplôme/ certificat">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Nom de l’établissement:</label>
-                                    <input type="text" class="form-control" id="etablissement2" name="etablissement2"
+                                    <input type="text" class="form-control" id="etablissement2" name="exp[etablissement]"
                                         placeholder="Nom de l’établissement">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Période :</label>
-                                    <input type="text" class="form-control" id="periode2" name="periode2">
+                                    <input type="text" class="form-control" id="periode2" name="exp[periode]">
                                 </div>
 
                                 <div class="form-group col-md-4">
                                     <label>Titre du diplôme/ certificat:</label>
-                                    <input type="text" class="form-control" id="certificat3" name="certificat3"
+                                    <input type="text" class="form-control" id="certificat3" name="exp[certificat]"
                                         placeholder="Titre du diplôme/ certificat">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Nom de l’établissement:</label>
-                                    <input type="text" class="form-control" id="etablissement3" name="etablissement3"
+                                    <input type="text" class="form-control" id="etablissement3" name="exp[etablissement]"
                                         placeholder="Nom de l’établissement">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Période :</label>
-                                    <input type="text" class="form-control" id="periode3" name="periode3">
+                                    <input type="text" class="form-control" id="periode3" name="exp[periode]">
                                 </div>
 
                             </table>
@@ -277,60 +277,60 @@
                             <table>
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
-                                    <input type="number" class="form-control" id="nombre" name="nombre1"
+                                    <input type="number" class="form-control" id="nombre" name="exppro[nombre]"
                                         placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Unité :</label>
-                                    {!! Form::select('unite1', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                    {!! Form::select('exppro[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Entreprise :</label>
-                                    <input type="text" class="form-control" id="entreprise" placeholder="entreprise1" name="entreprise1">
+                                    <input type="text" class="form-control" id="entreprise" placeholder="entreprise1" name="exppro[entreprise]">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Poste ou fonction :</label>
-                                    <input type="text" class="form-control" id="fonction1" name="fonction1"
+                                    <input type="text" class="form-control" id="fonction1" name="exppro[fonction]"
                                         placeholder="Poste ou fonction">
                                 </div>
 
 
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
-                                    <input type="number" class="form-control" id="nombre" name="nombre2"
+                                    <input type="number" class="form-control" id="nombre" name="exppro[nombre]"
                                            placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Unité :</label>
-                                    {!! Form::select('unite2', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                    {!! Form::select('exppro[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Entreprise :</label>
-                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise1" name="entreprise2">
+                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise1" name="exppro[entreprise]">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Poste ou fonction :</label>
-                                    <input type="text" class="form-control" id="fonction2" name="fonction2"
+                                    <input type="text" class="form-control" id="fonction2" name="exppro[fonction]"
                                            placeholder="Poste ou fonction">
                                 </div>
 
 
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
-                                    <input type="number" class="form-control" id="nombre" name="nombre3"
+                                    <input type="number" class="form-control" id="nombre" name="exppro[nombre]"
                                            placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Unité :</label>
-                                    {!! Form::select('unite3', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                    {!! Form::select('exppro[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Entreprise :</label>
-                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise" name="entreprise3">
+                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise" name="exppro[entreprise]">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Poste ou fonction :</label>
-                                    <input type="text" class="form-control" id="fonction3" name="fonction3"
+                                    <input type="text" class="form-control" id="fonction3" name="exppro[fonction]"
                                            placeholder="Poste ou fonction">
                                 </div>
                             </table>
