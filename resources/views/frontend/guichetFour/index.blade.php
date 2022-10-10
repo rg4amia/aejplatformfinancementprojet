@@ -64,7 +64,12 @@
                         <h2>Moyenne Entreprise et Projets Structurants</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
                     
-                    <div class="tour_head1 l-info-pack-days days">
+                    
+                    <button class="accordion">CREDIT ORDINAIRE</button>
+                        <div class="panel">
+
+                         <h3>Credit ordinaire</h3>
+                         <div class="tour_head1 l-info-pack-days days">
                         <h3>Description</h3>
                         <ul>
                             <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -88,10 +93,8 @@
                             </li>
                         </ul>
                         <br>
-                        <button class="accordion">CREDIT ORDINAIRE</button>
-                        <div class="panel">
-
-                         <h3>Credit ordinaire</h3>
+                        
+                    </div>
                         
                         <br>
                         <a href="{{route('form.projetguichet4co')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
@@ -105,7 +108,6 @@
                         <br>
                         <a href="{{route('form.projetguichet4ac')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
                         </div>
-                    </div>
                 </div>
                 <div class="col-md-3 tour_r">
 
