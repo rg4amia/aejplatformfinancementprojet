@@ -39,7 +39,6 @@ class GuichetThreeController extends Controller
 
     public function form_projetguichet3()
     {
-
         $secteuractivites = SecteurActivite::select('libelle','id')->orderBy('libelle', 'ASC')->get();
 
         foreach ($secteuractivites as $item) {
@@ -122,6 +121,25 @@ class GuichetThreeController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate(request(), [
+            'region_id'                 => 'required|integer',
+            'commune_id'                => 'required|integer',
+            'district_id'               => 'required|integer',
+            'typeprojet_id'             => 'required|integer',
+            'secteuractivite_id'        => 'required|integer',
+            'divisionregionaleaej_id'   => 'required|integer',
+            'formejuridique_id'         => 'required|integer',
+            'intituleprojet'            => 'required|string',
+            'raisonsociale'             => 'required|string',
+            'sigle'                     => 'required|string',
+            'descriptionactivite'       => 'required|string',
+            'coutprojet'                => 'required|integer',
+            'nombreemploi'              => 'required|integer',
+            'estnouvelleactivite'       => 'required|integer',
+            'planaffaire'               => 'required|mimes:pdf,doc,docx|max:1024',
+        ]);
+
+
         dd($request->all());
     }
 
