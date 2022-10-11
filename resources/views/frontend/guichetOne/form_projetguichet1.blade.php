@@ -71,17 +71,16 @@
             </div>
         </div>
     </section>
-
     <!--====== TOUR DETAILS ==========-->
     <section>
-
         <div class="rows inn-page-bg com-colo">
             <div class="container inn-page-con-bg tb-space">
                 <div class="tour_head">
                     <h2>Formulaire de soumission</h2>
                 </div>
                 <div class="">
-                    <form id="regForm" action="" class="">
+                    <form id="regForm" action="{{ route('form.projetguichet1.store') }}" method="POST" class="">
+                        @csrf()
                         <!-- One "tab" for each step in the form: -->
                         <div class="tab">
                             <h5>I. INFORMATIONS SUR LE CANDIDAT :</h5>
@@ -103,8 +102,12 @@
                                 </div>
                                 <div class="form-group col-md-4 ">
                                     <label>Lieu de naissance:</label>
-                                    <input type="text" class="form-control" id="lieudenaissance"
-                                        value="{{ promoteurLogin()->date_naissance }}" name="lieudenaissance">
+                                   {{-- <input type="text" class="form-control" id="lieudenaissance"
+                                        value="" name="lieudenaissance">--}}
+                                    {!! Form::select('lieudenaissance_id', $commune, promoteurLogin()->lieudenaissance_id, [
+                                       'class' => 'select2-region form-control',
+                                       'required' => true,
+                                   ]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Sexe:</label>
@@ -244,32 +247,32 @@
 
                                 <div class="form-group col-md-4">
                                     <label>Titre du diplôme/ certificat:</label>
-                                    <input type="text" class="form-control" id="certificat2" name="exp[certificat]"
+                                    <input type="text" class="form-control" id="certificat2" name="exp1[certificat]"
                                         placeholder="Titre du diplôme/ certificat">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Nom de l’établissement:</label>
-                                    <input type="text" class="form-control" id="etablissement2" name="exp[etablissement]"
+                                    <input type="text" class="form-control" id="etablissement2" name="exp1[etablissement]"
                                         placeholder="Nom de l’établissement">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Période :</label>
-                                    <input type="text" class="form-control" id="periode2" name="exp[periode]">
+                                    <input type="text" class="form-control" id="periode2" name="exp1[periode]">
                                 </div>
 
                                 <div class="form-group col-md-4">
                                     <label>Titre du diplôme/ certificat:</label>
-                                    <input type="text" class="form-control" id="certificat3" name="exp[certificat]"
+                                    <input type="text" class="form-control" id="certificat3" name="exp2[certificat]"
                                         placeholder="Titre du diplôme/ certificat">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Nom de l’établissement:</label>
-                                    <input type="text" class="form-control" id="etablissement3" name="exp[etablissement]"
+                                    <input type="text" class="form-control" id="etablissement3" name="exp2[etablissement]"
                                         placeholder="Nom de l’établissement">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Période :</label>
-                                    <input type="text" class="form-control" id="periode3" name="exp[periode]">
+                                    <input type="text" class="form-control" id="periode3" name="exp2[periode]">
                                 </div>
 
                             </table>
@@ -297,40 +300,40 @@
 
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
-                                    <input type="number" class="form-control" id="nombre" name="exppro[nombre]"
+                                    <input type="number" class="form-control" id="nombre" name="exppro1[nombre]"
                                            placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Unité :</label>
-                                    {!! Form::select('exppro[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                    {!! Form::select('exppro1[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Entreprise :</label>
-                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise1" name="exppro[entreprise]">
+                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise1" name="exppro1[entreprise]">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Poste ou fonction :</label>
-                                    <input type="text" class="form-control" id="fonction2" name="exppro[fonction]"
+                                    <input type="text" class="form-control" id="fonction2" name="exppro1[fonction]"
                                            placeholder="Poste ou fonction">
                                 </div>
 
 
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
-                                    <input type="number" class="form-control" id="nombre" name="exppro[nombre]"
+                                    <input type="number" class="form-control" id="nombre" name="exppro2[nombre]"
                                            placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Unité :</label>
-                                    {!! Form::select('exppro[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                    {!! Form::select('exppro2[unite]', $uniteanne, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Entreprise :</label>
-                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise" name="exppro[entreprise]">
+                                    <input type="text" class="form-control" id="entreprise" placeholder="Entreprise" name="exppro2[entreprise]">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Poste ou fonction :</label>
-                                    <input type="text" class="form-control" id="fonction3" name="exppro[fonction]"
+                                    <input type="text" class="form-control" id="fonction3" name="exppro2[fonction]"
                                            placeholder="Poste ou fonction">
                                 </div>
                             </table>
@@ -379,7 +382,7 @@
                                 <div class="form-group row">
                                     <div class="col-sm-6">
                                         <label>3.4. Pouvez-vous décrire votre projet ?</label>
-                                        <textarea placeholder="" class="form-control" id="descriptionProjet" name="descrireprojet"></textarea>
+                                        <textarea placeholder="" class="form-control" id="descriptionProjet" name="decrireprojet"></textarea>
                                     </div>
 
                                     <div class="form-group col-md-6">
@@ -433,70 +436,70 @@
                                             <tr>
                                                 <td width="30%">Nombre de produits vendus</td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu1" name="nbre_produit1">
+                                                    <input type="number" class="form-control" id="produitVendu1" name="result[nbre_produit]">
                                                 </td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu2" name="nbre_produit2">
+                                                    <input type="number" class="form-control" id="produitVendu2" name="result1[nbre_produit]">
                                                 </td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu3" name="nbre_produit3">
+                                                    <input type="number" class="form-control" id="produitVendu3" name="result2[nbre_produit]">
                                                 </td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu4" name="nbre_produit4">
+                                                    <input type="number" class="form-control" id="produitVendu4" name="result3[nbre_produit]">
                                                 </td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu5" name="nbre_produit5">
+                                                    <input type="number" class="form-control" id="produitVendu5" name="result4[nbre_produit]">
                                                 </td>
                                                 <td>
-                                                    <input type="number" class="form-control" id="produitVendu6" name="nbre_produit6">
+                                                    <input type="number" class="form-control" id="produitVendu6" name="result5[nbre_produit]">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Montant des ventes</td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu1"
-                                                        name="montant_ventes1"></td>
+                                                        name="result[montant_vente]"></td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu2"
-                                                        name="montant_ventes2"></td>
+                                                        name="result1[montant_vente]"></td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu3"
-                                                        name="montant_ventes3"></td>
+                                                        name="result2[montant_vente]"></td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu4"
-                                                        name="montant_ventes4"></td>
+                                                        name="result3[montant_vente]"></td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu5"
-                                                        name="montant_ventes5"></td>
+                                                        name="result4[montant_vente]"></td>
                                                 <td><input type="number" class="form-control" id="montantProduitVendu6"
-                                                        name="montant_ventes6"></td>
+                                                        name="result5[montant_vente]"></td>
                                             </tr>
 
                                             <tr>
                                                 <td>Montant des dépenses (charges)</td>
                                                 <td><input type="number" class="form-control" id="montantDepense1"
-                                                        name="montant_depenses1"></td>
+                                                        name="result[montant_depenses]"></td>
                                                 <td><input type="number" class="form-control" id="montantDepense2"
-                                                        name="montant_depenses2"></td>
+                                                        name="result1[montant_depenses]"></td>
                                                 <td><input type="number" class="form-control" id="montantDepense3"
-                                                        name="montant_depenses3"></td>
+                                                        name="result2[montant_depenses]"></td>
                                                 <td><input type="number" class="form-control" id="montantDepense4"
-                                                        name="montant_depenses4"></td>
+                                                        name="result3[montant_depenses]"></td>
                                                 <td><input type="number" class="form-control" id="montantDepense5"
-                                                        name="montant_depenses5"></td>
+                                                        name="result4[montant_depenses]"></td>
                                                 <td><input type="number" class="form-control" id="montantDepense6"
-                                                        name="montant_depenses5"></td>
+                                                        name="result5[montant_depenses]"></td>
                                             </tr>
 
                                             <tr>
                                                 <td>Bénéfices</td>
                                                 <td><input type="number" class="form-control" id="benefice1"
-                                                        name="benefice1"></td>
+                                                        name="result[benefice]"></td>
                                                 <td><input type="number" class="form-control" id="benefice2"
-                                                        name="benefice2"></td>
+                                                        name="result1[benefice]"></td>
                                                 <td><input type="number" class="form-control" id="benefice3"
-                                                        name="benefice3"></td>
+                                                        name="result2[benefice]"></td>
                                                 <td><input type="number" class="form-control" id="benefice4"
-                                                        name="benefice4"></td>
+                                                        name="result3[benefice]"></td>
                                                 <td><input type="number" class="form-control" id="benefice5"
-                                                        name="benefice5"></td>
+                                                        name="result4[benefice]"></td>
                                                 <td><input type="number" class="form-control" id="benefice6"
-                                                        name="benefice6"></td>
+                                                        name="result5[benefice]"></td>
                                             </tr>
 
                                         </tbody>
@@ -520,7 +523,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4 ">
                                         <label>3.12. Etes-vous à plein temps dans le projet ? </label>
-                                        <select class="form-control" id="pleinTemps" name="plein_tps_in_projet "
+                                        <select class="form-control" id="pleinTemps" name="plein_tps_in_projet"
                                             onchange="displayPleinTemps(this.value)">
                                             <option value=""> </option>
                                             <option value="1">OUI</option>
@@ -596,7 +599,7 @@
                                     <div class="col-md-4">
                                         <label>3.17. Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ? </label>
                                             {{--niveaupratiqueentrepreneuriat--}}
-                                        {!! Form::select('niveaupratiqueentrepreneuriat_id', $niveaupratiqueentrepreneuriat, null, ['class' => 'select2-region form-control','required' => true,]) !!}
+                                        {!! Form::select('niveaupratiqueentrepreunariat_id', $niveaupratiqueentrepreneuriat, null, ['class' => 'select2-region form-control','required' => true,]) !!}
 
                                     </div>
                                 </div>
@@ -676,7 +679,6 @@
                         </div>
                         <br>
                         <div class="row" style="float:right; ">
-
                             <div style="text-align:center;">
                                 <span class="step"></span>
                                 <span class="step"></span>
@@ -684,17 +686,12 @@
                                 <span class="step"></span>
                             </div>
                             <div>
-                                <button type="button" id="prevBtn" class="btn btn-warning btn-rounded"
-                                    onclick="nextPrev(-1)">Précédent</button>
-                                <button type="button" id="nextBtn" class="btn btn-info btn-rounded"
-                                    onclick="nextPrev(1)">Suivant</button>
+                                <button type="button" id="prevBtn" class="btn btn-warning btn-rounded" onclick="nextPrev(-1)">Précédent</button>
+                                <button type="button" id="nextBtn" class="btn btn-info btn-rounded" onclick="nextPrev(1)">Suivant</button>
                             </div>
-                </div>
-
-
+                        </div>
                 </form>
             </div>
-
         </div>
         </div>
     </section>
@@ -721,6 +718,7 @@
             } else {
                 document.getElementById("nextBtn").innerHTML = "Suivant";
             }
+            console.log(n);
             // ... and run a function that displays the correct step indicator:
             fixStepIndicator(n)
         }
@@ -779,9 +777,9 @@
         function displaySitMatrimoniale(id) {
 
             if (id == 6) {
-                $('#precis_sitMatrimoniale').css("display", "block");;
+                $('#precis_sitMatrimoniale').css("display", "block");
             } else {
-                $('#precis_sitMatrimoniale').css("display", "none");;
+                $('#precis_sitMatrimoniale').css("display", "none");
             }
 
         }
@@ -789,9 +787,9 @@
         function displayDebutProjet(id) {
 
             if (id == 1) {
-                $('#dateDebutProjet').css("display", "block");;
+                $('#dateDebutProjet').css("display", "block");
             } else {
-                $('#dateDebutProjet').css("display", "none");;
+                $('#dateDebutProjet').css("display", "none");
             }
 
         }
@@ -799,9 +797,9 @@
         function displayPleinTemps(id) {
 
             if (id == 1) {
-                $('#restTemps').css("display", "block");;
+                $('#restTemps').css("display", "block");
             } else {
-                $('#restTemps').css("display", "none");;
+                $('#restTemps').css("display", "none");
             }
 
         }
@@ -809,9 +807,9 @@
         function displayFormationEntrepreunariat(id) {
 
             if (id == 1) {
-                $('#connaissanceAquise').css("display", "block");;
+                $('#connaissanceAquise').css("display", "block");
             } else {
-                $('#connaissanceAquise').css("display", "none");;
+                $('#connaissanceAquise').css("display", "none");
             }
 
         }
@@ -819,9 +817,9 @@
         function displayFormationGestion(id) {
 
             if (id == 1) {
-                $('#connaissanceAquiseGestion').css("display", "block");;
+                $('#connaissanceAquiseGestion').css("display", "block");
             } else {
-                $('#connaissanceAquiseGestion').css("display", "none");;
+                $('#connaissanceAquiseGestion').css("display", "none");
             }
 
         }
@@ -829,9 +827,9 @@
         function displayBesoinEnFinancement(id) {
 
             if (id == 1) {
-                $('#besoinEnFinancement').css("display", "block");;
+                $('#besoinEnFinancement').css("display", "block");
             } else {
-                $('#besoinEnFinancement').css("display", "none");;
+                $('#besoinEnFinancement').css("display", "none");
             }
 
         }

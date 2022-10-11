@@ -7,7 +7,31 @@
               <span class="menu-title">Tableau de Bord</span>
             </a>
           </li>
-          <li class="nav-item">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('backend.admin.guichet-one.index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Guichet 1</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('backend.admin.guichet-three.index') }}">
+                    <i class="icon-list menu-icon"></i>
+                    <span class="menu-title">Guichet 3</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('backend.admin.guichet-four.index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Guichet 4</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('backend.admin.guichet-five.index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Guichet 5</span>
+                </a>
+            </li>
+         {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#guichet1" aria-expanded="false" aria-controls="guichet1">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 1</span>
@@ -38,7 +62,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li>--}}
 
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#guichet-3" aria-expanded="false" aria-controls="guichet-3">
@@ -52,7 +76,7 @@
               </ul>
             </div>
           </li> --}}
-          <li class="nav-item">
+         {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#guichet4" aria-expanded="false" aria-controls="guichet4">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Guichet 4</span>
@@ -83,7 +107,7 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li>--}}
      </ul>
 </nav>
 @endrole

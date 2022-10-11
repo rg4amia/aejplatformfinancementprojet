@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class DiplomeCertificat extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'titrediplome_certificat','nom_etablissement','periode','promoteur_id','projetpromoteurthree_id'
+    ];
 }
