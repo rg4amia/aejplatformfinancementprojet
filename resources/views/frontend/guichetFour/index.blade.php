@@ -91,7 +91,8 @@
                         
                     </div>
                     <br>
-                        <a href="{{route('form.projetguichet4co')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
+                       <!--  <a href="{{route('form.projetguichet4co')}}"><button class="btn btn-info"> Soumettre un projet</button></a> -->
+                        <a href="{{url('https://agenceemploijeunes.ci/site/demandeur_login')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
                     
                     
                     <!-- <button class="accordion">CREDIT ORDINAIRE</button>
