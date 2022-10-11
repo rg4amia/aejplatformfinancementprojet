@@ -1,4 +1,7 @@
 @extends('backend.partials.main')
+@php
+$active='guichet1';
+@endphp
 @section('content')
 @section('css')
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">

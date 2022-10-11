@@ -3,7 +3,7 @@
   $(function() {
     if ($("#order-chart").length) {
       var areaData = {
-        labels: ["10","","","20","","","30","","","40","","", "50","","", "60","","","70"],
+        labels: ["BELIER","MORONOU","IFFOU","SUD COMOE","FOLON","GÔH","LA ME","TONKPI","CAVALLY","GUEMON","TCHOLOGO","PORO", "MARAHOUE","GONTOUGO","BAGOUE", "GBÔKLÊ","HAMBOL","WORODOUGOU","BOUNKANI"],
         datasets: [
           {
             data: [200, 480, 700, 600, 620, 350, 380, 350, 850, "600", "650", "350", "590", "350", "620", "500", "990", "780", "650"],
@@ -184,14 +184,14 @@
         data: {
           labels: ["Jan", "Feb", "Mar", "Apr", "May"],
           datasets: [{
-              label: 'Offline Sales',
-              data: [480, 230, 470, 210, 330],
+              label: 'Hommes',
+              data: [4, 2, 7, 10, 3],
               backgroundColor: '#98BDFF'
             },
             {
-              label: 'Online Sales',
-              data: [400, 340, 550, 480, 170],
-              backgroundColor: '#4B49AC'
+              label: 'Femmes',
+              data: [3, 3, 5, 8, 17],
+              backgroundColor: '#f540b5'
             }
           ]
         },
@@ -218,9 +218,9 @@
               ticks: {
                 display: true,
                 min: 0,
-                max: 560,
+                max: 20,
                 callback: function(value, index, values) {
-                  return  value + '$' ;
+                  return  value + '' ;
                 },
                 autoSkip: true,
                 maxTicksLimit: 10,
