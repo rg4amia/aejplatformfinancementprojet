@@ -63,9 +63,38 @@
                     <div class="tour_head">
                         <h2>Moyenne Entreprise et Projets Structurants</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
+
+                    <div class="tour_head1 l-info-pack-days days">
+                        <h3>Description</h3>
+                        <ul>
+                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4> Composantes</h4>
+                                <p>- accompagnement des projets de développement d’entreprises formelles.</p>
+                                <p>- accès à la formation, au financement et au dispositif de suivi-encadrement.</p>
+                            </li>
+                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4> Cibles</h4>
+                                <p>- Jeunes (18 à 40 ans) déjà en activité (2 années d’existence minimum ).</p>
+                            </li>
+                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4> Besoins de financement</h4>
+                                <p>- 5 000 001 F CFA à 25 000 000 F CFA</p>
+                            </li>
+                            <li class="l-info-pack-plac"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4> Conditions de financement</h4>
+                                <p>- Type : Crédit; Duréede remboursement : 36 mois maximum.</p>
+                                <p>- Taux d’intérêt: à partir de 8% TAEG/an.</p>
+                                <p>- Apport personnel: 10% minimum.</p>
+                            </li>
+                        </ul>
+                        <br>
+                        
+                    </div>
+                    <br>
+                        <a href="{{route('form.projetguichet4co')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
                     
                     
-                    <button class="accordion">CREDIT ORDINAIRE</button>
+                    <!-- <button class="accordion">CREDIT ORDINAIRE</button>
                         <div class="panel">
 
                          <h3>Credit ordinaire</h3>
@@ -107,7 +136,7 @@
                         
                         <br>
                         <a href="{{route('form.projetguichet4ac')}}"><button class="btn btn-info"> Soumettre un projet</button></a>
-                        </div>
+                        </div> -->
                 </div>
                 <div class="col-md-3 tour_r">
 

@@ -10,7 +10,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>Capital d’Investissement (CI)</span> <!-- Family Package --></h2>
+                <h2><span>Capital Investissement (CI)</span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -18,7 +18,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Capital d’Investissement (CI)</a>
                     </li>
                 </ul>
-                <p>Capital d’Investissement (CI)</p>
+                <p>Capital Investissement (CI)</p>
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@
                 <div class="col-md-9">
                     <!--====== TOUR TITLE ==========-->
                     <div class="tour_head">
-                        <h2>Capital d’Investissement (CI)</h2> </div>
+                        <h2>Capital Investissement (CI)</h2> </div>
                     <!--====== TOUR DESCRIPTION ==========-->
                     <div class="tour_head1 l-info-pack-days days">
                         <h3>Description</h3>

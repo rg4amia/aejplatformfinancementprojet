@@ -134,7 +134,7 @@
                             <a class="course-overlay" href="{{route('guichet5')}}" target="_blank">
                             <div class="v_place_img"><img src="{{asset('frontend/images/t4.png')}}" alt="Capital d'investisement" title="Capital d'investisement" /> </div>
                             <span style="padding-bottom: 200px;">
-                                <h4> Capital d'investisement (CI)</h4>
+                                <h4> Capital Investisement (CI)</h4>
                             </span>
                             <span style="padding-bottom: 100px;text-align: left;">
                                 <h5 style="margin-left: 30px;">- Accompagnement des projets</h5>
@@ -149,7 +149,7 @@
                                     <div class="col-md-12 col-sm-12">
                                         <h5>
                                             <a href="{{route('guichet5')}}" target="_blank">
-                                                Capital d'investisement (CI)
+                                                Capital Investisement (CI)
                                                 <br>
                                                 <span class="v_pl_name"><!-- (Andaman) -->
                                         </span>

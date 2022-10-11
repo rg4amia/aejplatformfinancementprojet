@@ -83,7 +83,7 @@
                         @csrf()
                         <!-- One "tab" for each step in the form: -->
                         <div class="tab">
-                            <h5>I. INFORMATIONS SUR LE CANDIDAT :</h5>
+                            <h5>INFORMATIONS SUR LE CANDIDAT :</h5>
                             <table>
                                 <div class="form-group col-md-4">
                                     <label>Nom:</label>
@@ -225,8 +225,8 @@
                         </div>
 
                         <div class="tab">
-                            <h5>II. EDUCATION ET EXPERIENCE PROFESSIONNELLE :</h5>
-                            <h5>2.1. Veuillez indiquer vos diplômes et/ou certificats en commençant par les plus récents
+                            <h5>EDUCATION ET EXPERIENCE PROFESSIONNELLE :</h5>
+                            <h5>Veuillez indiquer vos diplômes et/ou certificats en commençant par les plus récents
                             </h5>
                             <table>
 
@@ -276,7 +276,7 @@
                                 </div>
 
                             </table>
-                            <h5>2.2. Veuillez rappeler votre expérience professionnelle </h5>
+                            <h5>Veuillez rappeler votre expérience professionnelle </h5>
                             <table>
                                 <div class="form-group col-md-2">
                                     <label>Nombre :</label>
@@ -341,13 +341,13 @@
                         </div>
 
                         <div class="tab">
-                            <h5>III. PRESENTATION DE L’IDEE DE PROJET ET/OU L’ENTREPRISE :</h5>
-                            <h6>3.1. Quelle est la dénomination de votre projet ? </h6>
+                            <h5>PRESENTATION DE L’IDEE DE PROJET ET/OU L’ENTREPRISE :</h5>
+                            <h6>Quelle est la dénomination de votre projet ? </h6>
                             <table>
                                 <div class="form-group row">
 
                                     <div class="col-md-4">
-                                        <label>3.2. Avez-vous débuté le projet ?</label>
+                                        <label>Avez-vous débuté le projet ?</label>
                                         <select class="form-control" id="debutProjet" name="debutprojet"
                                             onchange="displayDebutProjet(this.value)">
                                             <option value=""> </option>
@@ -362,7 +362,7 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label>3.3. Comment décrirez-vous le niveau de maturation de votre projet ?</label>
+                                        <label>Comment décrirez-vous le niveau de maturation de votre projet ?</label>
                                         {!! Form::select('niveaumaturation_id', $niveaumaturation, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                        {{-- <select class="form-control" id="descriptionMaturation"
                                             name="descriptionMaturation">
@@ -381,12 +381,12 @@
 
                                 <div class="form-group row">
                                     <div class="col-sm-6">
-                                        <label>3.4. Pouvez-vous décrire votre projet ?</label>
+                                        <label>Pouvez-vous décrire votre projet ?</label>
                                         <textarea placeholder="" class="form-control" id="descriptionProjet" name="decrireprojet"></textarea>
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label>3.5. A quel besoin économique votre projet ou idée répond-il ?</label>
+                                        <label>A quel besoin économique votre projet ou idée répond-il ?</label>
                                         <textarea placeholder="" class="form-control" id="besoinecono_projet" name="besoinecono_projet"></textarea>
                                     </div>
                                 </div>
@@ -394,14 +394,14 @@
 
                                     <div class="col-md-6">
                                         <label>
-                                            3.6. Quel est votre business model (modèle économique ou modèle d’affaires) ?
+                                            Quel est votre business model (modèle économique ou modèle d’affaires) ?
                                         </label>
                                         <textarea placeholder="" class="form-control" id="modelaffaire" name="modelaffaire">
                                         </textarea>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>
-                                            3.7. Quel est le marché cible ? quelle est votre stratégie marketing ?
+                                            Quel est le marché cible ? quelle est votre stratégie marketing ?
                                         </label>
                                         <textarea placeholder="" class="form-control" id="strategiemarketing" name="strategiemarketing"></textarea>
                                     </div>
@@ -409,7 +409,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-6">
-                                        <label>3.8. Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?
+                                        <label>Si déjà en activité, combien avez-vous d’utilisateurs ou clients ?
                                             combien d’utilisateurs paient l’usage du produit ou du service ?</label>
                                         <input class="form-control" type="number" name="combien_utilisateur" id="combien_utilisateur">
                                     </div>
@@ -420,7 +420,7 @@
 
                             <div class="form-group row col-md-12">
                                 <div class="col-md-12">
-                                    3.9. Si déjà en activité, quels sont vos résultats les plus récents en termes de vente
+                                    Si déjà en activité, quels sont vos résultats les plus récents en termes de vente
                                     de vos produits sur les 6 derniers mois ?
                                     <table>
                                         <thead>
@@ -511,18 +511,18 @@
                             <table>
                                 <div class="form-group row">
                                     <div class="col-md-6 ">
-                                        <label>3.10. Quel est la composition de votre équipe de gestion ? </label>
+                                        <label>Quel est la composition de votre équipe de gestion ? </label>
                                         <textarea placeholder="" class="form-control" id="compositionEquipe" name="compoequipe_gestion"></textarea>
                                     </div>
                                     <div class="col-md-6 ">
-                                        <label>3.11. Quel est votre rôle dans le projet ?</label>
+                                        <label>Quel est votre rôle dans le projet ?</label>
                                         <textarea placeholder="" class="form-control" id="monRole" name="role_in_projet"></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <div class="col-md-4 ">
-                                        <label>3.12. Etes-vous à plein temps dans le projet ? </label>
+                                        <label>Etes-vous à plein temps dans le projet ? </label>
                                         <select class="form-control" id="pleinTemps" name="plein_tps_in_projet"
                                             onchange="displayPleinTemps(this.value)">
                                             <option value=""> </option>
@@ -538,7 +538,7 @@
 
                                     <div class="col-md-4">
                                         <label>
-                                            3.13. Décrivez le plus précisément possible votre expérience dans l’activité envisagée
+                                            Décrivez le plus précisément possible votre expérience dans l’activité envisagée
                                         </label>
                                         <textarea class="form-control" name="experienceprecise" placeholder=""></textarea>
                                     </div>
@@ -548,7 +548,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4">
                                         <label>
-                                            3.14. Comment pouvez-vous décrire votre niveau de connaissance de l’activité/
+                                            Comment pouvez-vous décrire votre niveau de connaissance de l’activité/
                                             métier ?
                                         </label>
                                         {!! Form::select('descriptionconnaissance_id', $descriconnaissanceactivite, null, ['class' => 'select2-region form-control','required' => true,]) !!}
@@ -565,7 +565,7 @@
                                         </select>--}}
                                     </div>
                                     <div class="col-md-4">
-                                        <label>3.15. Avez-vous pris part à une formation en entrepreneuriat ? </label>
+                                        <label>Avez-vous pris part à une formation en entrepreneuriat ? </label>
                                         <select class="form-control" id="formationEntrepreunariat"
                                             name="formationentrepreunariat"
                                             onchange="displayFormationEntrepreunariat(this.value)">
@@ -582,7 +582,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-4">
-                                        <label>3.16. Avez-vous pris part à une formation en gestion d’entreprises ? </label>
+                                        <label>Avez-vous pris part à une formation en gestion d’entreprises ? </label>
                                         <select class="form-control" id="formationGestion" name="formationgestion"
                                             onchange="displayFormationGestion(this.value)">
                                             <option value=""> </option>
@@ -597,7 +597,7 @@
                                     </div>
 
                                     <div class="col-md-4">
-                                        <label>3.17. Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ? </label>
+                                        <label>Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ? </label>
                                             {{--niveaupratiqueentrepreunariat_id--}}
                                         {!! Form::select('niveaupratiqueentrepreunariat_id', $niveaupratiqueentrepreneuriat, null, ['class' => 'select2-region form-control','required' => true,]) !!}
 
@@ -606,7 +606,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-6">
-                                        <label>3.18. Comment pouvez-vous décrire votre niveau de pratique en gestion
+                                        <label>Comment pouvez-vous décrire votre niveau de pratique en gestion
                                             d’entreprise </label>
                                         {!! Form::select('niveaupratiqueentreprise_id', $niveaupratiqueentreprise, null, ['class' => 'select2-region form-control','required' => true,]) !!}
                                         {{--
@@ -626,18 +626,18 @@
                         </div>
 
                         <div class="tab">
-                            <h5>IV. BESOINS : </h5>
+                            <h5>BESOINS : </h5>
                             <table class="col-12">
 
                                 <div class="form-group row">
                                     <div class="col-md-6">
-                                        <label>4.1. Quels sont vos besoins actuels en formation pour mener à bien votre
+                                        <label>Quels sont vos besoins actuels en formation pour mener à bien votre
                                             projet ?</label>
                                         <textarea placeholder="Besoin actuels en formation" id="besoinsActuelsFormation"
                                                   name="besoinsactuelsformation" class="form-control"></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>4.2. Quels sont vos besoins actuels en accompagnement technique ou en gestion
+                                        <label>Quels sont vos besoins actuels en accompagnement technique ou en gestion
                                             pour mener à bien votre projet ?</label>
                                         <textarea placeholder="Besoins actuels en accompagnement" id="besoinsActuelsAccompagnement"
                                             name="besoinsactuelsaccompagnement" class="form-control"></textarea>
@@ -646,7 +646,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-4">
-                                        <label>4.3. Avez-vous un besoin de financement ? </label>
+                                        <label>Avez-vous un besoin de financement ? </label>
                                         <select class="form-control" id="formationGestion" name="besoinenfinancement"
                                             onchange="displayBesoinEnFinancement(this.value)">
                                             <option value=""> </option>
@@ -661,7 +661,7 @@
                                     </div>
 
                                     <div class="col-md-4">
-                                        <label>4.4. Quels sont les investissements à réaliser avec le concours financier
+                                        <label>Quels sont les investissements à réaliser avec le concours financier
                                             sollicité</label>
                                         <textarea placeholder="" id="investissementConcour" name="investconcour" class="form-control"></textarea>
                                     </div>
@@ -669,7 +669,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-6 ">
-                                        <label>4.2. Avez-vous d’autres besoins d’accompagnement (coaching, suivi,
+                                        <label>Avez-vous d’autres besoins d’accompagnement (coaching, suivi,
                                             etc.)</label>
                                         <textarea placeholder="Autres bésoins" id="autreBesoinsAccompagnement" name="autrebesoinsaccompagnement"
                                             class="form-control"></textarea>

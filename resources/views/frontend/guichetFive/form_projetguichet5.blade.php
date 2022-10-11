@@ -10,7 +10,7 @@
     <section>
         <div class="rows inner_banner inner_banner_4">
             <div class="container">
-                <h2><span>Capital d’Investissement (CI)</span> <!-- Family Package --></h2>
+                <h2><span>Capital Investissement (CI)</span> <!-- Family Package --></h2>
                 <ul>
                     <li><a href="{{url('/')}}">Accueil</a>
                     </li>
@@ -18,7 +18,7 @@
                     <li><a href="#inner-page-title" class="bread-acti">Soumettre un projet</a>
                     </li>
                 </ul>
-                <p>Capital d’Investissement (CI)</p>
+                <p>Capital Investissement (CI)</p>
             </div>
         </div>
     </section>
