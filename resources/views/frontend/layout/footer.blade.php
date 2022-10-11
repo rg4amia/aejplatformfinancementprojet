@@ -50,7 +50,7 @@
 <section>
     <div class="rows copy">
         <div class="container">
-            <p>Copyrights © 2018 Company Name. All Rights Reserved</p>
+            <p>Copyrights © 2022 Agence Emploi Jeunes. Tous droits reservés</p>
         </div>
     </div>
 </section>
