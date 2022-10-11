@@ -1,6 +1,6 @@
 @extends('frontend.layout.main_form')
 @section('content')
-  
+
     <!--END HEADER SECTION-->
 
     <!--====== BANNER ==========-->
@@ -31,7 +31,7 @@
                     </div>
 
                <div class="dir-rat-inn">
-                    <form >
+                    <form action="" >
                         <div class="form-group">
                         <div class="col-md-4">
                             <label>Nom:</label>
@@ -67,7 +67,7 @@
                              <label><h5>Quartier de résidence:</h5></label>
                             <input type="text" class="form-control" id="quartierResidence" name="quartierResidence" placeholder="Quatier de residence"> </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <div class="col-md-4">
                              <label><h5>Secteur d'activité:</h5></label>

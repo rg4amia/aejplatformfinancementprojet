@@ -1,5 +1,8 @@
 @extends('backend.partials.main')
 @section('content')
+@section('css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+@endsection
     <div class="content-wrapper">
           <div class="row">
 
@@ -34,6 +37,11 @@
     </div>
 @endsection
 @section('js')
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
     <script>
         var data = [];
         function setProjetCheck(elt,id){
@@ -45,7 +53,6 @@
         }
 
         $(function () {
-
            /* var table = $('#tableprojetguichetun').DataTable( {
                 "ajax": '{{ route('backend.admin.guichet-one.getindex') }}',
                 "columns": [
@@ -115,9 +122,17 @@
                 ajax: {
                     url: '{{ route('backend.admin.guichet-one.getindex') }}'
                 },
-                dom:'<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-right"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+                dom: 'Bfrtip',
+                //dom:'<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-right"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
                 colVis: {
                     exclude: [ 0 ]
+                },
+                initComplete: function () {
+                    $('.buttons-pdf').removeClass('dt-button buttons-pdf buttons-html5').addClass('btn btn-info btn-icon-text').html(
+                    'Imprimer <i class="ti-printer btn-icon-append"></i>'
+                    );
+                    //btn btn-info btn-icon-text"
+                    //dt-button buttons-pdf buttons-html5
                 },
                 columns: [
                     {data: 'date', visible: true},
@@ -128,81 +143,13 @@
                     {data: 'montantfinancement', visible: true},
                 ],
                 buttons: [
-                    {
-                        extend: 'colvis',
-                       // text: feather.icons['check-square'].toSvg({ class: 'font-small-4 mr-50' }) + 'Valider & Transmission Partenaire Financier',
-                        className: 'btn btn-relief-info mr-2',
-                        action: function ( e, dt, node, config ) {
-                            if(data.length == 0) {
-                                Swal.fire({
-                                    icon: 'warning',
-                                    title: 'Veuillez cocher un projet',
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    customClass: {
-                                        confirmButton: 'btn btn-primary'
-                                    },
-                                    buttonsStyling: false
-                                });
-                            } else {
-                                $("#btnTransmissionPF").click();
-                            }
-                        }
-                    },
-                    {
-                        extend: 'colvis',
-                        //text: feather.icons['eye'].toSvg({ class: 'font-small-4 mr-50' }) + 'Colonne',
-                        className: 'btn btn-relief-success dropdown-toggle mr-2',
-                    },
-                    {
-                        extend: 'collection',
-                        className: 'btn btn-relief-primary dropdown-toggle mr-2',
-                        //text: feather.icons['share'].toSvg({ class: 'font-small-4 mr-50' }) + 'Extraction',
-                        buttons: [
-                            {
-                                extend: 'print',
-                                //text: feather.icons['printer'].toSvg({ class: 'font-small-4 mr-50' }) + 'Print',
-                                className: 'dropdown-item',
-                                exportOptions: { columns: [3, 4, 5, 6, 7] }
-                            },
-                            {
-                                extend: 'csv',
-                                //text: feather.icons['file-text'].toSvg({ class: 'font-small-4 mr-50' }) + 'Csv',
-                                className: 'dropdown-item',
-                                exportOptions: { columns: [3, 4, 5, 6, 7] }
-                            },
-                            {
-                                extend: 'excel',
-                                //text: feather.icons['file'].toSvg({ class: 'font-small-4 mr-50' }) + 'Excel',
-                                className: 'dropdown-item',
-                                exportOptions: { columns: [3, 4, 5, 6, 7] }
-                            },
-                            {
-                                extend: 'pdf',
-                                //text: feather.icons['clipboard'].toSvg({ class: 'font-small-4 mr-50' }) + 'Pdf',
-                                className: 'dropdown-item',
-                                exportOptions: { columns: [3, 4, 5, 6, 7] }
-                            },
-                            {
-                                extend: 'copy',
-                                //text: feather.icons['copy'].toSvg({ class: 'font-small-4 mr-50' }) + 'Copy',
-                                className: 'dropdown-item',
-                                exportOptions: { columns: [3, 4, 5, 6, 7] }
-                            }
-                        ],
-                        init: function (api, node, config) {
-                            $(node).removeClass('btn-secondary');
-                            $(node).parent().removeClass('btn-group');
-                            setTimeout(function () {
-                                $(node).closest('.dt-buttons').removeClass('btn-group').addClass('d-inline-flex');
-                            }, 50);
-
-                        }
-                    },
-                ],
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+                ]
             });
         });
-
     </script>
 @endsection
 
