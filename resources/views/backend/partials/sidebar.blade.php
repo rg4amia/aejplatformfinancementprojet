@@ -1,18 +1,18 @@
 @role('admin')
    <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('backend.admin.dashboard') }}">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Tableau de Bord</span>
-            </a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('backend.admin.guichet-one.index') }}">
-                    <i class="icon-grid menu-icon"></i>
-                    <span class="menu-title">Guichet 1</span>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('backend.admin.dashboard') }}">
+                  <i class="icon-grid menu-icon"></i>
+                  <span class="menu-title">Tableau de Bord</span>
                 </a>
-            </li>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="{{ route('backend.admin.guichet-one.index') }}">
+                        <i class="icon-grid menu-icon"></i>
+                        <span class="menu-title">Guichet 1</span>
+                    </a>
+              </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.admin.guichet-three.index') }}">
                     <i class="icon-list menu-icon"></i>

@@ -14,9 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('diplome_certificats', function (Blueprint $table) {
-
-
-            $table->foreignId('projetpromoteurthree_id')->constrained('projet_promoteur_threes');
+            $table->dropForeign('diplome_certificats_projetpromoteurthree_id_foreign');
+            $table->renameColumn('projetpromoteurthree_id', 'projetpromoteurone_id')->constrained('projet_promoteur_ones')->change();
         });
     }
 

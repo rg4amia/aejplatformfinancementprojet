@@ -598,7 +598,7 @@
 
                                     <div class="col-md-4">
                                         <label>3.17. Comment pouvez-vous décrire votre niveau de pratique en entrepreneuriat ? </label>
-                                            {{--niveaupratiqueentrepreneuriat--}}
+                                            {{--niveaupratiqueentrepreunariat_id--}}
                                         {!! Form::select('niveaupratiqueentrepreunariat_id', $niveaupratiqueentrepreneuriat, null, ['class' => 'select2-region form-control','required' => true,]) !!}
 
                                     </div>

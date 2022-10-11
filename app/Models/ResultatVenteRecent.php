@@ -11,10 +11,10 @@ class ResultatVenteRecent extends Model
 
     protected $fillable = [
         'nbre_produit',
-        'montant_vente',
+        'montant_ventes',
         'montant_depenses',
-        'benefice',
+        'benefices',
         'promoteur_id',
-        'projetpromoteurthree_id'
+        'projetpromoteurone_id'
     ];
 }
