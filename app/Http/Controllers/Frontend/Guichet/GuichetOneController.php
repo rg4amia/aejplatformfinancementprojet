@@ -34,8 +34,6 @@ class GuichetOneController extends Controller
      */
     public function index()
     {
-
-
          return view('frontend.guichetOne.index');
     }
 
@@ -47,6 +45,12 @@ class GuichetOneController extends Controller
     public function form_mentor()
     {
         return view('frontend.guichetOne.form_mentor');
+    }
+
+
+    public function mentorStore(Request $request){
+        dd($request->all());
+
     }
 
     public function form_projetguichet1()
