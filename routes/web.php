@@ -42,8 +42,8 @@ Route::get('/guichet5', [GuichetFiveController::class, 'index'])->name('guichet5
 Route::get('/mentor_form', [GuichetOneController::class, 'form_mentor'])->name('mentor.form');
 
 Route::get('/projetguichet1_form', [GuichetOneController::class, 'form_projetguichet1'])->name('form.projetguichet1');
-
 Route::post('/projetguichet1_form/store', [GuichetOneController::class, 'store'])->name('form.projetguichet1.store');
+Route::get('/successful', [GuichetOneController::class, 'successful'])->name('form.projetguichet1.successful');
 
 Route::get('/projetguichet3_form', [GuichetThreeController::class, 'form_projetguichet3'])->name('form.projetguichet3');
 Route::post('/store', [GuichetThreeController::class, 'store'])->name('form.projetguichet3.store');
@@ -75,10 +75,12 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
 
             Route::group(['prefix' => 'one-guichet', 'as' => 'guichet-one.'], function () {
                 Route::get('index', [GuichetOneBackendController::class, 'index'])->name('index');
+                Route::get('getindex',[GuichetOneBackendController::class,'getIndex'])->name('getindex');
             });
 
             Route::group(['prefix' => 'guichet-three', 'as' => 'guichet-three.'], function () {
                 Route::get('index', [GuichetThreeBackendController::class, 'index'])->name('index');
+                Route::get('getindex',[GuichetThreeBackendController::class,'getIndex'])->name('getindex');
             });
 
             Route::group(['prefix' => 'guichet-four', 'as' => 'guichet-four.'], function () {

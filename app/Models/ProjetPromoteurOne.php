@@ -35,6 +35,13 @@ class ProjetPromoteurOne extends Model
         "besoinenfinancement",
         "montantfinancement",
         "investconcour",
-        "autrebesoinsaccompagnement"
+        "autrebesoinsaccompagnement",
+        "promoteur_id",
+        'matriculeprojet'
     ];
+
+    public function promoteur(){
+        return $this->belongsTo(Promoteur::class,'promoteur_id','id');
+    }
+
 }

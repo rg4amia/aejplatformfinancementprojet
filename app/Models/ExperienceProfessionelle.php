@@ -15,6 +15,6 @@ class ExperienceProfessionelle extends Model
         'entreprise',
         'fonction',
         'promoteur_id',
-        'projetpromoteurthree_id'
+        'projetpromoteurone_id'
     ];
 }

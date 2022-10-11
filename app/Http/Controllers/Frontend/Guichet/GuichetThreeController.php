@@ -234,7 +234,6 @@ class GuichetThreeController extends Controller
             $projet->save();
 
             if ($projet->save()) {
-
                 session()->flash('success', 'Projet crée avec success');
                 return redirect()->route('form.projetguichet3.successful');
             }

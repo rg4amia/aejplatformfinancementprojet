@@ -10,6 +10,6 @@ class DiplomeCertificat extends Model
     use HasFactory;
 
     protected $fillable = [
-        'titrediplome_certificat','nom_etablissement','periode','promoteur_id','projetpromoteurthree_id'
+        'titrediplome_certificat','nom_etablissement','periode','promoteur_id','projetpromoteurone_id'
     ];
 }

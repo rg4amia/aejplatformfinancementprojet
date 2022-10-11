@@ -13,10 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('diplome_certificats', function (Blueprint $table) {
-
-
-            $table->foreignId('projetpromoteurthree_id')->constrained('projet_promoteur_threes');
+        Schema::table('projet_promoteur_ones', function (Blueprint $table) {
+            $table->string('matriculeprojet')->nullable();
         });
     }
 
@@ -27,7 +25,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('diplome_certificats', function (Blueprint $table) {
+        Schema::table('projet_promoteur_ones', function (Blueprint $table) {
             //
         });
     }

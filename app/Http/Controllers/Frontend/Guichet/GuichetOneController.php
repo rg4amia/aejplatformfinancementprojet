@@ -13,6 +13,7 @@ use App\Models\NiveauMaturationParam;
 use App\Models\NiveauPratiqueEntrepreneuriat;
 use App\Models\NiveauPratiqueEntreprise;
 use App\Models\ProjetPromoteurOne;
+use App\Models\ProjetPromoteurThree;
 use App\Models\Promoteur;
 use App\Models\Region;
 use App\Models\ResultatVenteRecent;
@@ -21,6 +22,7 @@ use App\Models\SituationMatrimonialeParam;
 use App\Models\UniteAnne;
 use Database\Seeders\DescrConnaissanceActiviteSeeder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class GuichetOneController extends Controller
@@ -126,11 +128,11 @@ class GuichetOneController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        /*$validated = Validator::make(
+       /* $validated = Validator::make(
             [
                 'nom'                   => $request->nom,
                 'prenom'                => $request->prenom,
@@ -184,7 +186,7 @@ class GuichetOneController extends Controller
                 'connaissanceaquise'        => $request->connaissanceaquise,
                 'formationgestion'        => $request->formationgestion,
                 'connaissanceaquisegestion'        => $request->connaissanceaquisegestion,
-                'niveaupratiqueentrepreneuriat_id'        => $request->niveaupratiqueentrepreunariat_id,
+                'niveaupratiqueentrepreunariat_id'        => $request->niveaupratiqueentrepreunariat_id,
                 'niveaupratiqueentreprise_id'        => $request->niveaupratiqueentreprise_id,
                 'besoinsactuelsformation'        => $request->besoinsactuelsformation,
                 'besoinsactuelsaccompagnement'        => $request->besoinsactuelsaccompagnement,
@@ -295,65 +297,64 @@ class GuichetOneController extends Controller
             ]
         )->validate();*/
 
-
-        try {
-
-            $promoteur = Promoteur::find(promoteurLogin()->id);
-            $promoteur->update([
-                  "nom" =>  $request->nom,
-                  "prenom" =>  $request->prenom,
-                  "datedenaissance" =>  $request->datedenaissance,
-                  "lieudenaissance" => $request->lieudenaissance,
-                  "sexe_id" => $request->sexe_id,
-                  "nationalite_id" =>  $request->nationalite_id,
-                  "niveauetudeprojet_id" => $request->niveauetudeprojet_id,
-                  "dernier_diplome" => $request->dernier_diplome,
-                  "situationmatrimoniale_id" => $request->situationmatrimoniale_id,
-                  "nombreenfant" => $request->nombreenfant,
-                  "nombrepers_charge" => $request->nombrepers_charge,
-                  "commune_id" => $request->commune_id,
-                  "region_id" => $request->region_id,
-                  "adressepostale" =>$request->adressepostale,
-                  "adressegeoprecise" => $request->adressegeoprecise,
-                  "telfixe" =>$request->telfixe,
-                  "cellulaire" => $request->cellulaire,
-                  "email" => $request->email,
-            ]);
-
-            //dd($request->all());
-
-            if($promoteur){
-
-                $projet = ProjetPromoteurOne::create([
-                     "debutprojet" => $request->debutprojet,
-                      "datedebutprojet" => $request->datedebutprojet,
-                      "niveaumaturation_id" => $request->niveaumaturation_id,
-                      "decrireprojet" => $request->decrireprojet,
-                      "besoinecono_projet" => $request->besoinecono_projet,
-                      "modelaffaire" => $request->modelaffaire,
-                      "strategiemarketing" => $request->strategiemarketing,
-                      "combien_utilisateur" => $request->combien_utilisateur,
-                      "compoequipe_gestion" => $request->compoequipe_gestion,
-                      "role_in_projet" => $request->role_in_projet,
-                      "plein_tps_in_projet" => $request->plein_tps_in_projet,
-                      "resttemps" => $request->resttemps,
-                      "experienceprecise" => $request->experienceprecise,
-                      "descriptionconnaissance_id" => $request->descriptionconnaissance_id,
-                      "formationentrepreunariat" => $request->formationentrepreunariat,
-                      "connaissanceaquise" => $request->connaissanceaquise,
-                      "formationgestion" =>  $request->formationgestion,
-                      "connaissanceaquisegestion" => $request->connaissanceaquisegestion,
-                      "niveaupratiqueentrepreunariat_id" => $request->niveaupratiqueentrepreneuriat_id,
-                      "niveaupratiqueentreprise_id" => $request->niveaupratiqueentreprise_id,
-                      "besoinsactuelsformation" => $request->besoinsactuelsformation,
-                      "besoinsactuelsaccompagnement" => $request->besoinsactuelsaccompagnement,
-                      "besoinenfinancement" => $request->besoinenfinancement,
-                      "montantfinancement" => $request->montantfinancement,
-                      "investconcour" => $request->investconcour,
-                      "autrebesoinsaccompagnement" => $request->autrebesoinsaccompagnement,
+        // Transaction
+        $exception = DB::transaction(function() use ($request) {
+            // try...catch
+            try {
+                // Do your SQL here
+                $promoteur = Promoteur::find(promoteurLogin()->id);
+                $promoteur->update([
+                    "nom" =>  $request->nom,
+                    "prenom" =>  $request->prenom,
+                    "datedenaissance" =>  $request->datedenaissance,
+                    "lieudenaissance" => $request->lieudenaissance,
+                    "sexe_id" => $request->sexe_id,
+                    "nationalite_id" =>  $request->nationalite_id,
+                    "niveauetudeprojet_id" => $request->niveauetudeprojet_id,
+                    "dernier_diplome" => $request->dernier_diplome,
+                    "situationmatrimoniale_id" => $request->situationmatrimoniale_id,
+                    "nombreenfant" => $request->nombreenfant,
+                    "nombrepers_charge" => $request->nombrepers_charge,
+                    "commune_id" => $request->commune_id,
+                    "region_id" => $request->region_id,
+                    "adressepostale" =>$request->adressepostale,
+                    "adressegeoprecise" => $request->adressegeoprecise,
+                    "telfixe" =>$request->telfixe,
+                    "cellulaire" => $request->cellulaire,
+                    "email" => $request->email,
                 ]);
 
-                if($projet){
+                    $projet = new ProjetPromoteurOne();
+                    $projet->debutprojet            = $request->debutprojet;
+                    $projet->datedebutprojet        = $request->datedebutprojet;
+                    $projet->niveaumaturation_id    = $request->niveaumaturation_id;
+                    $projet->decrireprojet          = $request->decrireprojet;
+                    $projet->besoinecono_projet     = $request->besoinecono_projet;
+                    $projet->modelaffaire           = $request->modelaffaire;
+                    $projet->strategiemarketing     = $request->strategiemarketing;
+                    $projet->combien_utilisateur    = $request->combien_utilisateur;
+                    $projet->compoequipe_gestion    = $request->compoequipe_gestion;
+                    $projet->role_in_projet         = $request->role_in_projet;
+                    $projet->plein_tps_in_projet    = $request->plein_tps_in_projet;
+                    $projet->resttemps              = $request->resttemps;
+                    $projet->experienceprecise      = $request->experienceprecise;
+                    $projet->descriptionconnaissance_id = $request->descriptionconnaissance_id;
+                    $projet->formationentrepreunariat   = $request->formationentrepreunariat;
+                    $projet->connaissanceaquise         = $request->connaissanceaquise;
+                    $projet->formationgestion           = $request->formationgestion;
+                    $projet->connaissanceaquisegestion  = $request->connaissanceaquisegestion;
+                    $projet->niveaupratiqueentrepreunariat_id   = $request->niveaupratiqueentrepreunariat_id;
+                    $projet->niveaupratiqueentreprise_id        = $request->niveaupratiqueentreprise_id;
+                    $projet->besoinsactuelsformation            = $request->besoinsactuelsformation;
+                    $projet->besoinsactuelsaccompagnement       = $request->besoinsactuelsaccompagnement;
+                    $projet->besoinenfinancement                = $request->besoinenfinancement;
+                    $projet->montantfinancement                 = $request->montantfinancement;
+                    $projet->investconcour                      = $request->investconcour;
+                    $projet->autrebesoinsaccompagnement         = $request->autrebesoinsaccompagnement;
+                    $projet->promoteur_id                       = promoteurLogin()->id;
+                    $projet->save();
+
+                    if($projet){
 
                         DiplomeCertificat::create(
                             [
@@ -361,26 +362,27 @@ class GuichetOneController extends Controller
                                 'nom_etablissement' =>  $request->exp['etablissement'],
                                 'periode' =>  $request->exp['periode'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
+
                         DiplomeCertificat::create(
                             [
                                 'titrediplome_certificat' =>  $request->exp1['certificat'],
                                 'nom_etablissement' =>  $request->exp1['etablissement'],
                                 'periode' =>  $request->exp1['periode'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
-                       DiplomeCertificat::create(
+                        DiplomeCertificat::create(
                             [
                                 'titrediplome_certificat' =>  $request->exp2['certificat'],
                                 'nom_etablissement' =>  $request->exp2['etablissement'],
                                 'periode' =>  $request->exp2['periode'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
@@ -391,7 +393,7 @@ class GuichetOneController extends Controller
                                 'entreprise' =>  $request->exppro['entreprise'],
                                 'fonction' =>  $request->exppro['fonction'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
@@ -402,156 +404,118 @@ class GuichetOneController extends Controller
                                 'entreprise' =>  $request->exppro1['entreprise'],
                                 'fonction' =>  $request->exppro1['fonction'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
-                        $experiencediplome = ExperienceProfessionelle::create(
+                        ExperienceProfessionelle::create(
                             [
                                 'nombre' =>  $request->exppro2['nombre'],
                                 'unite' =>  $request->exppro2['unite'],
                                 'entreprise' =>  $request->exppro2['entreprise'],
                                 'fonction' =>  $request->exppro2['fonction'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
-                        $experiencediplome = ResultatVenteRecent::create(
+                        ResultatVenteRecent::create(
                             [
                                 'nbre_produit' =>  $request->result['nbre_produit'],
-                                'montant_vente' =>  $request->result['montant_vente'],
+                                'montant_ventes' =>  $request->result['montant_vente'],
                                 'montant_depenses' =>  $request->result['montant_depenses'],
-                                'benefice' =>  $request->result['benefice'],
+                                'benefices' =>  $request->result['benefice'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
-                      ResultatVenteRecent::create(
+                        ResultatVenteRecent::create(
                             [
                                 'nbre_produit' =>  $request->result1['nbre_produit'],
-                                'montant_vente' =>  $request->result1['montant_vente'],
+                                'montant_ventes' =>  $request->result1['montant_vente'],
                                 'montant_depenses' =>  $request->result1['montant_depenses'],
-                                'benefice' =>  $request->result1['benefice'],
+                                'benefices' =>  $request->result1['benefice'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
-                         ResultatVenteRecent::create(
+                        ResultatVenteRecent::create(
                             [
                                 'nbre_produit' =>  $request->result2['nbre_produit'],
-                                'montant_vente' =>  $request->result2['montant_vente'],
+                                'montant_ventes' =>  $request->result2['montant_vente'],
                                 'montant_depenses' =>  $request->result2['montant_depenses'],
-                                'benefice' =>  $request->result2['benefice'],
+                                'benefices' =>  $request->result2['benefice'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
 
                         ResultatVenteRecent::create(
                             [
                                 'nbre_produit' =>  $request->result3['nbre_produit'],
-                                'montant_vente' =>  $request->result3['montant_vente'],
+                                'montant_ventes' =>  $request->result3['montant_vente'],
                                 'montant_depenses' =>  $request->result3['montant_depenses'],
-                                'benefice' =>  $request->result3['benefice'],
+                                'benefices' =>  $request->result3['benefice'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
-
-                       ResultatVenteRecent::create(
-                            [
-                                'nbre_produit' =>  $request->result['nbre_produit'],
-                                'montant_vente' =>  $request->result['montant_vente'],
-                                'montant_depenses' =>  $request->result['montant_depenses'],
-                                'benefice' =>  $request->result['benefice'],
-                                'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
-                            ]
-                        );
-                    }
 
                         ResultatVenteRecent::create(
                             [
-                                'nbre_produit' =>  $request->result5['nbre_produit'],
-                                'montant_vente' =>  $request->result5['montant_vente'],
-                                'montant_depenses' =>  $request->result5['montant_depenses'],
-                                'benefice' =>  $request->result5['benefice'],
+                                'nbre_produit' =>  $request->result['nbre_produit'],
+                                'montant_ventes' =>  $request->result['montant_vente'],
+                                'montant_depenses' =>  $request->result['montant_depenses'],
+                                'benefices' =>  $request->result['benefice'],
                                 'promoteur_id' =>  promoteurLogin()->id,
-                                'projetpromoteurthree_id' => $projet->id,
+                                'projetpromoteurone_id' => $projet->id,
                             ]
                         );
+
+                    ResultatVenteRecent::create(
+                        [
+                            'nbre_produit' =>  $request->result5['nbre_produit'],
+                            'montant_ventes' =>  $request->result5['montant_vente'],
+                            'montant_depenses' =>  $request->result5['montant_depenses'],
+                            'benefices' =>  $request->result5['benefice'],
+                            'promoteur_id' =>  promoteurLogin()->id,
+                            'projetpromoteurone_id' => $projet->id,
+                        ]
+                    );
+                        $dayorder = ProjetPromoteurThree::where('created_at', '>=', date('Y-m-d'))->count(); //l'ordre du jour
+                        $matriculeprojet =  $projet->id . '-' . $dayorder;
+                        $projet->matriculeprojet = $matriculeprojet;
+                        $projet->save();
                     }
 
+                DB::commit();
+            } catch(\Exception $e) {
+                DB::rollback();
+                $message_error = $e->getMessage();
+                session()->flash('warning', $message_error);
+                throw $e;
+            }
+        });
 
+        $check = is_null($exception) ? true : false;
 
-        } catch (\Exception $e){
-            dd($e->getMessage());
+        if($check == true){
+            session()->flash('success', 'Projet crée avec success');
+            return redirect()->route('form.projetguichet1.successful');
+        }else{
+            return back();
         }
+    }
 
-        /*"nom" => "traore"
-  "prenom" => "messedjan"
-  "datedenaissance" => "1975-05-18"
-  "lieudenaissance" => "1975-05-18"
-  "sexe_id" => "1"
-  "nationalite_id" => "1"
-  "niveauetudeprojet_id" => "0"
-  "dernier_diplome" => "TEST"
-  "situationmatrimoniale_id" => "2"
-  "nombreenfant" => "2"
-  "nombrepers_charge" => "5"
-  "commune_id" => "0"
-  "region_id" => "19"
-  "adressepostale" => null
-  "adressegeoprecise" => "test"
-  "telfixe" => "0998989098"
-  "cellulaire" => "0704762810"
-  "email" => "ahout76@yahoo.fr"
-  "exp" => array:3 [▼
-    "certificat" => "test"
-    "etablissement" => "test"
-    "periode" => "2022"
-  ]
-  "exppro" => array:4 [▼
-    "nombre" => "3"
-    "unite" => "2"
-    "entreprise" => "test"
-    "fonction" => "derche"
-  ]
-  "debutprojet" => "1"
-  "datedebutprojet" => "2022-10-12"
-  "niveaumaturation_id" => "5"
-  "descrireprojet" => "test"
-  "besoinecono_projet" => "ets"
-  "modelaffaire" => "test"
-  "strategiemarketing" => "test"
-  "combien_utilisateur" => "4"
-  "result" => array:4 [▼
-    "nbre_produit" => "500"
-    "montant_vente" => "500"
-    "montant_depenses" => "500"
-    "benefice" => "500"
-  ]
-  "compoequipe_gestion" => "test"
-  "role_in_projet" => "test"
-  "plein_tps_in_projet_" => "1"
-  "resttemps" => "test"
-  "experienceprecise" => "test"
-  "descriptionconnaissance_id" => "1"
-  "formationentrepreunariat" => "1"
-  "connaissanceaquise" => "test"
-  "formationgestion" => "1"
-  "connaissanceaquisegestion" => "test"
-  "niveaupratiqueentrepreneuriat_id" => "1"
-  "niveaupratiqueentreprise_id" => "1"
-  "besoinsactuelsformation" => "test"
-  "besoinsactuelsaccompagnement" => "test"
-  "besoinenfinancement" => "1"
-  "montantfinancement" => "50000"
-  "investconcour" => "test"
-  "autrebesoinsaccompagnement" => "test"*/
+    public function successful()
+    {
+        if (session()->get('success')) {
+            return view('frontend.guichetOne.successfull');
+        } else {
+            return redirect()->route('form.projetguichet1');
+        }
     }
 
     /**
