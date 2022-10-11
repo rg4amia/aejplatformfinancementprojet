@@ -42,7 +42,7 @@ class UserBackendController extends Controller
 
             if (Auth::guard()->attempt($credentials)) {
                 $login = User::whereEmail($request->email)->first();
-                return redirect()->route('backend.dashboard');
+                return redirect()->route('backend.admin.dashboard');
             } else {
                 session()->flash('warning', 'Votre adresse électronique ou votre mot de passe est incorrecte');
                 return back();

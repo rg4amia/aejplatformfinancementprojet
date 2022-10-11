@@ -9,10 +9,10 @@ use App\Http\Controllers\Frontend\Guichet\GuichetFourController;
 use App\Http\Controllers\Frontend\Guichet\GuichetFiveController;
 use App\Http\Controllers\Frontend\User\UserController;
 use App\Http\Controllers\Backend\UserBackendController;
-use App\Http\Controllers\Backend\GuichetOne\GuichetOneBackendController;
-use App\Http\Controllers\Backend\GuichetThree\GuichetThreeBackendController;
-use App\Http\Controllers\Backend\GuichetFour\GuichetFourBackendController;
-use App\Http\Controllers\Backend\GuichetFive\GuichetFiveBackendController;
+use App\Http\Controllers\Backend\Admin\GuichetOne\GuichetOneBackendController;
+use App\Http\Controllers\Backend\Admin\GuichetThree\GuichetThreeBackendController;
+use App\Http\Controllers\Backend\Admin\GuichetFour\GuichetFourBackendController;
+use App\Http\Controllers\Backend\Admin\GuichetFive\GuichetFiveBackendController;
 use App\Http\Controllers\Backend\Mentor\DashMentorController;
 use App\Http\Controllers\Backend\Promoteur\DashPromoteurController;
 use App\Http\Controllers\Backend\Promoteur\SuiviProjetController;
@@ -38,8 +38,12 @@ Route::get('/guichet2', [GuichetTwoController::class, 'index'])->name('guichet2'
 Route::get('/guichet3', [GuichetThreeController::class, 'index'])->name('guichet3');
 Route::get('/guichet4', [GuichetFourController::class, 'index'])->name('guichet4');
 Route::get('/guichet5', [GuichetFiveController::class, 'index'])->name('guichet5');
+
 Route::get('/mentor_form', [GuichetOneController::class, 'form_mentor'])->name('mentor.form');
+
 Route::get('/projetguichet1_form', [GuichetOneController::class, 'form_projetguichet1'])->name('form.projetguichet1');
+
+Route::post('/projetguichet1_form/store', [GuichetOneController::class, 'store'])->name('form.projetguichet1.store');
 
 Route::get('/projetguichet3_form', [GuichetThreeController::class, 'form_projetguichet3'])->name('form.projetguichet3');
 Route::post('/store', [GuichetThreeController::class, 'store'])->name('form.projetguichet3.store');
@@ -69,7 +73,7 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.'], function () {
         Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('tableau-de-board', [DashboardController::class, 'index'])->name('dashboard');
 
-            Route::group(['prefix' => 'guichet-one', 'as' => 'guichet-one.'], function () {
+            Route::group(['prefix' => 'one-guichet', 'as' => 'guichet-one.'], function () {
                 Route::get('index', [GuichetOneBackendController::class, 'index'])->name('index');
             });
 
