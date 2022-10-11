@@ -65,7 +65,7 @@
                     <!--====== TOUR DESCRIPTION ==========-->
                     
                     <div class="">
-                        <button class="accordion">Mentorat solidaire (Business Angel)</button>
+                        <button class="accordion">MENTORAT SOLIDAIRE (BUSINESS ANGEL)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
                         <h2>Mentorat solidaire (Business Angel)</h2>
                         <ul>
@@ -87,7 +87,7 @@
                     </div>
 
                          <br>
-                        <button class="accordion">Activités Génératrices de Revenus (AGR) </button>
+                        <button class="accordion">ACTIVITES GENERATRICES DE REVENUS (AGR)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
                         <h2>Activités Génératrices de Revenus (AGR)</h2>
                         <ul>
@@ -114,7 +114,7 @@
                     </div>
                        
                        <br>
-                        <button class="accordion">Micro et Petites Entreprises (MPE) </button>
+                        <button class="accordion">MICRO ET PETITES ENTREPRISES (MPE)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
                         <h2>Micro et Petites Entreprises (MPE)</h2>
                         <ul>
@@ -141,7 +141,7 @@
                     </div>
 
                          <br>
-                        <button class="accordion">Moyennes Entreprises et Projets Structurants (MEPS)</button>
+                        <button class="accordion">MOYENNES ENTREPRISES ET PROJETS STRUCTURANTS (MEPS)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
                         <h2>Moyennes Entreprises et Projets Structurants (MEPS)</h2>
                          <ul>
@@ -165,7 +165,7 @@
                     </div>
                         
                         <br>
-                        <button class="accordion">Capital Investissement (CI)</button>
+                        <button class="accordion">CAPITAL INVESTISSEMENT (CI)</button>
                         <div class="panel tour_head1 l-info-pack-days days">
                         <h2>Capital Investissement (CI)</h2>
                         <ul>
