@@ -52,17 +52,17 @@
                 <div class="ed-com-t1-social">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/AgenceEmploiJeunes">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            <a href="https://www.linkedin.com/company/agence-emploi-jeunes/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/EmploiJeunesci">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
                         </li>

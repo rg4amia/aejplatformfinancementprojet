@@ -32,11 +32,11 @@
                                 <h4><span>Suivez-nous</span> sur</h4>
                                <!--  <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p> -->
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                                    <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+                                    <li><a href="https://www.facebook.com/AgenceEmploiJeunes"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                   <!--  <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li> -->
+                                    <li><a href="https://twitter.com/EmploiJeunesci"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                    <li><a href="https://www.linkedin.com/company/agence-emploi-jeunes"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                   <!--  <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
 <section>
     <div class="icon-float">
         <ul>
-            <li><a href="#" class="sh">1k <br> Share</a> </li>
+            <!-- <li><a href="#" class="sh">1k <br> Share</a> </li> -->
             <li><a href="https://www.facebook.com/AgenceEmploiJeunes" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
            <!--  <li><a href="#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li> -->
             <li><a href="https://twitter.com/EmploiJeunesci" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
