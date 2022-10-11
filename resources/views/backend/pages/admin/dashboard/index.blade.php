@@ -1,4 +1,7 @@
 @extends('backend.partials.main')
+@php
+$active='das';
+@endphp
 @section('content')
     <div class="content-wrapper">
           <div class="row">
@@ -30,15 +33,15 @@
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card tale-bg">
                 <div class="card-people mt-auto">
-                  <img src="images/dashboard/people.svg" alt="people">
+                  <img src="{{asset('backend/images/dashboard/people.svg')}}" alt="people">
                   <div class="weather-info">
                     <div class="d-flex">
                       <div>
                         <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>31<sup>C</sup></h2>
                       </div>
                       <div class="ml-2">
-                        <h4 class="location font-weight-normal">Bangalore</h4>
-                        <h6 class="font-weight-normal">India</h6>
+                        <h4 class="location font-weight-normal">Cote d'ivoire</h4>
+                        <h6 class="font-weight-normal">Abidjan</h6>
                       </div>
                     </div>
                   </div>
@@ -50,18 +53,18 @@
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Today’s Bookings</p>
-                      <p class="fs-30 mb-2">4006</p>
-                      <p>10.00% (30 days)</p>
+                      <p class="mb-4">MENTORAT SOLIDAIRE</p>
+                      <p class="fs-30 mb-2">10 Projet(s)</p>
+                      <p>25%</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card card-dark-blue">
                     <div class="card-body">
-                      <p class="mb-4">Total Bookings</p>
-                      <p class="fs-30 mb-2">61344</p>
-                      <p>22.00% (30 days)</p>
+                      <p class="mb-4">MICRO ET PETITE ENTREPRISE</p>
+                      <p class="fs-30 mb-2">112 Projet(s)</p>
+                      <p>25%</p>
                     </div>
                   </div>
                 </div>
@@ -70,18 +73,18 @@
                 <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
                   <div class="card card-light-blue">
                     <div class="card-body">
-                      <p class="mb-4">Number of Meetings</p>
-                      <p class="fs-30 mb-2">34040</p>
-                      <p>2.00% (30 days)</p>
+                      <p class="mb-4">MOYENNE ENTREPRISE & PROJETS STRUCTURANT</p>
+                      <p class="fs-30 mb-2">112 Projet(s)</p>
+                      <p>25%</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 stretch-card transparent">
                   <div class="card card-light-danger">
                     <div class="card-body">
-                      <p class="mb-4">Number of Clients</p>
-                      <p class="fs-30 mb-2">47033</p>
-                      <p>0.22% (30 days)</p>
+                      <p class="mb-4">CAPITAL D'INVESTISSEMENT</p>
+                      <p class="fs-30 mb-2">16 Projet(s)</p>
+                      <p>25%</p>
                     </div>
                   </div>
                 </div>
@@ -92,24 +95,24 @@
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-title">Order Details</p>
-                  <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                  <p class="card-title">PROJET PAR REGION</p>
+                  <p class="font-weight-500"><!-- The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc --></p>
                   <div class="d-flex flex-wrap mb-5">
                     <div class="mr-5 mt-3">
-                      <p class="text-muted">Order value</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">12.3k</h3>
+                      <p class="text-muted">MS (BA)</p>
+                      <h3 class="text-primary fs-20 font-weight-medium">25%</h3>
                     </div>
                     <div class="mr-5 mt-3">
-                      <p class="text-muted">Orders</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">14k</h3>
+                      <p class="text-muted">M & PE</p>
+                      <h3 class="text-primary fs-20 font-weight-medium">25%</h3>
                     </div>
                     <div class="mr-5 mt-3">
-                      <p class="text-muted">Users</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">71.56%</h3>
+                      <p class="text-muted">ME & PS</p>
+                      <h3 class="text-primary fs-20 font-weight-medium">25%</h3>
                     </div>
                     <div class="mt-3">
-                      <p class="text-muted">Downloads</p>
-                      <h3 class="text-primary fs-30 font-weight-medium">34040</h3>
+                      <p class="text-muted">CI</p>
+                      <h3 class="text-primary fs-20 font-weight-medium">25%</h3>
                     </div>
                   </div>
                   <canvas id="order-chart"></canvas>
@@ -120,10 +123,10 @@
               <div class="card">
                 <div class="card-body">
                  <div class="d-flex justify-content-between">
-                  <p class="card-title">Sales Report</p>
+                  <p class="card-title">PROMOTEUR PAR GENRE</p>
                   <a href="#" class="text-info">View all</a>
                  </div>
-                  <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                  <p class="font-weight-500"><!-- The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc --></p>
                   <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
                   <canvas id="sales-chart"></canvas>
                 </div>
@@ -615,7 +618,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -643,7 +646,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
         </div>
     <!-- content-wrapper ends -->
 @endsection

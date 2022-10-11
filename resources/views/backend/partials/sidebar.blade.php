@@ -1,13 +1,13 @@
 @role('admin')
    <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item  <?php if($active=='dash'){echo 'active';} ?>">
             <a class="nav-link" href="{{ route('backend.admin.dashboard') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Tableau de Bord</span>
             </a>
           </li>
-            <li class="nav-item">
+            <li class="nav-item <?php if($active=='guichet1'){echo 'active';} ?>">
                 <a class="nav-link" href="{{ route('backend.admin.guichet-one.index') }}">
                     <i class="icon-grid menu-icon"></i>
                     <span class="menu-title">Guichet 1</span>
@@ -31,6 +31,7 @@
                     <span class="menu-title">Guichet 5</span>
                 </a>
             </li>
+
          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#guichet1" aria-expanded="false" aria-controls="guichet1">
               <i class="icon-layout menu-icon"></i>

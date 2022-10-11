@@ -1,4 +1,7 @@
 @extends('backend.partials.main')
+@php
+$active='guichet1';
+@endphp
 @section('content')
     <div class="content-wrapper">
           <div class="row">
