@@ -17,7 +17,7 @@
                 <div>
                     <!-- TOUR PLACE 1 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow slideInUp" data-wow-duration="0.5s">
-                        <a class="course-overlay" href="{{ route('guichet1') }}">
+                        <a class="course-overlay" href="{{ route('guichet1') }}" target="_blank">
                             <!-- IMAGE -->
                             <span style="padding-bottom: 200px;">
                                 <h4>Mentorat solidaire (Business Angel)</h4>
@@ -46,7 +46,7 @@
                     </div>
                     <!-- TOUR PLACE 2 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.7s">
-                        <a class="course-overlay" href="{{ route('guichet2') }}">
+                        <a class="course-overlay" href="{{ route('guichet2') }}" target="_blank">
 
                             <span style="padding-bottom: 200px;">
                                 <h4>Activité Génératrice de revenu(AGR)</h4>
@@ -75,7 +75,7 @@
                     </div>
                     <!-- TOUR PLACE 3 -->
                     <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.9s">
-                        <a class="course-overlay" href="{{route('guichet3')}}">
+                        <a class="course-overlay" href="{{route('guichet3')}}" target="_blank">
 
                             <span style="padding-bottom: 200px;">
                                 <h4>Micro et petite Entreprise (MPE)</h4>
