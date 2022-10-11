@@ -166,5 +166,27 @@
                 </div>
             </div>
         </div>
+        <div class="spe-title">
+                    <h2>Nos <span>Partenaires</span></h2>
+                    <div class="title-line">
+                        <div class="tl-1"></div>
+                        <div class="tl-2"></div>
+                        <div class="tl-3"></div>
+                    </div>
+                   <div class="row">
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/banquepoplaire.png')}}" alt="Banque populaire" style="width : 120px;height : 65px;" /></div>
+
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/comocapital.png')}}" alt="Como Capital" style="width : 130px;height : 65px;" /></div>
+
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/unacoopec.png')}}" alt="coopec" style="width : 90px;height : 90px;" /></div>
+
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/societegenerale.png')}}" alt="Societe générale" style="width : 90px;height : 90px;" /></div>
+
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/orangebank.png')}}" alt="Orabank" style="width : 80px;height : 80px;" /></div>
+
+                    <div class="col-sm-2"><img src="{{asset('frontend/images/partenaires/filelle.png')}}" alt="fin'elle" style="width : 120px;height : 65px;" /></div>
+                       
+                   </div>
+                </div>
     </section>
 @endsection
