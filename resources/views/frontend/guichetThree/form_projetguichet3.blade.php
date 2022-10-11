@@ -58,11 +58,22 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                             <label>Selectionnez la region:</label>
-                            {!! Form::select('region_id', $region,null, ['class' => 'select2-region form-control', 'required' => true]) !!}
+                            <select class="select2-region form-control" required id="region_id" name="region_id" onchange="getVilleByRegionId(this.value)">
+                                            <option value="">Selectionnez région</option>
+                                            @foreach($regions as $region)
+                                            <option value="{{$region->id}}">{{$region->nom}}</option>
+                                            @endforeach
+                                        </select>
+                           <!--  {!! Form::select('region_id', $region,null, ['class' => 'select2-region form-control', 'required' => true]) !!} -->
                         </div>
                         <div class=" col-md-4">
-                             <label>Commune:</label>
-                             {!! Form::select('commune_id', $commune,null, ['class' => 'select2-commune form-control', 'required' => true]) !!}
+                             <label>Ville / Commune:</label>
+                                <select class="select2-region form-control" required id="commune_id" name="commune_id">
+                                    <option value="">Selectionnez Ville</option>
+                                   
+                                </select>
+                            <!--  <label>Commune:</label>
+                             {!! Form::select('commune_id', $commune,null, ['class' => 'select2-commune form-control', 'required' => true]) !!} -->
                             </div>
                         <div class=" col-md-4">
                              <label>District:</label>
@@ -171,5 +182,25 @@
             $('.select2-division').select2();
             $('.select2-formejuridique').select2();
         });
+
+        function getVilleByRegionId(id)
+          {
+
+            //alert(id);
+            
+            var url = "{{ url('ajax/villeByRegionId/show') }}/"+id;
+             $.ajax(
+             {
+              type: "get",
+              url: url,
+              success: function(data)
+              {
+                  $('select#commune_id').html(data.html_first);  
+                 // $('select#agent').html(data.html_two);       
+              }
+            }
+        );
+          }
+
     </script>
 @endsection

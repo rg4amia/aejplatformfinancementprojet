@@ -37,96 +37,43 @@
                     <form >
                       
                             <div class="form-group row">
-                        <div class="col-md-4">
-                            <label>Selectionnez la region:</label>
-                           <select class="form-control" required="" id="region" name="region">
-                                <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
-                                <option value="32">ABIDJAN</option>
-                                <option value="11">AGNEBY-TIASSA</option>
-                                <option value="28">BAFING</option>
-                                <option value="21">BAGOUE</option>
-                                <option value="3">BELIER</option>
-                                <option value="27">BERE</option>
-                                <option value="30">BOUNKANI</option>
-                                <option value="15">CAVALLY</option>
-                                <option value="7">FOLON</option>
-                                <option value="26">GBEKE</option>
-                                <option value="24">GBOKLE</option>
-                                <option value="9">GOH</option>
-                                <option value="31">GONTOUGO</option>
-                                <option value="13">GRANDS PONTS</option>
-                                <option value="16">GUEMON</option>
-                                <option value="25">HAMBOL</option>
-                                <option value="17">HAUT-SASSANDRA</option>
-                                <option value="2">IFFOU</option>
-                                <option value="5">INDENIE-DJUABLIN</option>
-                                <option value="8">KABADOUGOU</option>
-                                <option value="12">LA ME</option>
-                                <option value="10">LOH-DJIBOUA</option>
-                                <option value="18">MARAHOUE</option>
-                                <option value="4">MORONOU</option>
-                                <option value="1">N'ZI</option>
-                                <option value="22">NAWA</option>
-                                <option value="19">PORO</option>
-                                <option value="23">SAN-PEDRO</option>
-                                <option value="6">SUD-COMOE</option>
-                                <option value="20">TCHOLOGO</option>
-                                <option value="14">TONKPI</option>
-                                <option value="29">WORODOUGOU</option>
-                                <option value="33">YAMOUSSOUKRO</option>
-                                </select> 
+                                <div class="col-md-4">
+                                <label>Région:</label>
+                                        <select class="select2-region form-control" required id="region_id" name="region_id" onchange="getVilleByRegionId(this.value)">
+                                            <option value="">Selectionnez région</option>
+                                            @foreach($regions as $region)
+                                            <option value="{{$region->id}}">{{$region->nom}}</option>
+                                            @endforeach
+                                        </select>
                             </div>
                         <div class="col-md-4">
-                             <label>Commune:</label>
-                            <select class="form-control" required="" id="commune" name="commune">
-                             <option selected="" value=""> -- Veuillez Sélectionnez  -- </option>
-                            <option value="1">ABENGOUROU</option>
-                            <option value="2">ABIGUI</option>
-                            <option value="3">ABOBO</option>
-                            <option value="4">ABOISSO</option>
-                            <option value="5">ABOISSO-COMOE</option>
-                            <option value="6">ABONGOUA</option>
-                            <option value="7">ABOUDE</option>
-                            <option value="8">ADAOU</option>
-                            <option value="9">ADIAKE</option>
-                            <option value="10">ADJAME</option>
-                            <option value="11">ADJOUAN</option>
-                            <option value="12">ADZOPE</option>
-                            <option value="507">ZAIBO</option>
-                            <option value="508">ZANZRA</option>
-                            <option value="509">ZARANOU</option>
-                            <option value="510">ZEAGLO</option>
-                            <option value="511">ZEGO</option>
-                            <option value="512">ZEO</option>
-                            <option value="513">ZIKISSO</option>
-                            <option value="514">ZIOGOUINE</option>
-                            <option value="515">ZONNEU</option>
-                            <option value="516">ZOU</option>
-                            <option value="517">ZOUAN-HOUNIEN</option>
-                            <option value="518">ZOUKOUGBEU</option>
-                            <option value="519">ZUENOULA</option>
-                    </select> </div>
-                        <div class="col-md-4">
-                             <label>District:</label>
-                            <select  class="form-control" required="" id="district" name="district">
-                            <option selected="" value="">-- Veuillez Sélectionnez --</option>
-                                    <option value="11">BAS-SASSANDRA</option>
-                                    <option value="5">DENGUELE</option>
-                                    <option value="1">DISTRICT AUTONOME ABIDJAN</option>
-                                    <option value="2">DISTRICT AUTONOME YAMOUSSOUKRO</option>
-                                    <option value="6">GÔH-DJIBOUA</option>
-                                    <option value="3">LACS</option>
-                                    <option value="7">LAGUNES</option>
-                                    <option value="8">MONTAGNES</option>
-                                    <option value="9">SASSANDRA-MARAHOUE</option>
-                                    <option value="10">SAVANES</option>
-                                    <option value="4">SUD-COMOE</option>
-                                    <option value="12">VALLEE DU BANDAMA</option>
-                                    <option value="13">WOROBA</option>
-                                    <option value="14">ZANZAN</option>
-                            </select>
-                            </div>
+                             <label>Ville / Commune:</label>
+                                <select class="select2-region form-control" required id="commune_id" name="commune_id">
+                                    <option value="">Selectionnez Ville</option>
+                                   
+                                </select>
                         </div>
+                            <div class="col-md-4">
+                                 <label>District:</label>
+                                <select  class="form-control" required="" id="district" name="district">
+                                <option selected="" value="">-- Veuillez Sélectionnez --</option>
+                                        <option value="11">BAS-SASSANDRA</option>
+                                        <option value="5">DENGUELE</option>
+                                        <option value="1">DISTRICT AUTONOME ABIDJAN</option>
+                                        <option value="2">DISTRICT AUTONOME YAMOUSSOUKRO</option>
+                                        <option value="6">GÔH-DJIBOUA</option>
+                                        <option value="3">LACS</option>
+                                        <option value="7">LAGUNES</option>
+                                        <option value="8">MONTAGNES</option>
+                                        <option value="9">SASSANDRA-MARAHOUE</option>
+                                        <option value="10">SAVANES</option>
+                                        <option value="4">SUD-COMOE</option>
+                                        <option value="12">VALLEE DU BANDAMA</option>
+                                        <option value="13">WOROBA</option>
+                                        <option value="14">ZANZAN</option>
+                                </select>
+                                </div>
+                            </div>
 
                         <div class="form-group row">
                         <div class="col-md-4">
@@ -274,5 +221,41 @@
         </div>
     </section>
     
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+
+         $(document).ready(function() {
+            $('.select2-region').select2();
+            $('.select2-commune').select2();
+            $('.select2-district').select2();
+            $('.select2-typeprojet').select2();
+            $('.select2-secteuractivite').select2();
+            $('.select2-division').select2();
+            $('.select2-formejuridique').select2();
+        });
+    
+
+function getVilleByRegionId(id)
+  {
+
+    //alert(id);
+    
+    var url = "{{ url('ajax/villeByRegionId/show') }}/"+id;
+     $.ajax(
+     {
+      type: "get",
+      url: url,
+      success: function(data)
+      {
+          $('select#commune_id').html(data.html_first);  
+         // $('select#agent').html(data.html_two);       
+      }
+    }
+);
+  }
+
+    </script>
 @endsection
  

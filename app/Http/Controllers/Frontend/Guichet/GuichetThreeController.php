@@ -126,7 +126,8 @@ class GuichetThreeController extends Controller
             'typeprojet',
             'typeprogramme',
             'district',
-            'statut'));
+            'statut',
+            'regions'));
     }
 
     /**

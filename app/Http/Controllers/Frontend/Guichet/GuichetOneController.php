@@ -16,6 +16,7 @@ use App\Models\ProjetPromoteurOne;
 use App\Models\ProjetPromoteurThree;
 use App\Models\Promoteur;
 use App\Models\Region;
+use App\Models\Ville;
 use App\Models\ResultatVenteRecent;
 use App\Models\SexeParam;
 use App\Models\SituationMatrimonialeParam;
@@ -73,7 +74,7 @@ class GuichetOneController extends Controller
             $commune[$item->id] = $item->nom;
         }
 
-        $regions          = Region::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        $regions = Region::select('nom', 'id')->orderBy('nom', 'ASC')->get();
         $region = [0 => 'Selectionner'];
         foreach ($regions as $item) {
             $region[$item->id] = $item->nom;
@@ -124,7 +125,7 @@ class GuichetOneController extends Controller
         return view('frontend.guichetOne.form_projetguichet1',compact('sexe','niveauetude',
             'commune','region','situationmatrimoniale','nationalite','uniteanne',
             'niveaumaturation','descriconnaissanceactivite','niveaupratiqueentrepreneuriat',
-            'niveaupratiqueentreprise'
+            'niveaupratiqueentreprise','regions'
         ));
     }
 
@@ -566,4 +567,27 @@ class GuichetOneController extends Controller
     {
         //
     }
+
+
+     public function showVilleByRegionId($region_id)
+  {
+
+     $villes = Ville::select('nom','id')->where('region_id',$region_id)->orderBy('nom', 'ASC')->get();
+
+     $html_first = '<option value="">Selectionnez Ville</option>';
+     
+     foreach ($villes as $ville)
+      {
+           $html_first = $html_first.'<option value="'.$ville->id.'">'.$ville->nom.'</option>';
+      }
+
+
+      $obj = new \stdClass;
+      $obj->html_first = $html_first;
+     
+      return response()->json($obj);
+
+  }
+
+
 }

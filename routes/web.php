@@ -53,6 +53,8 @@ Route::get('/projetguichet4co_form', [GuichetFourController::class, 'form_projet
 Route::get('/projetguichet4ac_form', [GuichetFourController::class, 'form_projetguichet4ac'])->name('form.projetguichet4ac');
 Route::get('/projetguichet5_form', [GuichetFiveController::class, 'form_projetguichet5'])->name('form.projetguichet5');
 
+Route::get('ajax/villeByRegionId/show/{id}', [GuichetOneController::class,'showVilleByRegionId'])->name('region.ville.show');
+
 Route::group(['prefix' => 'mentor', 'as' => 'mentor.'], function (){
     Route::get('/mentor_form', [GuichetOneController::class, 'form_mentor'])->name('form');
     Route::post('/mentor_store', [GuichetOneController::class, 'mentorStore'])->name('form');

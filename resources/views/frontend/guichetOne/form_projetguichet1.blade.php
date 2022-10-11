@@ -177,23 +177,37 @@
                                         class="form-control" id="nombrepers_charge" name="nombrepers_charge">
                                 </div>
 
+                                <div class="form-group col-md-4 ">
+                                    <label>Région:</label>
+                                    <select class="select2-region form-control" required id="region_id" name="region_id" onchange="getVilleByRegionId(this.value)">
+                                        <option value="">Selectionnez région</option>
+                                        @foreach($regions as $region)
+                                        <option value="{{$region->id}}">{{$region->nom}}</option>
+                                        @endforeach
+                                    </select>
+                                    <!-- {!! Form::select('region_id', $region, promoteurLogin()->region_id, [
+                                        'class' => 'select2-region form-control',
+                                        'required' => true,
+                                    ]) !!} -->
+                                 </div>
+
                                 <div class="form-group col-md-4">
                                     @php
                                         //dd(promoteurLogin()->commune_id)
                                     @endphp
                                     <label>Ville / Commune:</label>
-                                    {!! Form::select('commune_id', $commune, promoteurLogin()->commune_id, [
+                                    <select class="select2-region form-control" required id="commune_id" name="commune_id">
+                                        <option value="">Selectionnez Ville</option>
+                                       
+                                    </select>
+                                    <!-- {!! Form::select('commune_id', $commune, promoteurLogin()->commune_id, [
                                         'class' => 'select2-region form-control',
                                         'required' => true,
-                                    ]) !!}
+                                    ]) !!} -->
                                     {{-- <input type="text" class="form-control" id="commune" name="commune" > --}}
                                 </div>
-                                <div class="form-group col-md-4 ">
-                                    <label>Région:</label>
-                                    {!! Form::select('region_id', $region, promoteurLogin()->region_id, [
-                                        'class' => 'select2-region form-control',
-                                        'required' => true,
-                                    ]) !!}
+
+                                <div class="form-group col-md-4">
                                     <label>Adresse postale :</label>
                                     <input type="text" class="form-control"
                                         value="{{ promoteurLogin()->adressepostale }}" id="adresse" name="adressepostale">
@@ -833,5 +847,25 @@
             }
 
         }
+
+          function getVilleByRegionId(id)
+  {
+
+    //alert(id);
+    
+    var url = "{{ url('ajax/villeByRegionId/show') }}/"+id;
+     $.ajax(
+     {
+      type: "get",
+      url: url,
+      success: function(data)
+      {
+          $('select#commune_id').html(data.html_first);  
+         // $('select#agent').html(data.html_two);       
+      }
+    }
+);
+  }
+
     </script>
 @endsection

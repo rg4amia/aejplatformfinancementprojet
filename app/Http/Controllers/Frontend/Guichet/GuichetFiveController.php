@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend\Guichet;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Region;
+
 class GuichetFiveController extends Controller
 {
     /**
@@ -28,8 +30,8 @@ class GuichetFiveController extends Controller
     }
 
      public function form_projetguichet5()
-    {
-        return view('frontend.guichetFive.form_projetguichet5');
+    {   $regions = Region::select('nom', 'id')->orderBy('nom', 'ASC')->get();
+        return view('frontend.guichetFive.form_projetguichet5',compact('regions'));
     }
 
     /**
