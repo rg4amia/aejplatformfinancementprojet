@@ -1,4 +1,5 @@
 @extends('backend.partials.main')
+@section('title') Mentorat Solidaire @endsection
 @php
 $active='guichet1';
 @endphp

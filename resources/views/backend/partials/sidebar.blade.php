@@ -10,25 +10,25 @@
               <li class="nav-item">
                     <a class="nav-link" href="{{ route('backend.admin.guichet-one.index') }}">
                         <i class="icon-grid menu-icon"></i>
-                        <span class="menu-title">Guichet 1</span>
+                        <span class="menu-title">Mentorat Solidaire</span>
                     </a>
               </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.admin.guichet-three.index') }}">
-                    <i class="icon-list menu-icon"></i>
-                    <span class="menu-title">Guichet 3</span>
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Micro & petite Ent.</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.admin.guichet-four.index') }}">
                     <i class="icon-grid menu-icon"></i>
-                    <span class="menu-title">Guichet 4</span>
+                    <span class="menu-title">Moy Entreprise & P. S.</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.admin.guichet-five.index') }}">
                     <i class="icon-grid menu-icon"></i>
-                    <span class="menu-title">Guichet 5</span>
+                    <span class="menu-title">Capital Investissement</span>
                 </a>
             </li>
          {{-- <li class="nav-item">

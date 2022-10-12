@@ -1,6 +1,8 @@
 @extends('backend.partials.main')
+@section('title')Tableau de bord @endsection
+
 @php
-$active='das';
+$active='dashboard';
 @endphp
 @section('content')
     <div class="content-wrapper">
@@ -124,7 +126,7 @@ $active='das';
                 <div class="card-body">
                  <div class="d-flex justify-content-between">
                   <p class="card-title">PROMOTEUR PAR GENRE</p>
-                  <a href="#" class="text-info">View all</a>
+                  <!-- <a href="#" class="text-info">Voir tous</a> -->
                  </div>
                   <p class="font-weight-500"><!-- The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc --></p>
                   <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
@@ -181,7 +183,7 @@ $active='das';
                                           <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">58</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">19</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Villes</td>
@@ -190,7 +192,7 @@ $active='das';
                                           <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">92</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">30</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Secteur d'activités</td>
@@ -218,6 +220,7 @@ $active='das';
                                 <div id="north-america-legend"></div>
                               </div>
                             </div>
+                            <span style="float: right;"><a href="#" class="text-info">Voir tous</a></span>
                           </div>
                         </div>
                       </div>
@@ -256,7 +259,7 @@ $active='das';
                                           <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">58</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">21</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Villes</td>
@@ -265,7 +268,7 @@ $active='das';
                                           <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">92</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">21</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Secteur d'activités</td>
@@ -293,6 +296,7 @@ $active='das';
                                 <div id="north-america-legend2"></div>
                               </div>
                             </div>
+                             <span style="float: right;"><a href="#" class="text-info">Voir tous</a></span>
                           </div>
                         </div>
                       </div>
@@ -340,7 +344,7 @@ $active='das';
                                           <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">58</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">12</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Villes</td>
@@ -349,7 +353,7 @@ $active='das';
                                           <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">92</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">29</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Secteur d'activités</td>
@@ -377,6 +381,7 @@ $active='das';
                                 <div id="north-america-legend3"></div>
                               </div>
                             </div>
+                             <span style="float: right;"><a href="#" class="text-info">Voir tous</a></span>
                           </div>
                         </div>
                       </div>
@@ -423,7 +428,7 @@ $active='das';
                                           <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">58</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">17</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Villes</td>
@@ -432,7 +437,7 @@ $active='das';
                                           <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                       </td>
-                                      <td><h5 class="font-weight-bold mb-0">92</h5></td>
+                                      <td><h5 class="font-weight-bold mb-0">32</h5></td>
                                     </tr>
                                     <tr>
                                       <td class="text-muted">Secteur d'activités</td>
@@ -460,6 +465,7 @@ $active='das';
                                 <div id="north-america-legend4"></div>
                               </div>
                             </div>
+                             <span style="float: right;"><a href="#" class="text-info">Voir tous</a></span>
                           </div>
                         </div>
                       </div>
